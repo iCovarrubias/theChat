@@ -26,6 +26,73 @@ function respondWith(res, statusCode) {
   };
 }
 
+
+/**
+ * Add friend, to be used with updateFriendList
+ */
+function addFriend(req, res, next) {
+  var email = req.body.email;
+  if(!email) {
+    return res.status(400).json({message: "email is empty"});
+  }
+  var user = req.user;
+
+  User.findOneAsync({ email: email }, "email name")
+    .then(function(friend) {
+      //email not registered
+      if(!friend) {
+        return res.status(400).json({
+          message: "Can't find this user " + email
+        });
+      }
+      
+      //contact already exists
+      if(user.friends.indexOf(friend._id) != -1)
+      {
+        //return it like this instead of User.update with $addToSet because 
+        //we don't have a callback for the update operation
+        return res.status(400).json({
+          message: "You've already added this friend " + email
+        });
+      }
+
+      user.friends.push(friend);
+      return user.saveAsync()
+        .then(function() {
+          //populate the friends
+          return user.updateFriends();
+        })
+        .then(function(user) {
+          // req.user = user; //update to the one with populated friends??
+          res.status(200).json(friend);            
+        })
+        .catch(validationError(res));
+
+    }).catch(function(err) {
+      return next(err);
+    });
+};
+
+/**
+ * Remove friend, to be used with updateFriendList
+ */
+function removeFriend(req, res, next) {
+  var friendId = req.body.friendId;
+  var user = req.user;
+
+  var idx = user.friends.indexOf(friendId);
+  if(idx == -1) {
+    res.status(400).json({message: "Friend already removed"});
+  }
+  user.friends.splice(idx, 1);
+  user.saveAsync()
+    .then(function(){
+      res.status(204).end();
+    })
+    .catch(validationError(res));
+}
+
+
 /**
  * Get list of users
  * restriction: 'admin'
@@ -141,63 +208,34 @@ exports.authCallback = function(req, res, next) {
 
 
 
-/**
- * Add friend
- */
-exports.addFriend  = function(req, res, next) {
-  var email = req.body.email;
-  if(!email) {
-    return res.status(400).json({message: "email is empty"});
-  }
-  var user = req.user;
-
-  User.findOneAsync({ email: email }, "email name")
-    .then(function(friend) {
-      //email not registered
-      if(!friend) {
-        return res.status(400).json({
-          message: "Can't find this user " + email
-        });
-      }
-      
-      //contact already exists
-      if(user.friends.indexOf(friend._id) != -1)
-      {
-        //return it like this instead of User.update with $addToSet because 
-        //we don't have a callback for the update operation
-        return res.status(400).json({
-          message: "You've already added this friend " + email
-        });
-      }
-
-      user.friends.push(friend);
-      return user.saveAsync()
-        .then(function() {
-          //populate the friends
-          return user.updateFriends();
-        })
-        .then(function(user) {
-          // req.user = user; //update to the one with populated friends??
-          res.status(200).json(friend);            
-        })
-        .catch(validationError(res));
-
-    }).catch(function(err) {
-      return next(err);
-    });
-};
-
-
-
 /*
- * Remove a friend
+ * Update the whole model
  */
 exports.update = function(req, res, next) {
   var userInfo = req.body;
-  console.log('updatingg:' , userInfo);
   
-  User.findByIdAndUpdateAsync(userInfo._id, userInfo, {'new': true})
+  //the 'new' parameter sends the upated information in the callback 
+  User.findByIdAndUpdateAsync(userInfo._id, userInfo, {'new': true}) 
     .then(function(theUser) {
-      console.log('onupdate prom', theUser);
+      req.status(200).end();
     }).catch(validationError(res));
+}
+
+
+/*
+ *
+ */
+exports.updateFriendList = function(req, res, next) {
+  var op = req.body.op;
+
+  if(op === "add") {
+    addFriend(req, res, next);
+  } else if(op === "remove") {
+    removeFriend(req, res, next);
+  } else {
+    //error
+    return validationError(res,400)({
+      message: "op parameter is missing, expected op='add'|'remove'"
+    });
+  }
 }

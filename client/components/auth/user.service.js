@@ -18,10 +18,10 @@ angular.module('theChatApp')
           id:'me'
         }
       },
-      addFriend: {
+      updateFriendList: {
         method: 'PUT',
         params: {
-          controller: 'addFriend'
+          controller: 'updateFriendList'            
         }
       },
       update: {
