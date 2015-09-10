@@ -2,10 +2,10 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-6 col-sm-offset-3">
       <h1>Sign up</h1>
     </div>
-    <div class="col-sm-12">
+    <div class="col-sm-6 col-sm-offset-3">
       <form class="form" name="form" ng-submit="register(form)" novalidate>
 
         <div class="form-group" ng-class="{ 'has-success': form.name.$valid && submitted,
@@ -54,6 +54,23 @@
           </p>
         </div>
 
+        <div class="form-group" ng-class="{ 
+          'has-success': form.passwordConfirm.$valid && submitted,
+          'has-error': form.passwordConfirm.$invalid && submitted 
+          }">
+          <label>Confirm Password</label>
+
+          <input type="password" name="passwordConfirm" class="form-control" 
+              ng-model="user.passwordConfirm"
+                 ng-minlength="3"
+                 required 
+                 match="user.password"/>
+          <p class="help-block"
+             ng-show="form.passwordConfirm.$invalid && submitted">
+            Passwords must match
+          </p>
+        </div>
+
         <div>
           <button class="btn btn-inverse btn-lg btn-register" type="submit">
             Sign up
@@ -64,17 +81,7 @@
         </div>
 
         <hr>
-        <div>
-          <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')">
-            <i class="fa fa-facebook"></i> Connect with Facebook
-          </a>
-          <a class="btn btn-google-plus" href="" ng-click="loginOauth('google')">
-            <i class="fa fa-google-plus"></i> Connect with Google+
-          </a>
-          <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
-            <i class="fa fa-twitter"></i> Connect with Twitter
-          </a>
-        </div>
+       <login-social></login-social>
       </form>
     </div>
   </div>

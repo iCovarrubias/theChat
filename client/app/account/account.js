@@ -3,11 +3,6 @@
 angular.module('theChatApp')
   .config(function($stateProvider) {
     $stateProvider
-      .state('login', {
-        url: '/login',
-        templateUrl: 'app/account/login/login.html',
-        controller: 'LoginCtrl'
-      })
       .state('logout', {
         url: '/logout?referrer',
         referrer: 'main',
@@ -31,6 +26,12 @@ angular.module('theChatApp')
         controller: 'SettingsCtrl',
         authenticate: true
       });
+      // Isma, no login state
+      // .state('login', {
+      //   url: '/login',
+      //   templateUrl: 'app/account/login/login.html',
+      //   controller: 'LoginCtrl'
+      // });
   })
   .run(function($rootScope) {
     $rootScope.$on('$stateChangeStart', function(event, next, nextParams, current) {

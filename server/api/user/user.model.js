@@ -21,7 +21,8 @@ var UserSchema = new Schema({
   facebook: {},
   twitter: {},
   google: {},
-  github: {}
+  github: {},
+  friends: [{ type: Schema.Types.ObjectId, ref: 'User' }]
 });
 
 /**
@@ -222,6 +223,16 @@ UserSchema.methods = {
       }
       return callback(null, key.toString('base64'));
     });
+  },
+
+
+  //isma, a method to update the friends field
+  updateFriends: function(){
+       return this.constructor.populateAsync(this, 
+        {
+          path: "friends",
+          select: "email name",  
+        })
   }
 };
 

@@ -1,0 +1,1662 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"find",
+				"findByIdAndRemoveAsync"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"frie",
+				"friendId"
+			],
+			[
+				"fr",
+				"friend"
+			],
+			[
+				"fre",
+				"friends"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"cont",
+				"controller	AngularJS"
+			],
+			[
+				"Logged",
+				"isLoggedIn"
+			],
+			[
+				"prof",
+				"profileURL"
+			],
+			[
+				"au",
+				"authenticated"
+			],
+			[
+				"contr",
+				"controller_arr	AngularJS"
+			],
+			[
+				"flapp",
+				"flapper-news-token"
+			],
+			[
+				"upv",
+				"upvoteComment"
+			],
+			[
+				"reso",
+				"resolve"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"meet",
+				"meetup"
+			],
+			[
+				"meetu",
+				"meetupsController"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"whi",
+				"whispMatch"
+			],
+			[
+				"w",
+				"whispMatch"
+			],
+			[
+				"wi",
+				"max-width"
+			],
+			[
+				"nick",
+				"nickname"
+			],
+			[
+				"index",
+				"indexOf"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"l",
+				"link	Tag"
+			],
+			[
+				"error",
+				"errorhandler"
+			],
+			[
+				"get",
+				"getValue"
+			],
+			[
+				"nex",
+				"nextTick"
+			],
+			[
+				"sn",
+				"snippet"
+			],
+			[
+				"sni",
+				"snippet"
+			],
+			[
+				"recei",
+				"received-message"
+			],
+			[
+				"load",
+				"loadCollection"
+			],
+			[
+				"collec",
+				"collectionName"
+			],
+			[
+				"collectio",
+				"collections"
+			],
+			[
+				"coll",
+				"collectionName"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"s",
+				"superagent"
+			],
+			[
+				"c",
+				"collections"
+			],
+			[
+				"n",
+				"null"
+			],
+			[
+				"eq",
+				"eql"
+			],
+			[
+				"article",
+				"Article"
+			],
+			[
+				"AUth",
+				"handleAuthCallbackError"
+			],
+			[
+				"FACEB",
+				"FACEBOOK_APP_SECRET"
+			],
+			[
+				"eve",
+				"everyauth"
+			],
+			[
+				"ever",
+				"everymodule"
+			],
+			[
+				"YAHOO",
+				"YAHOO_CONSUMER_SECRET"
+			],
+			[
+				"seed",
+				"seedArticles"
+			],
+			[
+				"g",
+				"glyphicon-play"
+			],
+			[
+				"art",
+				"article"
+			],
+			[
+				"artic",
+				"articles"
+			],
+			[
+				"articl",
+				"articles"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"db",
+				"dbUrl"
+			],
+			[
+				"mong",
+				"mongoskin"
+			],
+			[
+				"findo",
+				"findOneAndAddText"
+			],
+			[
+				"pi",
+				"published"
+			],
+			[
+				"fo",
+				"form-group"
+			],
+			[
+				"ser",
+				"server"
+			],
+			[
+				"wrap",
+				"wrapper"
+			],
+			[
+				"quer",
+				"queryNoteFn"
+			],
+			[
+				"data",
+				"appData"
+			],
+			[
+				"def",
+				"deferred"
+			],
+			[
+				"rest",
+				"restapi"
+			],
+			[
+				"update",
+				"updateTimerI"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"to",
+				"text-top"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"must",
+				"mustInsert"
+			],
+			[
+				"in",
+				"inOrderTraverseNode"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"valid",
+				"valid"
+			],
+			[
+				"val",
+				"validateType"
+			],
+			[
+				"valida",
+				"validateType"
+			],
+			[
+				"va",
+				"validateType"
+			],
+			[
+				"ngMode",
+				"ngModelCtrl"
+			],
+			[
+				"valia",
+				"validateEqual"
+			],
+			[
+				"wr",
+				"wrapper"
+			],
+			[
+				"the",
+				"thewrapper"
+			],
+			[
+				"gal",
+				"galleryRequest"
+			],
+			[
+				"serv",
+				"serverData"
+			],
+			[
+				"sc",
+				"scrollTop"
+			],
+			[
+				"a",
+				"angular	AngularJS"
+			],
+			[
+				"ri",
+				"ridx"
+			],
+			[
+				"rig",
+				"rightIdx"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"server",
+				"serverImg"
+			],
+			[
+				"proces",
+				"processFailResponse"
+			],
+			[
+				"process",
+				"processSuccessResponse"
+			],
+			[
+				"img",
+				"imgUrlPath"
+			],
+			[
+				"dat",
+				"dataArrayPath"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"galle",
+				"galleryRequestProvider"
+			],
+			[
+				"add",
+				"addImage"
+			],
+			[
+				"tot",
+				"totalPages"
+			],
+			[
+				"pag",
+				"page"
+			],
+			[
+				"page",
+				"imgsPerPage"
+			],
+			[
+				"e",
+				"endIdx"
+			],
+			[
+				"imag",
+				"imgsPerPage"
+			],
+			[
+				"imgRetrieverP",
+				"imgRetrieverProvider"
+			],
+			[
+				"service",
+				"serviceUrl"
+			],
+			[
+				"_",
+				"_chartService_"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"prot",
+				"proto	Prototype"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"grap",
+				"graphRender"
+			],
+			[
+				"direc",
+				"verbose_directive	AngularJS"
+			],
+			[
+				"graph",
+				"graph-canvas"
+			],
+			[
+				"dire",
+				"verbose_directive	AngularJS"
+			],
+			[
+				"cou",
+				"counterService"
+			],
+			[
+				"mock",
+				"mockScope"
+			],
+			[
+				"ex",
+				"expect"
+			],
+			[
+				"bac",
+				"backend"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"Sc",
+				"SCRIPT	Tag"
+			],
+			[
+				"prod",
+				"productsResource"
+			],
+			[
+				"edi",
+				"editorView"
+			],
+			[
+				"$rou",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"lef",
+				"left"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
+				"pivo",
+				"pivotIdx"
+			],
+			[
+				"pivot",
+				"pivotIdx"
+			],
+			[
+				"piv",
+				"pivotLocation-1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "client/app/account/login/login.html",
+			"settings":
+			{
+				"buffer_size": 1357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/dashboard/dashboard.html",
+			"settings":
+			{
+				"buffer_size": 1454,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/dashboard/dashboard.controller.js",
+			"settings":
+			{
+				"buffer_size": 1050,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/api/user/user.controller.js",
+			"settings":
+			{
+				"buffer_size": 4601,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/components/auth/user.service.js",
+			"settings":
+			{
+				"buffer_size": 609,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/components/auth/auth.service.js",
+			"settings":
+			{
+				"buffer_size": 4579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/api/user/index.js",
+			"settings":
+			{
+				"buffer_size": 749,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/dev/TheChat/server/auth/auth.service.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.css",
+		"/C/dev/TheChat/client/components/auth/user.service.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
+		"/C/dev/TheChat/server/api/user/user.controller.js",
+		"/C/dev/TheChat/server/auth/index.js",
+		"/C/dev/TheChat/client/components/auth/auth.service.js",
+		"/C/dev/TheChat/server/api/user/user.model.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
+		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/C/dev/TheChat/client/app/account/signup/signup.html",
+		"/C/dev/TheChat/server/api/user/index.js",
+		"/C/dev/TheChat/client/app/account/account.js",
+		"/C/dev/TheChat/theChat.sublime-project",
+		"/C/dev/TheChat/client/app/account/login/login.controller.js",
+		"/C/dev/TheChat/client/app/app.css",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.js",
+		"/C/dev/TheChat/server/api/dashboard/index.js",
+		"/C/dev/TheChat/client/app/app.js",
+		"/C/dev/TheChat/server/routes.js",
+		"/C/dev/TheChat/server/config/socketio.js",
+		"/C/dev/TheChat/Gruntfile.js",
+		"/C/dev/TheChat/client/components/match/match.directive.js",
+		"/C/dev/TheChat/client/app/account/signup/signup.controller.js",
+		"/C/dev/projects/angularJS-exercises/angularJS/04-FormMatch/matchDirective/app/scripts/directives/validatematch.js",
+		"/C/dev/projects/angularJS-exercises/angularJS/04-FormMatch/matchDirective/app/views/main.html",
+		"/C/dev/TheChat/client/app/account/login/loginSocial/loginSocial.html",
+		"/C/dev/TheChat/client/components/navbar/navbar.controller.js",
+		"/C/dev/TheChat/node_modules/grunt-node-inspector/README.md",
+		"/C/dev/TheChat/node_modules/grunt-node-inspector/package.json",
+		"/C/dev/TheChat/package.json",
+		"/C/dev/tuts/DaftMonk-mean-generator/package.json",
+		"/C/dev/TheChat/client/components/navbar/navbar.html",
+		"/C/dev/TheChat/grunt_debug.bat",
+		"/C/dev/TheChat/client/app/main/main.html",
+		"/C/dev/TheChat/client/bower_components/angular-ui-router/src/urlRouter.js",
+		"/C/dev/tuts/thechat_youtube_tut/public/index.html",
+		"/C/dev/TheChat/client/app/account/login/login.directive.js",
+		"/C/dev/TheChat/client/app/account/login/login.html",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/components/auth/auth.service.js",
+		"/C/dev/TheChat/server/auth/local/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/app/account/login/login.controller.js",
+		"/C/dev/TheChat/client/app/account/login/logSocial/logSocial.html",
+		"/C/dev/TheChat/client/app/account/login/logSocial/logSocial.directive.js",
+		"/C/dev/TheChat/client/app/account/login/loginSocial/loginSocial.directive.js",
+		"/C/dev/TheChat/client/app/main/main.controller.spec.js",
+		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css.map",
+		"/C/dev/TheChat/client/app/account/login/login.css",
+		"/C/dev/TheChat/client/app/account/login/logSocial/logSocial.css",
+		"/C/dev/TheChat/client/app/main/main.controller.js",
+		"/C/dev/TheChat/client/app/main/main.js",
+		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/C/dev/TheChat/server/config/environment/development.js",
+		"/C/dev/TheChat/server/app.js",
+		"/C/dev/TheChat/server/config/local.env.js",
+		"/C/dev/TheChat/dist/server/auth/auth.service.js",
+		"/C/dev/TheChat/.gitignore",
+		"/C/dev/TheChat/server/config/environment/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/config/environment/development.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/config/local.env.js",
+		"/C/dev/TheChat/server/config/environment/production.js",
+		"/C/dev/TheChat/server/config/local.env.sample.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/app/app.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/local/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/facebook/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/facebook/passport.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/auth.service.js",
+		"/C/Users/Ismael/Desktop/absmin - Chapoy - Isma.html",
+		"/C/dev/tuts/DaftMonk-mean-generator/node_modules/passport-facebook/lib/strategy.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/config/environment/index.js",
+		"/C/dev/tuts/redditColne/flapper-news/public/javascripts/AngularApp.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/user/user.integration.js",
+		"/C/Users/Ismael/Desktop/absmin.html",
+		"/C/Users/Ismael/Desktop/absmin - Chapoy.html",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/local/passport.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/user/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/index.js",
+		"/C/dev/tuts/redditColne/flapper-news/app.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/routes.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/config/socketio.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/config/express.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/twitter/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/user/user.model.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/index.html",
+		"/C/dev/tuts/redditColne/flapper-news/models/Users.js",
+		"/C/dev/tuts/redditColne/flapper-news/views/index.ejs",
+		"/C/dev/tuts/redditColne/flapper-news/routes/index.js",
+		"/C/dev/tuts/redditColne/flapper-news/config/passport.js",
+		"/C/dev/PracticalNodeJS/ch9/editor/redis-server.bat",
+		"/C/dev/tuts/redditColne/flapper-news/config/config.js",
+		"/C/dev/tuts/redditColne/flapper-news/models/User.js",
+		"/C/dev/tuts/redditColne/flapper-news/models/Posts.js",
+		"/C/dev/tuts/redditColne/flapper-news/models/Comments.js",
+		"/C/dev/tuts/redditColne/nada/algo/routes/index.js",
+		"/C/dev/tuts/redditColne/index.html",
+		"/C/dev/tuts/redditColne/app.js",
+		"/C/dev/tuts/redditColne/flapper-news/package.json",
+		"/C/dev/tuts/my-angular-project/client/app/app.js",
+		"/C/dev/tuts/my-angular-project/client/components/navbar/navbar.html",
+		"/C/dev/tuts/my-angular-project/client/app/login/login.js",
+		"/C/dev/tuts/my-angular-project/client/app/login/login.html",
+		"/C/dev/tuts/my-angular-project/client/app/register/register.html",
+		"/C/dev/tuts/my-angular-project/client/app/profile/profile.js",
+		"/C/dev/tuts/my-angular-project/client/app/profile/profile.html",
+		"/C/dev/tuts/my-angular-project/server/routes.js",
+		"/C/dev/tuts/my-angular-project/server/app.js",
+		"/C/dev/tuts/angular-tube/server/routes.js",
+		"/C/dev/tuts/angular-tube/server/app.js",
+		"/C/dev/tuts/my-angular-project/server/config/local.env.js",
+		"/C/dev/tuts/angular-tube/server/index.js",
+		"/C/dev/tuts/angular-tube/server/api/comment/comment.events.js",
+		"/C/dev/tuts/angular-tube/server/api/comment/comment.socket.js",
+		"/C/dev/tuts/angular-tube/server/api/comment/comment.model.js",
+		"/C/dev/tuts/angular-tube/server/config/socketio.js",
+		"/C/dev/tuts/angular-tube/server/api/comment/comment.controller.js",
+		"/C/dev/projects/angularJS-exercises/angularJS/06_Using_UI-Route/mySample/app/scripts/controllers/main.js",
+		"/C/dev/tuts/angular-tube/server/config/express.js",
+		"/C/dev/tuts/angular-tube/client/app/main/main.controller.js",
+		"/C/dev/tuts/angular-tube/server/config/environment/index.js",
+		"/C/dev/tuts/angular-tube/server/auth/auth.service.js",
+		"/C/dev/tuts/angular-tube/server/api/comment/index.js",
+		"/C/dev/tuts/angular-tube/client/app/main/main.html",
+		"/C/dev/tuts/angular-tube/client/app/main/main.less",
+		"/C/dev/tuts/angular-tube/server/config/environment/development.js",
+		"/C/dev/tuts/angular-tube/client/app/main/main.js",
+		"/C/dev/tuts/angular-tube/client/app/main/main.controller.spec.js",
+		"/C/dev/tuts/angular-tube/client/app/app.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			"C:\\dev\\TheChat\\server",
+			"C:\\dev\\TheChat\\client",
+			"C:\\dev\\TheChat\\server\\api",
+			"C:\\dev\\TheChat\\server\\api\\user",
+			"C:\\dev\\TheChat\\server",
+			"C:\\dev\\TheChat\\server\\auth",
+			"C:\\dev\\TheChat\\server\\api\\user",
+			"C:\\dev\\TheChat\\server\\api",
+			"C:\\dev\\TheChat\\client",
+			"C:\\dev\\TheChat",
+			"C:\\dev\\TheChat, -C:\\dev\\TheChat\\client\\bower_components",
+			"C:\\dev\\TheChat\\client, -\"/C/dev/TheChat/client/bower_components\"",
+			"C:\\dev\\TheChat\\client, -\"C/dev/TheChat/client/bower_components\"",
+			"C:\\dev\\TheChat\\client, -C:\\dev\\TheChat\\client\\bower_components\\*",
+			"C:\\dev\\TheChat\\client, -C:\\dev\\TheChat\\client\\bower_components",
+			"C:\\dev\\TheChat\\client, -\\client\\bower_components",
+			"C:\\dev\\TheChat\\client,-\\client\\bower_components",
+			"C:\\dev\\TheChat\\client,-*\\client\\bower_components",
+			"C:\\dev\\TheChat\\client,-*\\bower_components",
+			"C:\\dev\\TheChat\\client",
+			"C:\\dev\\TheChat\\server\\config",
+			"C:\\dev\\tuts\\DaftMonk-mean-generator\\node_modules\\passport-facebook",
+			"C:\\dev\\tuts\\redditColne\\flapper-news",
+			"C:\\dev\\tuts\\DaftMonk-mean-generator\\server",
+			"C:\\dev\\tuts\\redditColne\\flapper-news, *.js",
+			"C:\\dev\\tuts\\redditColne\\flapper-news",
+			"C:\\dev\\tuts\\DaftMonk-mean-generator\\server",
+			"C:\\dev\\tuts\\angular-tube\\server",
+			"C:\\dev\\tuts\\angular-tube\\server\\api\\comment",
+			"C:\\dev\\tuts\\angular-tube\\server",
+			"C:\\dev\\tuts\\DaftMonk-mean-generator\\server",
+			"C:\\dev\\PracticalNodeJS\\ch2\\express-styl\\node_modules\\express",
+			"C:\\Users\\Ismael\\Documents\\nodeJS\\Practical_NodeJS_src\\ch6, *.js",
+			"C:\\Users\\Ismael\\Documents\\nodeJS\\Practical_NodeJS_src\\ch6",
+			"C:\\dev\\PracticalNodeJS\\ch5\\blog-express, *.js",
+			"C:\\dev\\PracticalNodeJS\\ch5\\blog-express",
+			"C:\\Users\\Ismael\\Documents\\AngularJS\\Chapter 21",
+			"C:\\dev\\projects\\Chapter17 - Advanced Directives",
+			"C:\\dev\\projects\\angularJS-exercises\\angularJS\\06_Using_UI-Route\\mySample\\app",
+			"C:\\dev\\projects\\angularJS-exercises\\angularJS\\01 - Graph Directive\\graph\\app",
+			"C:\\dev\\projects\\angularJS-exercises\\angularJS\\01 - Graph Directive\\graph\\app\\scripts",
+			"C:\\Users\\Ismael\\Documents\\Javascript",
+			"C:\\Users\\Ismael\\Documents",
+			"C:\\Users\\Ismael\\Documents\\Javascript",
+			"C:\\dev\\projects\\angularJS-exercises\\angularJS\\01 - Graph Directive",
+			"C:\\dev\\projects\\,-angular.js,-jquery-ui.min.js",
+			"C:\\dev\\projects\\,-angular.js",
+			"C:\\dev\\projects\\",
+			"C:\\dev\\projects\\Chapter21 - Services for REST",
+			"C:\\dev\\projects\\Chapter19 - Services for Global Objects Errors and Expressions\\angularjs",
+			"C:\\wamp\\www\\jquery\\chapter13, *.html",
+			"C:\\dev\\projects\\Chapter13 - Controllers and Scopes\\angularjs",
+			"C:\\dev\\projects\\Chapter10",
+			"C:\\dev\\projects\\sportsstore\\angularjs",
+			"C:\\dev\\projects\\sportsstore\\angularjs, *.css",
+			"C:\\dev\\projects\\sportsstore\\angularjs, *.html",
+			"C:\\dev\\projects\\sportsstore\\angularjs",
+			"C:\\wamp\\www\\jquery",
+			"C:\\Users\\Ismael\\Documents\\jQuery - The missing manual\\js3e-master",
+			"C:\\Users\\Ismael\\Documents\\Design patterns\\exercises",
+			"C:\\Users\\Ismael\\Documents\\Design patterns\\exercises\\scripts",
+			"C:\\Users\\Ismael\\Documents\\Design patterns\\exercises",
+			"C:\\Users\\Ismael\\Documents\\Javascript\\Exercises - 3 to 14",
+			"C:\\Users\\Ismael\\Documents\\Design patterns\\exercises",
+			"C:\\Users\\Ismael\\Documents\\Design patterns\\repos\\todoMVC-Vanilla\\todomvc\\examples\\vanillajs",
+			"C:\\Users\\Ismael\\Documents\\Javascript\\ninja-code\\chapter-13"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"validationError",
+			"saveAsync",
+			"findByIdAndRemoveAsync",
+			"new User",
+			"}\n",
+			"has-error",
+			"req.user",
+			"current",
+			"currentUser",
+			"pre",
+			"authenticate",
+			"login",
+			"//isma",
+			"req.user",
+			"currentUser",
+			".get(",
+			"title",
+			"navbar-right",
+			"\n            path: \"friends\",\n            select: \"email name\",  \n          }).then(function(userz) {\n            //update the user in res\n            console.log(\"pop\",userz)\n          });",
+			"async",
+			"handleError",
+			"500",
+			"handleError",
+			"findById",
+			"\\",
+			"findById",
+			"user.find",
+			"55f07e74e7bd0e8814388e22",
+			"saveAsync",
+			"console",
+			"validationError",
+			"};\n",
+			"authenticate",
+			"dashboard",
+			"/me",
+			"500",
+			"findOneAsync",
+			"findOneAsync\n",
+			"validationError",
+			"204",
+			"validationError",
+			"json",
+			"validationError",
+			"validationError\n",
+			"validationError",
+			"400",
+			"validationError",
+			"validationEr",
+			"validationER",
+			"saveAsync",
+			"},\n",
+			"getCurrentUser",
+			"currentUser",
+			"admin",
+			"UserSchema",
+			"object",
+			"id",
+			"object",
+			"ObjectId",
+			"req.bo",
+			".user",
+			"var userId = req.user._id;",
+			"findOneAsync",
+			"201",
+			"200",
+			"201=0",
+			"201",
+			"email",
+			"watch",
+			"open",
+			"serve",
+			"register",
+			"registerta",
+			"'\n",
+			"pyth",
+			"node-in",
+			"'node-inspector'",
+			"istanbul_check_coverage",
+			"express",
+			"useminPrepare",
+			"loadNpmTasks",
+			"jit-g",
+			"registertas",
+			"debug",
+			"node-inspec",
+			"node-inspec	",
+			"node-inspec",
+			"node-in",
+			"node-inspector",
+			"inspect",
+			"registerTask",
+			"server",
+			"register",
+			"regis",
+			"isLoggedIn",
+			"islogged",
+			"isLoggedIn",
+			"labe",
+			"thing",
+			"thins",
+			"things",
+			"//isma",
+			"things",
+			"Auth",
+			"login(form)",
+			"login",
+			"col-sm-12",
+			"col-sm-6",
+			"islogged",
+			"safeCb",
+			"{\n",
+			"isloggedIn",
+			"isLoggedIn",
+			"islogged",
+			"seedDB: true",
+			"mainCtr",
+			"awesomeThings",
+			"thing",
+			"api",
+			"thing",
+			"FACEBOOK_ID",
+			"token",
+			"setTokenCookie",
+			"authorizationURL",
+			"https://www.facebook.com/v2.0/dialog/oauth",
+			"BEARER ",
+			"access_token",
+			"Bearer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0",
+			"5858",
+			"handlebars",
+			"app/images/",
+			"\"description\": \"\"",
+			"",
+			"\"height\":\"\\1\"",
+			"\"width\":\"\\1\"",
+			"\"height\":\"\\1\"",
+			"\"height\":",
+			"\"\\1\":",
+			"url: \"images/",
+			"binary",
+			"W",
+			"Q",
+			"X",
+			"L",
+			"F",
+			"U",
+			"B",
+			"V",
+			"M",
+			"P",
+			"G",
+			"I",
+			"R",
+			"x",
+			"K",
+			"Y",
+			"S",
+			"R",
+			"C",
+			"D",
+			"N",
+			"O",
+			"A",
+			"E",
+			"H",
+			"T",
+			"B",
+			"R",
+			"E",
+			"H",
+			"T",
+			"THE",
+			"X",
+			"C",
+			"V",
+			"K",
+			"k",
+			"M",
+			"Y",
+			"F",
+			"W",
+			"B",
+			"U",
+			"N",
+			"A",
+			"DA",
+			"D",
+			"O",
+			"G",
+			"L",
+			"S",
+			"I",
+			"Y",
+			"R",
+			"E",
+			"H",
+			"T",
+			"O",
+			"N",
+			"A",
+			"AN",
+			"",
+			"L",
+			"T",
+			"LL",
+			"R",
+			"RE",
+			"ER",
+			"H",
+			"T",
+			"E",
+			"THE",
+			"_",
+			"e",
+			"h",
+			"t",
+			"the",
+			"\"$1\"",
+			"",
+			"'",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "client/app/account/login/login.html",
+					"settings":
+					{
+						"buffer_size": 1357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								450
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/app/dashboard/dashboard.html",
+					"settings":
+					{
+						"buffer_size": 1454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1385,
+								1385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 600.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/app/dashboard/dashboard.controller.js",
+					"settings":
+					{
+						"buffer_size": 1050,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								584,
+								584
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "server/api/user/user.controller.js",
+					"settings":
+					{
+						"buffer_size": 4601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4485,
+								4485
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3155.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/components/auth/user.service.js",
+					"settings":
+					{
+						"buffer_size": 609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/components/auth/auth.service.js",
+					"settings":
+					{
+						"buffer_size": 4579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3876,
+								3878
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2952.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "server/api/user/index.js",
+					"settings":
+					{
+						"buffer_size": 749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 20.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"auth.se",
+				"client/components/auth/auth.service.js"
+			],
+			[
+				"auth",
+				"server/auth/auth.service.js"
+			],
+			[
+				"user.ser",
+				"client/components/auth/user.service.js"
+			],
+			[
+				"user.contr",
+				"server/api/user/user.controller.js"
+			],
+			[
+				"user.serv",
+				"client/components/auth/user.service.js"
+			],
+			[
+				"auth.serv",
+				"client/components/auth/auth.service.js"
+			],
+			[
+				"bootst",
+				"client/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"boot",
+				"client/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"config/envi",
+				"server/config/environment/development.js"
+			],
+			[
+				"user",
+				"redditColne/flapper-news/models/Users.js"
+			],
+			[
+				"index.ej",
+				"redditColne/flapper-news/views/index.ejs"
+			],
+			[
+				"routes/",
+				"redditColne/flapper-news/routes/index.js"
+			],
+			[
+				"index.ejs",
+				"redditColne/flapper-news/views/index.ejs"
+			],
+			[
+				"users.j",
+				"redditColne/flapper-news/models/Users.js"
+			],
+			[
+				"profile.t",
+				"client/app/profile/profile.html"
+			],
+			[
+				"client/app/profile/profile",
+				"client/app/profile/profile.js"
+			],
+			[
+				"register.",
+				"client/app/register/register.html"
+			],
+			[
+				"client/app/login/logi",
+				"client/app/login/login.html"
+			],
+			[
+				"client/app/login/log",
+				"client/app/login/login.js"
+			],
+			[
+				"express.js",
+				"server/config/express.js"
+			],
+			[
+				"main.css",
+				"06_Using_UI-Route/mySample/app/styles/main.css"
+			],
+			[
+				"spoiler.h",
+				"06_Using_UI-Route/mySample/app/views/state/spoiler.html"
+			],
+			[
+				"main.",
+				"07_Notes/notesApp/app/styles/main.css"
+			],
+			[
+				"main.cs",
+				"07_Notes/notesApp/.tmp/styles/main.css"
+			],
+			[
+				"notemodel.js",
+				"07_Notes/notesApp/app/scripts/services/notemodel.js"
+			],
+			[
+				"angular.j",
+				"07_Notes/notesApp/bower_components/angular/angular.js"
+			],
+			[
+				"bootstr",
+				"07_Notes/notesApp/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"bootstrac",
+				"07_Notes/notesApp/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"top.ht",
+				"mySample/app/views/top.html"
+			],
+			[
+				"top.h",
+				"mySample/app/views/top.html"
+			],
+			[
+				"main.html",
+				"mySample/app/views/main.html"
+			],
+			[
+				"top.htm",
+				"mySample/app/views/top.html"
+			],
+			[
+				"bootstra.j",
+				"mySample/bower_components/bootstrap/dist/js/bootstrap.js"
+			],
+			[
+				"bootstrap.cs",
+				"mySample/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"boots",
+				"Chapter12 - Forms/angularjs/bootstrap-theme.css"
+			],
+			[
+				"index.",
+				"04-FormMatch/matchDirective/app/index.html"
+			],
+			[
+				"main.js",
+				"04-FormMatch/matchDirective/app/scripts/controllers/main.js"
+			],
+			[
+				"validatet",
+				"04-FormMatch/matchDirective/app/scripts/directives/validatetype.js"
+			],
+			[
+				"validaterang",
+				"04-FormMatch/matchDirective/app/scripts/directives/validaterange.js"
+			],
+			[
+				"validatem",
+				"04-FormMatch/matchDirective/app/scripts/directives/validatematch.js"
+			],
+			[
+				"match.js",
+				"04-FormMatch/matchDirective/app/scripts/directives/match.js"
+			],
+			[
+				"main",
+				"matchDirective/app/views/main.html"
+			],
+			[
+				"mainh",
+				"matchDirective/app/views/main.html"
+			],
+			[
+				"main.ht",
+				"matchDirective/app/views/main.html"
+			],
+			[
+				"foo.js",
+				"matchDirective/app/scripts/directives/foo.js"
+			],
+			[
+				"index",
+				"spoiler/app/index.html"
+			],
+			[
+				"inde",
+				"spoiler/app/index.html"
+			],
+			[
+				"myhide",
+				"spoiler/app/scripts/directives/myhide.js"
+			],
+			[
+				"readme.m",
+				"01 - Graph Directive/graph/node_modules/grunt/node_modules/colors/ReadMe.md"
+			],
+			[
+				"gallery",
+				"03 - Gallery/gallery/app/scripts/services/galleryrequest.js"
+			],
+			[
+				"main.htm",
+				"03 - Gallery/gallery/app/views/main.html"
+			],
+			[
+				"dummyda",
+				"03 - Gallery/gallery/app/scripts/services/dummydata.js"
+			],
+			[
+				"bootstra",
+				"01 - Graph Directive/graph/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"galler",
+				"03 - Gallery/gallery/app/scripts/services/galleryrequest.js"
+			],
+			[
+				"imgretriev",
+				"03 - Gallery/gallery/app/scripts/services/imgretriever.js"
+			],
+			[
+				"dummydat",
+				"03 - Gallery/gallery/app/scripts/services/dummydata.js"
+			],
+			[
+				"dummydata",
+				"03 - Gallery/gallery/app/scripts/services/dummydata.js"
+			],
+			[
+				"charts",
+				"graph/app/scripts/services/chartservice.js"
+			],
+			[
+				"spreadsh",
+				"graph/app/scripts/directives/spreadsheet.js"
+			],
+			[
+				"spreads",
+				"graph/app/scripts/controllers/spreadsheet.js"
+			],
+			[
+				"chartserv",
+				"graph/app/scripts/services/chartservice.js"
+			],
+			[
+				"graphren",
+				"graph/app/scripts/services/graphrender.js"
+			],
+			[
+				"chartser",
+				"graph/app/scripts/services/chartservice.js"
+			],
+			[
+				"graphrender",
+				"graph/test/spec/services/graphrender.js"
+			],
+			[
+				"bootstrap.css",
+				"graph/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"bootr",
+				"angularJS/01 - Graph Directice/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"boo",
+				"angularJS/01 - Graph Directice/bower_components/bootstrap/dist/css/bootstrap.css"
+			],
+			[
+				"angul",
+				"Chapter17 - Advanced Directives/angularjs/angular.js"
+			],
+			[
+				"ang",
+				"Chapter17 - Advanced Directives/angularjs/angular.js"
+			],
+			[
+				"angu",
+				"Chapter17 - Advanced Directives/angularjs/angular.js"
+			],
+			[
+				"admincontrollers.js",
+				"controllers/adminControllers.js"
+			],
+			[
+				"app.ht",
+				"dev/angularjs/app.html"
+			],
+			[
+				"boos",
+				"dev/angularjs/bootstrap.css"
+			],
+			[
+				"panel",
+				"AngularJS/Chapter 08/views/adminOrders.html"
+			],
+			[
+				"regext",
+				"js3e-master/testbed/regex_tester.html"
+			],
+			[
+				"css/todo.css",
+				"js3e-master/chapter14/css/todo.css"
+			],
+			[
+				"jquery",
+				"_js/jquery-ui.js"
+			],
+			[
+				"model",
+				"scripts/model.js"
+			],
+			[
+				"comma",
+				"exercises/scripts/undoRedo/commands.js"
+			],
+			[
+				"shape",
+				"exercises/scripts/shapesApp/ShapeFactory.js"
+			],
+			[
+				"view",
+				"exercises/scripts/view.js"
+			],
+			[
+				"dic",
+				"exercises/res/dictionary_english.txt"
+			],
+			[
+				"dict",
+				"exercises/res/dictionary_english.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true
+}

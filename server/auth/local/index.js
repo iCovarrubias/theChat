@@ -6,6 +6,10 @@ var auth = require('../auth.service');
 
 var router = express.Router();
 
+router.get('/', function(req, res, next) {
+  return res.status(200).send('Local auth service is up and running!');
+})
+
 router.post('/', function(req, res, next) {
   passport.authenticate('local', function(err, user, info) {
     var error = err || info;

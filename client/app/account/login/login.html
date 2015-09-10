@@ -1,13 +1,7 @@
-<navbar></navbar>
-
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-6 col-sm-offset-3">
       <h1>Login</h1>
-      <p>Accounts are reset on server restart from <code>server/config/seed.js</code>. Default account is <code>test@example.com</code> / <code>test</code></p>
-      <p>Admin account is <code>admin@example.com</code> / <code>admin</code></p>
-    </div>
-    <div class="col-sm-12">
       <form class="form" name="form" ng-submit="login(form)" novalidate>
 
         <div class="form-group">
@@ -23,7 +17,8 @@
         </div>
 
         <div class="form-group has-error">
-          <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && submitted">
+          <p class="help-block" 
+            ng-show="(form.email.$error.required || form.password.$error.required) && submitted">
              Please enter your email and password.
           </p>
           <p class="help-block" ng-show="form.email.$error.email && submitted">
@@ -43,17 +38,8 @@
         </div>
 
         <hr>
-        <div>
-          <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')">
-            <i class="fa fa-facebook"></i> Connect with Facebook
-          </a>
-          <a class="btn btn-google-plus" href="" ng-click="loginOauth('google')">
-            <i class="fa fa-google-plus"></i> Connect with Google+
-          </a>
-          <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
-            <i class="fa fa-twitter"></i> Connect with Twitter
-          </a>
-        </div>
+        <login-social></login-social>
+        
       </form>
     </div>
   </div>

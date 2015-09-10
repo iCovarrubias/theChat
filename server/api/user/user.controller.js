@@ -6,7 +6,7 @@ var config = require('../../config/environment');
 var jwt = require('jsonwebtoken');
 
 function validationError(res, statusCode) {
-  statusCode = statusCode || 422;
+  statusCode = statusCode || 422; //422 is unprocessable entity
   return function(err) {
     res.status(statusCode).json(err);
   }
@@ -114,10 +114,16 @@ exports.changePassword = function(req, res, next) {
 exports.me = function(req, res, next) {
   var userId = req.user._id;
 
-  User.findOneAsync({ _id: userId }, '-salt -hashedPassword')
+  User.findOneAsync({ _id: userId }, '-salt -hashedPassword -password')
     .then(function(user) { // don't ever give out the password or salt
       if (!user) {
         return res.status(401).end();
+      }
+      return user.updateFriends();
+    })
+    .then(function(user) {
+      if(!user) {
+        return res.status(401).end(); 
       }
       res.json(user);
     })
@@ -132,3 +138,66 @@ exports.me = function(req, res, next) {
 exports.authCallback = function(req, res, next) {
   res.redirect('/');
 };
+
+
+
+/**
+ * Add friend
+ */
+exports.addFriend  = function(req, res, next) {
+  var email = req.body.email;
+  if(!email) {
+    return res.status(400).json({message: "email is empty"});
+  }
+  var user = req.user;
+
+  User.findOneAsync({ email: email }, "email name")
+    .then(function(friend) {
+      //email not registered
+      if(!friend) {
+        return res.status(400).json({
+          message: "Can't find this user " + email
+        });
+      }
+      
+      //contact already exists
+      if(user.friends.indexOf(friend._id) != -1)
+      {
+        //return it like this instead of User.update with $addToSet because 
+        //we don't have a callback for the update operation
+        return res.status(400).json({
+          message: "You've already added this friend " + email
+        });
+      }
+
+      user.friends.push(friend);
+      return user.saveAsync()
+        .then(function() {
+          //populate the friends
+          return user.updateFriends();
+        })
+        .then(function(user) {
+          // req.user = user; //update to the one with populated friends??
+          res.status(200).json(friend);            
+        })
+        .catch(validationError(res));
+
+    }).catch(function(err) {
+      return next(err);
+    });
+};
+
+
+
+/*
+ * Remove a friend
+ */
+exports.update = function(req, res, next) {
+  var userInfo = req.body;
+  console.log('updatingg:' , userInfo);
+  
+  User.findByIdAndUpdateAsync(userInfo._id, userInfo, {'new': true})
+    .then(function(theUser) {
+      console.log('onupdate prom', theUser);
+    }).catch(validationError(res));
+}

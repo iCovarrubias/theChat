@@ -8,6 +8,11 @@ angular.module('theChatApp')
     $scope.register = function(form) {
       $scope.submitted = true;
 
+      form.passwordConfirm.$setValidity('match', function() {
+        return $scope.user.password === $scope.user.passwordConfirm
+      });
+        
+
       if (form.$valid) {
         Auth.createUser({
           name: $scope.user.name,

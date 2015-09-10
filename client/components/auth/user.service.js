@@ -17,6 +17,18 @@ angular.module('theChatApp')
         params: {
           id:'me'
         }
+      },
+      addFriend: {
+        method: 'PUT',
+        params: {
+          controller: 'addFriend'
+        }
+      },
+      update: {
+        method: 'PUT',
+        params: {
+          controller: 'update'
+        }
       }
     });
   });

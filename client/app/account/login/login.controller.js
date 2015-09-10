@@ -15,7 +15,7 @@ angular.module('theChatApp')
         })
         .then(function() {
           // Logged in, redirect to home
-          $state.go('main');
+          $state.go('dashboard');
         })
         .catch(function(err) {
           $scope.errors.other = err.message;

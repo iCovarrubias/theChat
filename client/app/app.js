@@ -31,7 +31,7 @@ angular.module('theChatApp', [
       // Intercept 401s and redirect you to login
       responseError: function(response) {
         if (response.status === 401) {
-          (state || (state = $injector.get('$state'))).go('login');
+          (state || (state = $injector.get('$state'))).go('main');//isma, redirect to main
           // remove any stale tokens
           $cookies.remove('token');
           return $q.reject(response);
@@ -43,6 +43,7 @@ angular.module('theChatApp', [
     };
   })
 
+
   .run(function($rootScope, $state, Auth) {
     // Redirect to login if route requires auth and the user is not logged in
     $rootScope.$on('$stateChangeStart', function(event, next) {
@@ -50,7 +51,7 @@ angular.module('theChatApp', [
         Auth.isLoggedIn(function(loggedIn) {
           if (!loggedIn) {
             event.preventDefault();
-            $state.go('login');
+            $state.go('main');//isma, redirect to Main
           }
         });
       }

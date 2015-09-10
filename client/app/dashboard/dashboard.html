@@ -1,0 +1,77 @@
+<navbar></navbar>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="panel">
+				<h3>
+					My friends 
+					<span 
+						class="btn btn-primary glyphicon glyphicon-user"></span>
+				</h3>
+				
+				<form novalidate name="form" ng-submit="addFriend(form)">
+					<div class="input-group">
+						<input type="text" name="email" ng-model="email" 
+							placeholder="Friend's Email" 
+							class="form-control" />
+						<span class="input-group-btn">
+							<button type="submit" 
+								class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+						</span>
+					</div>
+					<div class="form-group has-error">
+						<p class="help-block" ng-show="errMsg">
+							Error: {{errMsg}}
+						</p>
+					</div>
+				</form>
+			</div>
+			<div class="panel">
+				<p>I'll have to style and code my own contact directive
+					take a look on the ones by web.whatsapp
+				</p>
+				<ul class="list-group">
+					<li class="list-group-item"
+						ng-repeat="friend in friendList">
+
+						<div class="btn-group">
+							<button type="button" class="btn btn-default">{{friend.name}}</button>
+
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-info-sign"></span>
+							</button>
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-remove"></span>
+							</button>
+							<button type="button" class="btn btn-default"
+								ng-click="removeFriend(friend._id)">
+								<span class="glyphicon glyphicon-trash"></span>
+							</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="panel">
+				<h4>Friend requests</h4>
+				Rehuse the contacts directive we haven't created or maybe create a new one
+				<ul class="list-group">
+					<li class="list-group-item"
+						ng-repeat="friend in friendRequests">
+
+						<div class="btn-group">
+							<button type="button" class="btn btn-default">{{friend.name}}</button>
+
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-ok"></span>
+							</button>
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-remove"></span>
+							</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
