@@ -2,9 +2,17 @@
 	"folders":
 	[
 		{
-			"path": "/C/dev/TheChat",
-			"binary_file_patterns": ["client/bower_components"],
-			 "folder_exclude_patterns": ["dist", "e2e", "node_modules", "client/bower_components"]
+			"folder_exclude_patterns":
+			[
+				"dist",
+				"e2e",
+				"node_modules",
+				"client/bower_components"
+			],
+			"path": "/C/dev/TheChat"
+		},
+		{
+			"path": "/C/dev/tuts/requireTEst"
 		}
 	]
 }

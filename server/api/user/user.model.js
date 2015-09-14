@@ -226,8 +226,8 @@ UserSchema.methods = {
   },
 
 
-  //isma, a method to update the friends field
-  updateFriends: function(){
+  //isma, a method to populate the friends field
+  populateFriends: function(){
        return this.constructor.populateAsync(this, 
         {
           path: "friends",

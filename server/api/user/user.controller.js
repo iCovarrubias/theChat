@@ -4,6 +4,7 @@ var User = require('./user.model');
 var passport = require('passport');
 var config = require('../../config/environment');
 var jwt = require('jsonwebtoken');
+// var UserEvents  =  require('./user.events.js');
 
 function validationError(res, statusCode) {
   statusCode = statusCode || 422; //422 is unprocessable entity
@@ -55,15 +56,15 @@ function addFriend(req, res, next) {
           message: "You've already added this friend " + email
         });
       }
-
       user.friends.push(friend);
       return user.saveAsync()
         .then(function() {
           //populate the friends
-          return user.updateFriends();
+          return user.populateFriends();
         })
         .then(function(user) {
           // req.user = user; //update to the one with populated friends??
+          // UserEvents.emit('friendListUpdated',{message: user.email + " added " + friend.email});
           res.status(200).json(friend);            
         })
         .catch(validationError(res));
@@ -186,7 +187,7 @@ exports.me = function(req, res, next) {
       if (!user) {
         return res.status(401).end();
       }
-      return user.updateFriends();
+      return user.populateFriends();
     })
     .then(function(user) {
       if(!user) {
@@ -227,6 +228,8 @@ exports.update = function(req, res, next) {
  */
 exports.updateFriendList = function(req, res, next) {
   var op = req.body.op;
+  console.log('onUserController updateFriendList');
+  
 
   if(op === "add") {
     addFriend(req, res, next);
@@ -239,3 +242,5 @@ exports.updateFriendList = function(req, res, next) {
     });
   }
 }
+
+

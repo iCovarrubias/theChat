@@ -9,6 +9,10 @@ angular.module('theChatApp')
 
     $scope.user = user;
 
+    // socket.onFriendListUpdate(function(evt,data) {
+    //     console.log('cb', evt);
+    // });
+
     $scope.addFriend = function(form){
     	var myId = user._id;
         
@@ -16,7 +20,21 @@ angular.module('theChatApp')
     	User
             .updateFriendList({id: myId},{op:'add', email: $scope.email}, 
                 function(friend) {
-                    console.log('ok: ', user.friends);
+                    console.log('ok: ',friend);
+                    socket.emit('friendRequest', 
+                        {
+                            fid: friend._id,
+                            userData: { //my data
+                                _id: user._id,
+                                email: user.email,
+                                name: user.name
+                            }
+                        },
+                        function(error, msg) {
+                            if(error) {
+                                console.log('Error sending friendRequest', msg);
+                            }
+                        });
                 }, function(res) {
                     if(res.data.message)
                     {
@@ -26,15 +44,6 @@ angular.module('theChatApp')
     };
 
     $scope.removeFriend = function(friendId) {
-        //Isma, this will be replaced by socket listeners
-        console.log("fid is:", friendId)
-        for(var i=0; i < user.friends.length; i++) {
-             if(user.friends[i]._id === friendId) {
-                user.friends.splice(i, 1);
-                break;
-             }
-        }
-        console.log("removingFriend", friendId);
         var myId = user._id;
         // user.$update({friendId: friendId});
         User
@@ -53,24 +62,28 @@ angular.module('theChatApp')
     /*
      * Extend socket functionality 
      */
-    function syncFriendList(socket, modelName, array, cb) {
-        cb = cb || angular.noop;
+    // function syncFriendList(socket, modelName, array, cb) {
+    //     cb = cb || angular.noop;
 
-        socket.on(modelName + ':addFriend', function(item){
-            console.log("socketon:addFriend", item);
-            // cb(event, item, array);
-        });
+    //     socket.on(modelName + ':addFriend', function(item){
+    //         console.log("socketon:addFriend", item);
+    //         // cb(event, item, array);
+    //     });
         
-    }
-    function syncFriendRequests(socket, modelName, array, cb) {
+    // }
+    // function syncFriendRequests(socket, modelName, array, cb) {
 
-    }
+    // }
 
-    syncFriendList(socket.socket, "user", $scope.friendList);
-
+    // syncFriendList(socket.socket, "user", $scope.friendList);
+    socket.on('friendRequest', function(data) {
+        console.log('friendRequest', data);
+        console.log("[%s] %s Wants to be your friend", data.email, data.name);
+    });
 
     $scope.$on('$destroy', function() {
-        socket.socket.removeAllListeners('user:addFriend');
+        socket.removeListener('friendRequest');
+        // socket.socket.removeAllListeners('user:addFriend');
         // socket.socket.removeAllListeners('user:friendRequest')
     });
 

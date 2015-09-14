@@ -11,23 +11,17 @@ var UserEvents = new EventEmitter();
 // Set max event listeners (0 == unlimited)
 UserEvents.setMaxListeners(0);
 
-// Model events
-var events = {
-  'save': 'save',
-  'remove': 'remove'
-};
+// Model events //isma, never do this!
+// you are alerting everyone when you change something!!
+// User.schema.post('save', emitEvent('save'));
 
-// Register the event emitter to the model events
-for (var e in events) {
-  var event = events[e];
-  User.schema.post(e, emitEvent(event));
-}
 
-function emitEvent(event) {
-  return function(doc) {
-    UserEvents.emit(event + ':' + doc._id, doc);
-    UserEvents.emit(event, doc);
-  }
-}
+// function emitEvent(event) {
+//   return function(msg) {
+//     // UserEvents.emit(event + ':' + doc._id, doc);
+//     // console.log('onUserEvents socket emit: ', event, msg);
+//     UserEvents.emit(event, msg);
+//   }
+// }
 
 module.exports = UserEvents;

@@ -2,12 +2,12 @@
 'use strict';
 
 angular.module('theChatApp')
-  .factory('socket', function(socketFactory) {
+  .factory('socket', function(socketFactory, Auth) {
 
     // socket.io now auto-configures its connection when we ommit a connection url
     var ioSocket = io('', {
       // Send auth token on connection, you will need to DI the Auth service above
-      // 'query': 'token=' + Auth.getToken()
+      'query': 'token=' + Auth.getToken(),
       path: '/socket.io-client'
     });
 
@@ -35,6 +35,7 @@ angular.module('theChatApp')
          * Syncs item creation/updates on 'model:save'
          */
         socket.on(modelName + ':save', function (item) {
+          console.log('saved:', item);
           var oldItem = _.find(array, {_id: item._id});
           var index = array.indexOf(oldItem);
           var event = 'created';
@@ -59,6 +60,18 @@ angular.module('theChatApp')
           _.remove(array, {_id: item._id});
           cb(event, item, array);
         });
+      },
+      //receives the friend that was added and emits it
+      emit: function(event, data, cb) {
+        socket.emit(event, data, cb);
+      },
+
+      on: function(event, cb) {
+        socket.on(event, cb);
+      },
+
+      removeListener: function(event) {
+        socket.removeAllListeners(event);
       },
 
       /**

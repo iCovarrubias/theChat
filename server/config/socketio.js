@@ -8,6 +8,8 @@ var config = require('./environment');
 
 // When the user disconnects.. perform this
 function onDisconnect(socket) {
+  //isma, TODO, perhaps add an unregister method to user.sockets
+  //to remove from the {users} cache?
 }
 
 // When the user connects.. perform this
@@ -18,6 +20,7 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/user/user.socket').register(socket);
   // require('../api/dashboard/dashboard.socket').register(socket);
   // require('../api/thing/thing.socket').register(socket);
 
@@ -34,10 +37,10 @@ module.exports = function(socketio) {
   // 1. You will need to send the token in `client/components/socket/socket.service.js`
   //
   // 2. Require authentication here:
-  // socketio.use(require('socketio-jwt').authorize({
-  //   secret: config.secrets.session,
-  //   handshake: true
-  // }));
+  socketio.use(require('socketio-jwt').authorize({
+    secret: config.secrets.session,
+    handshake: true
+  }));
 
   socketio.on('connection', function(socket) {
     socket.address = socket.request.connection.remoteAddress +
@@ -53,6 +56,6 @@ module.exports = function(socketio) {
 
     // Call onConnect.
     onConnect(socket);
-    console.info('[%s] CONNECTED', socket.address);
+    console.info('[%s] CONNECTED', socket.address, socket.decoded_token._id);
   });
 };

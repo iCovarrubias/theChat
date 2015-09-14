@@ -4,16 +4,64 @@
 		"selected_items":
 		[
 			[
+				"emi",
+				"emitting"
+			],
+			[
+				"friendLis",
+				"friendListUpdated"
+			],
+			[
+				"friendL",
+				"friendListUpdated"
+			],
+			[
+				"friendList",
+				"onFriendListUpdate"
+			],
+			[
+				"deb",
+				"debug-brk"
+			],
+			[
+				"even",
+				"userEvents"
+			],
+			[
+				"User",
+				"UserEvents"
+			],
+			[
+				"frie",
+				"friends"
+			],
+			[
+				"update",
+				"updateFriendList"
+			],
+			[
+				"fri",
+				"friendId"
+			],
+			[
+				"s",
+				"status"
+			],
+			[
+				"friend",
+				"friendId"
+			],
+			[
+				"syn",
+				"syncFriendList"
+			],
+			[
 				"find",
 				"findByIdAndRemoveAsync"
 			],
 			[
 				"req",
 				"req"
-			],
-			[
-				"frie",
-				"friendId"
 			],
 			[
 				"fr",
@@ -156,10 +204,6 @@
 				"result"
 			],
 			[
-				"s",
-				"superagent"
-			],
-			[
 				"c",
 				"collections"
 			],
@@ -262,10 +306,6 @@
 			[
 				"rest",
 				"restapi"
-			],
-			[
-				"update",
-				"updateTimerI"
 			],
 			[
 				"al",
@@ -474,72 +514,40 @@
 			[
 				"bac",
 				"backend"
-			],
-			[
-				"di",
-				"div	Tag"
-			],
-			[
-				"Sc",
-				"SCRIPT	Tag"
-			],
-			[
-				"prod",
-				"productsResource"
-			],
-			[
-				"edi",
-				"editorView"
-			],
-			[
-				"$rou",
-				"$routeProvider	AngularJS"
-			],
-			[
-				"lef",
-				"left"
-			],
-			[
-				"left",
-				"left"
-			],
-			[
-				"pivo",
-				"pivotIdx"
-			],
-			[
-				"pivot",
-				"pivotIdx"
-			],
-			[
-				"piv",
-				"pivotLocation-1"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "client/app/account/login/login.html",
+			"file": "server/config/socketio.js",
 			"settings":
 			{
-				"buffer_size": 1357,
+				"buffer_size": 1820,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/dashboard/dashboard.html",
+			"file": "server/api/user/user.socket.js",
 			"settings":
 			{
-				"buffer_size": 1454,
-				"line_ending": "Unix"
+				"buffer_size": 2003,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "client/app/dashboard/dashboard.controller.js",
+			"file": "/C/dev/tuts/requireTEst/index.js",
 			"settings":
 			{
-				"buffer_size": 1050,
+				"buffer_size": 163,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/api/user/user.events.js",
+			"settings":
+			{
+				"buffer_size": 649,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,23 +555,31 @@
 			"file": "server/api/user/user.controller.js",
 			"settings":
 			{
-				"buffer_size": 4601,
+				"buffer_size": 5642,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/components/auth/user.service.js",
+			"file": "server/api/user/user.model.js",
 			"settings":
 			{
-				"buffer_size": 609,
+				"buffer_size": 5125,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/components/auth/auth.service.js",
+			"file": "client/components/socket/socket.service.js",
 			"settings":
 			{
-				"buffer_size": 4579,
+				"buffer_size": 2431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/dashboard/dashboard.controller.js",
+			"settings":
+			{
+				"buffer_size": 2868,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +587,23 @@
 			"file": "server/api/user/index.js",
 			"settings":
 			{
-				"buffer_size": 749,
+				"buffer_size": 763,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/main/main.controller.js",
+			"settings":
+			{
+				"buffer_size": 165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/auth/auth.service.js",
+			"settings":
+			{
+				"buffer_size": 2386,
 				"line_ending": "Unix"
 			}
 		}
@@ -620,18 +652,43 @@
 	},
 	"file_history":
 	[
+		"/C/dev/tuts/requireTEst/unmod.js",
+		"/C/dev/tuts/thechat_youtube_tut/app.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/app/main/main.controller.js",
+		"/C/dev/TheChat/server/index.js",
+		"/C/dev/TheChat/grunt_debug.bat",
+		"/C/dev/TheChat/server/config/seed.js",
+		"/C/dev/TheChat/server/config/local.env.js",
+		"/C/dev/tuts/angular-tube/server/config/socketio.js",
+		"/C/dev/TheChat/server/config/socketio.js",
+		"/C/dev/TheChat/client/app/main/main.controller.js",
+		"/C/dev/tuts/thechat_youtube_tut/public/index.html",
+		"/C/dev/tuts/angular-tube/server/app.js",
+		"/C/dev/tuts/angular-tube/server/config/express.js",
+		"/C/dev/tuts/angular-tube/server/api/comment/comment.socket.js",
+		"/C/dev/TheChat/server/api/thing/thing.socket.js",
+		"/C/dev/TheChat/client/components/auth/user.service.js",
+		"/C/dev/TheChat/server/api/user/index.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
+		"/C/dev/TheChat/server/api/thing/thing.events.js",
+		"/C/dev/TheChat/client/components/socket/socket.service.js",
+		"/C/dev/TheChat/client/app/account/login/login.html",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
+		"/C/dev/TheChat/server/api/user/user.controller.js",
+		"/C/dev/TheChat/client/components/auth/auth.service.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.events.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.socket.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.controller.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.integration.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.spec.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.model.js",
 		"/C/dev/TheChat/server/auth/auth.service.js",
 		"/C/dev/TheChat/client/app/dashboard/dashboard.css",
-		"/C/dev/TheChat/client/components/auth/user.service.js",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
-		"/C/dev/TheChat/server/api/user/user.controller.js",
 		"/C/dev/TheChat/server/auth/index.js",
-		"/C/dev/TheChat/client/components/auth/auth.service.js",
 		"/C/dev/TheChat/server/api/user/user.model.js",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
 		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/C/dev/TheChat/client/app/account/signup/signup.html",
-		"/C/dev/TheChat/server/api/user/index.js",
 		"/C/dev/TheChat/client/app/account/account.js",
 		"/C/dev/TheChat/theChat.sublime-project",
 		"/C/dev/TheChat/client/app/account/login/login.controller.js",
@@ -640,7 +697,6 @@
 		"/C/dev/TheChat/server/api/dashboard/index.js",
 		"/C/dev/TheChat/client/app/app.js",
 		"/C/dev/TheChat/server/routes.js",
-		"/C/dev/TheChat/server/config/socketio.js",
 		"/C/dev/TheChat/Gruntfile.js",
 		"/C/dev/TheChat/client/components/match/match.directive.js",
 		"/C/dev/TheChat/client/app/account/signup/signup.controller.js",
@@ -653,12 +709,9 @@
 		"/C/dev/TheChat/package.json",
 		"/C/dev/tuts/DaftMonk-mean-generator/package.json",
 		"/C/dev/TheChat/client/components/navbar/navbar.html",
-		"/C/dev/TheChat/grunt_debug.bat",
 		"/C/dev/TheChat/client/app/main/main.html",
 		"/C/dev/TheChat/client/bower_components/angular-ui-router/src/urlRouter.js",
-		"/C/dev/tuts/thechat_youtube_tut/public/index.html",
 		"/C/dev/TheChat/client/app/account/login/login.directive.js",
-		"/C/dev/TheChat/client/app/account/login/login.html",
 		"/C/dev/tuts/DaftMonk-mean-generator/client/components/auth/auth.service.js",
 		"/C/dev/TheChat/server/auth/local/index.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/client/app/account/login/login.controller.js",
@@ -669,12 +722,10 @@
 		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css.map",
 		"/C/dev/TheChat/client/app/account/login/login.css",
 		"/C/dev/TheChat/client/app/account/login/logSocial/logSocial.css",
-		"/C/dev/TheChat/client/app/main/main.controller.js",
 		"/C/dev/TheChat/client/app/main/main.js",
 		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/C/dev/TheChat/server/config/environment/development.js",
 		"/C/dev/TheChat/server/app.js",
-		"/C/dev/TheChat/server/config/local.env.js",
 		"/C/dev/TheChat/dist/server/auth/auth.service.js",
 		"/C/dev/TheChat/.gitignore",
 		"/C/dev/TheChat/server/config/environment/index.js",
@@ -702,7 +753,6 @@
 		"/C/dev/tuts/DaftMonk-mean-generator/server/config/socketio.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/server/config/express.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/twitter/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/server/api/user/user.model.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/client/index.html",
 		"/C/dev/tuts/redditColne/flapper-news/models/Users.js",
@@ -728,26 +778,8 @@
 		"/C/dev/tuts/my-angular-project/server/routes.js",
 		"/C/dev/tuts/my-angular-project/server/app.js",
 		"/C/dev/tuts/angular-tube/server/routes.js",
-		"/C/dev/tuts/angular-tube/server/app.js",
 		"/C/dev/tuts/my-angular-project/server/config/local.env.js",
-		"/C/dev/tuts/angular-tube/server/index.js",
-		"/C/dev/tuts/angular-tube/server/api/comment/comment.events.js",
-		"/C/dev/tuts/angular-tube/server/api/comment/comment.socket.js",
-		"/C/dev/tuts/angular-tube/server/api/comment/comment.model.js",
-		"/C/dev/tuts/angular-tube/server/config/socketio.js",
-		"/C/dev/tuts/angular-tube/server/api/comment/comment.controller.js",
-		"/C/dev/projects/angularJS-exercises/angularJS/06_Using_UI-Route/mySample/app/scripts/controllers/main.js",
-		"/C/dev/tuts/angular-tube/server/config/express.js",
-		"/C/dev/tuts/angular-tube/client/app/main/main.controller.js",
-		"/C/dev/tuts/angular-tube/server/config/environment/index.js",
-		"/C/dev/tuts/angular-tube/server/auth/auth.service.js",
-		"/C/dev/tuts/angular-tube/server/api/comment/index.js",
-		"/C/dev/tuts/angular-tube/client/app/main/main.html",
-		"/C/dev/tuts/angular-tube/client/app/main/main.less",
-		"/C/dev/tuts/angular-tube/server/config/environment/development.js",
-		"/C/dev/tuts/angular-tube/client/app/main/main.js",
-		"/C/dev/tuts/angular-tube/client/app/main/main.controller.spec.js",
-		"/C/dev/tuts/angular-tube/client/app/app.js"
+		"/C/dev/tuts/angular-tube/server/index.js"
 	],
 	"find":
 	{
@@ -758,6 +790,12 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"C:\\dev\\TheChat\\server",
+			"C:\\dev\\tuts\\angular-tube\\server\\api\\comment",
+			"C:\\dev\\TheChat\\server\\api\\thing",
+			"C:\\dev\\TheChat\\server\\api\\user",
+			"C:\\dev\\TheChat\\server",
+			"C:\\dev\\TheChat\\client",
 			"C:\\dev\\TheChat\\server",
 			"C:\\dev\\TheChat\\client",
 			"C:\\dev\\TheChat\\server\\api",
@@ -831,6 +869,75 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"friendListUpdated",
+			"safe_cb",
+			"safecb",
+			"noop",
+			"emit",
+			"friendRequest",
+			"friendListUpdated",
+			"fid",
+			"addFriend",
+			"unsyncUpdates",
+			"connectedat",
+			"friendListUpdated",
+			"connect",
+			"Socket",
+			"socket",
+			"soc",
+			"soc'",
+			"token",
+			"UserEvents",
+			"422",
+			"socket",
+			"node-in",
+			"debug",
+			"updateFriendList",
+			"expres",
+			"sock\\",
+			"socket",
+			"connect",
+			"isAuthen",
+			"console.log",
+			"console.",
+			"console.log",
+			"console",
+			"setSocket",
+			"user.controller",
+			"addfr",
+			"addFriend",
+			"user:",
+			"onFriendListUpdate",
+			"emitevent",
+			"emitEvent",
+			"UserEvents.emit",
+			"debug",
+			"user:friendListUpdated",
+			"UserEvents",
+			"removeFriend",
+			"socketio-jwt",
+			"new user",
+			"socketio",
+			"/**",
+			"socket",
+			"user",
+			"socket",
+			"populateFriends",
+			"updatefriends",
+			".pre",
+			"thing",
+			"onConnect",
+			"removeFriend",
+			"saveAs",
+			"saveas",
+			"validationError",
+			"respondWith",
+			"handleer",
+			"400",
+			"socket.io-client",
+			"/socket.io-client",
+			"socketFactory",
+			"thing",
 			"validationError",
 			"saveAsync",
 			"findByIdAndRemoveAsync",
@@ -889,76 +996,7 @@
 			"object",
 			"id",
 			"object",
-			"ObjectId",
-			"req.bo",
-			".user",
-			"var userId = req.user._id;",
-			"findOneAsync",
-			"201",
-			"200",
-			"201=0",
-			"201",
-			"email",
-			"watch",
-			"open",
-			"serve",
-			"register",
-			"registerta",
-			"'\n",
-			"pyth",
-			"node-in",
-			"'node-inspector'",
-			"istanbul_check_coverage",
-			"express",
-			"useminPrepare",
-			"loadNpmTasks",
-			"jit-g",
-			"registertas",
-			"debug",
-			"node-inspec",
-			"node-inspec	",
-			"node-inspec",
-			"node-in",
-			"node-inspector",
-			"inspect",
-			"registerTask",
-			"server",
-			"register",
-			"regis",
-			"isLoggedIn",
-			"islogged",
-			"isLoggedIn",
-			"labe",
-			"thing",
-			"thins",
-			"things",
-			"//isma",
-			"things",
-			"Auth",
-			"login(form)",
-			"login",
-			"col-sm-12",
-			"col-sm-6",
-			"islogged",
-			"safeCb",
-			"{\n",
-			"isloggedIn",
-			"isLoggedIn",
-			"islogged",
-			"seedDB: true",
-			"mainCtr",
-			"awesomeThings",
-			"thing",
-			"api",
-			"thing",
-			"FACEBOOK_ID",
-			"token",
-			"setTokenCookie",
-			"authorizationURL",
-			"https://www.facebook.com/v2.0/dialog/oauth",
-			"BEARER ",
-			"access_token",
-			"Bearer"
+			"ObjectId"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1070,134 +1108,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/app/account/login/login.html",
+					"file": "server/config/socketio.js",
 					"settings":
 					{
-						"buffer_size": 1357,
+						"buffer_size": 1820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								450,
-								450
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/app/dashboard/dashboard.html",
-					"settings":
-					{
-						"buffer_size": 1454,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1385,
-								1385
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 600.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/app/dashboard/dashboard.controller.js",
-					"settings":
-					{
-						"buffer_size": 1050,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								584,
-								584
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 60.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "server/api/user/user.controller.js",
-					"settings":
-					{
-						"buffer_size": 4601,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4485,
-								4485
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3155.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "client/components/auth/user.service.js",
-					"settings":
-					{
-						"buffer_size": 609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								543,
-								543
+								190,
+								190
 							]
 						],
 						"settings":
@@ -1213,19 +1140,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "client/components/auth/auth.service.js",
+					"buffer": 1,
+					"file": "server/api/user/user.socket.js",
 					"settings":
 					{
-						"buffer_size": 4579,
+						"buffer_size": 2003,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3876,
-								3878
+								680,
+								667
 							]
 						],
 						"settings":
@@ -1235,25 +1162,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2952.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "server/api/user/index.js",
+					"buffer": 2,
+					"file": "/C/dev/tuts/requireTEst/index.js",
 					"settings":
 					{
-						"buffer_size": 749,
+						"buffer_size": 163,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								92,
-								77
+								132,
+								132
 							]
 						],
 						"settings":
@@ -1261,7 +1188,225 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 20.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "server/api/user/user.events.js",
+					"settings":
+					{
+						"buffer_size": 649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server/api/user/user.controller.js",
+					"settings":
+					{
+						"buffer_size": 5642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1081,
+								1081
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 740.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "server/api/user/user.model.js",
+					"settings":
+					{
+						"buffer_size": 5125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4848,
+								4848
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4230.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/components/socket/socket.service.js",
+					"settings":
+					{
+						"buffer_size": 2431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1818,
+								1818
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1232.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/app/dashboard/dashboard.controller.js",
+					"settings":
+					{
+						"buffer_size": 2868,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2503,
+								2390
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1320.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "server/api/user/index.js",
+					"settings":
+					{
+						"buffer_size": 763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685,
+								685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "client/app/main/main.controller.js",
+					"settings":
+					{
+						"buffer_size": 165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "server/auth/auth.service.js",
+					"settings":
+					{
+						"buffer_size": 2386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1035,
+								1035
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 155.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1310,6 +1455,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"server/config/socketio.js",
+				"server/config/socketio.js"
+			],
+			[
+				"server/config/local",
+				"server/config/local.env.js"
+			],
 			[
 				"auth.se",
 				"client/components/auth/auth.service.js"
