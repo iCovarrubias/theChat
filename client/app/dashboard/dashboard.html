@@ -62,7 +62,8 @@
 						<div class="btn-group">
 							<button type="button" class="btn btn-default">{{friend.name}}</button>
 
-							<button type="button" class="btn btn-default">
+							<button type="button" class="btn btn-default" 
+								ng-click="acceptFriend(friend._id)">
 								<span class="glyphicon glyphicon-ok"></span>
 							</button>
 							<button type="button" class="btn btn-default">

@@ -6,6 +6,7 @@ angular.module('theChatApp')
     var user = Auth.getCurrentUser();
 
     $scope.friendList = user.friends;
+    $scope.friendRequests = user.friendRequests;
 
     $scope.user = user;
 
@@ -15,32 +16,40 @@ angular.module('theChatApp')
 
     $scope.addFriend = function(form){
     	var myId = user._id;
-        
-        //Isma, this will be replace by socket functionality
     	User
-            .updateFriendList({id: myId},{op:'add', email: $scope.email}, 
-                function(friend) {
-                    console.log('ok: ',friend);
-                    socket.emit('friendRequest', 
-                        {
-                            fid: friend._id,
-                            userData: { //my data
-                                _id: user._id,
-                                email: user.email,
-                                name: user.name
-                            }
-                        },
-                        function(error, msg) {
-                            if(error) {
-                                console.log('Error sending friendRequest', msg);
-                            }
-                        });
-                }, function(res) {
-                    if(res.data.message)
+            .updateFriendList({id: myId},{op:'add', email: $scope.email})
+            .$promise
+            .then( function(friend){
+                console.log('addFriend response', friend);
+                //update GUI
+                $scope.friendList.push(friend);
+                $scope.errMsg = "";
+                $scope.email = "";
+                return friend;
+            })
+            .then( function(friend) {
+                //emit a friend request
+                socket.emit('friendRequest', 
                     {
-                        $scope.errMsg = res.data.message;
-                    }
-                });
+                        fid: friend._id, //receiver
+                        friendRequest: { //my data
+                            _id: user._id,
+                            email: user.email,
+                            name: user.name
+                        }
+                    },
+                    function(error, msg) {
+                        if(error) {
+                            console.log('Error sending friendRequest', msg);
+                        }
+                    });
+            })
+            .catch(function(res) {
+                if(res.data.message)
+                {
+                    $scope.errMsg = res.data.message;
+                }
+            }); 
     };
 
     $scope.removeFriend = function(friendId) {
@@ -50,13 +59,67 @@ angular.module('theChatApp')
             .updateFriendList({id: myId}, {op:'remove', friendId: friendId})
             .$promise
             .then(function(data) {
-                console.log('remove finished with: ', data)
-            }).catch(function(res) {
-                if(res.data.message)
-                {
-                    $scope.errMsg = res.data.message;
+                var friendId = data.friendId;
+                if(!friendId) throw new Error("No friendId returned by server");
+
+                var len = $scope.friendList.length;
+                for(var i = 0; i < len; i++) {
+                    if($scope.friendList[i]._id === friendId) {
+                        $scope.friendList.splice(i,1);
+                        return data;
+                    }
                 }
             })
+            .catch(function(res) {
+                // console.log('an error was trown', res);
+                if(res.data && res.data.message)
+                {
+                    $scope.errMsg = res.data.message;
+                } else 
+                {
+                    console.error('Unprocessable server response', res);
+                }
+            })
+    };
+
+    /*
+        Invoked when you accept a friend request
+    */
+    $scope.acceptFriend = function(friendId) {
+        var myId = user._id;
+        console.log('Accept Friend', friendId);
+
+        User
+            .updateFriendList({id: myId}, {op: 'acceptFriendRequest', friendId: friendId})
+            .$promise
+            .then(function(data){
+                var friendId = data._id;
+                if(!friendId) throw new Error("No friendId returned by server");
+
+                //updat GUI
+                //remove from friend requests
+                var len = $scope.friendRequests.length;
+                for(var i = 0; i < len; i++) {
+                    if($scope.friendRequests[i]._id === friendId)
+                    {
+                        $scope.friendRequests.splice(i, 1); 
+                        break;
+                    }
+                }
+                
+                //add to user list
+                $scope.friendList.push(data);
+            })
+            .catch(function(res) {
+                // console.log('an error was trown', res);
+                if(res.data && res.data.message)
+                {
+                    $scope.errMsg = res.data.message;
+                } else 
+                {
+                    console.error('Unprocessable server response', res);
+                }
+            });
     }
 
     /*
@@ -75,10 +138,14 @@ angular.module('theChatApp')
 
     // }
 
-    // syncFriendList(socket.socket, "user", $scope.friendList);
+    /*
+        Receives a friend request
+    */
     socket.on('friendRequest', function(data) {
         console.log('friendRequest', data);
         console.log("[%s] %s Wants to be your friend", data.email, data.name);
+        $scope.friendRequests.push(data);
+
     });
 
     $scope.$on('$destroy', function() {

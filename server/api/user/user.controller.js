@@ -4,7 +4,6 @@ var User = require('./user.model');
 var passport = require('passport');
 var config = require('../../config/environment');
 var jwt = require('jsonwebtoken');
-// var UserEvents  =  require('./user.events.js');
 
 function validationError(res, statusCode) {
   statusCode = statusCode || 422; //422 is unprocessable entity
@@ -38,7 +37,7 @@ function addFriend(req, res, next) {
   }
   var user = req.user;
 
-  User.findOneAsync({ email: email }, "email name")
+  User.findOneAsync({ email: email }, "email name friendRequests")
     .then(function(friend) {
       //email not registered
       if(!friend) {
@@ -59,13 +58,26 @@ function addFriend(req, res, next) {
       user.friends.push(friend);
       return user.saveAsync()
         .then(function() {
-          //populate the friends
-          return user.populateFriends();
+          //save friend request on friend
+          // if(!friend.friendRequests)
+          //   friend.friendRequests = []; //for those users without this field
+          //update: all of users have such field, we'll leave this code here as an example
+          //of what to do if a new field is added and the current user doesn't have such field
+          friend.friendRequests.push(user);
+          return friend.saveAsync();
         })
-        .then(function(user) {
-          // req.user = user; //update to the one with populated friends??
-          // UserEvents.emit('friendListUpdated',{message: user.email + " added " + friend.email});
-          res.status(200).json(friend);            
+        // .then(function() {
+        //   console.log('saved friend');
+        //   //populate the friends, totally unnecessary to populate?
+        //   return user.populateFriends();
+        // })
+        .then(function() {
+          var response = {
+            _id:    friend._id,
+            email:  friend.email,
+            name:   friend.name
+          };
+          res.status(200).json(response);            
         })
         .catch(validationError(res));
 
@@ -87,19 +99,73 @@ function removeFriend(req, res, next) {
   }
   user.friends.splice(idx, 1);
   user.saveAsync()
+    .then(function() {
+      return User.findOneAsync({ _id: friendId }, "email friendRequests");
+    })
+    .then(function(friend) {
+      // Remove myself from friend's friendRequests list
+      if(!friend) {
+        //the user you are removing has already erased his account
+        console.log("Can't remove from friendRequests, but we are safe");
+        return;
+      }
+      var idx = friend.friendRequests.indexOf(user._id);
+      if(idx != -1) {
+        friend.friendRequests.splice(idx, 1);
+        return friend.saveAsync();
+      }
+    })
     .then(function(){
+      // Once I've removed the user answer to the client,
       res.status(204).end();
     })
     .catch(validationError(res));
 }
 
 
+/*
+  Accept friend request, to be used with updateFriendList
+*/
+function acceptFriendRequest(req, res, next) {
+  var id = req.body.friendId;
+  var user = req.user;
+  
+  User.findByIdAsync(id, "_id email name")
+    .then(function(friend){
+      if(!friend) {
+        //the user probably erased his account
+        throw new Error({message: "Can't find user"});
+      }
+      //remove from friendRequests
+      var idx = user.friendRequests.indexOf(id);
+      if(idx != -1) {
+        user.friendRequests.splice(idx, 1);
+      }
+
+      //add to my friends
+      user.friends.push(id);
+      return user.saveAsync().then(function(){
+        return friend;
+      });
+    })
+    .then(function(friend) {
+        // console.log('Friend Reqest correctly accepted', friend);
+        //only return "_id email name"
+        return res.status(200).json(friend);
+    })
+    .catch(function(error){
+      console.log("what's happening here", error);
+      validationError(res)
+    });
+
+}
+
 /**
  * Get list of users
  * restriction: 'admin'
  */
 exports.index = function(req, res) {
-  User.findAsync({}, '-salt -hashedPassword')
+  User.findAsync({}, '-salt -hashedPassword -password')
     .then(function(users) {
       res.status(200).json(users);
     })
@@ -228,13 +294,14 @@ exports.update = function(req, res, next) {
  */
 exports.updateFriendList = function(req, res, next) {
   var op = req.body.op;
-  console.log('onUserController updateFriendList');
-  
 
   if(op === "add") {
     addFriend(req, res, next);
   } else if(op === "remove") {
     removeFriend(req, res, next);
+  } else if(op === "acceptFriendRequest" )
+  {
+    acceptFriendRequest(req, res, next);
   } else {
     //error
     return validationError(res,400)({

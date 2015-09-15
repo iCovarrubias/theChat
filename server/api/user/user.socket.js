@@ -20,7 +20,6 @@ exports.register = function(socket) {
   socket.on('disconnect', function(){
     // removeListener(event, listener);
     delete users[socket._id];
-    console.log("Disconected, user socket exists?",users[socket._id]);
   }); 
 
   socket.on('friendRequest', function(data, cb) {
@@ -63,7 +62,7 @@ function sendFriendRequest(socket, data, cb) {
   var fSocket = users[data.fid];  //the friend's socket
   if(fSocket) {
     //friend is online, send contact request w/id email and name
-    fSocket.emit('friendRequest', data.userData);
+    fSocket.emit('friendRequest', data.friendRequest);
   }
 }
 

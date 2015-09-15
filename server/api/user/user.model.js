@@ -22,7 +22,8 @@ var UserSchema = new Schema({
   twitter: {},
   google: {},
   github: {},
-  friends: [{ type: Schema.Types.ObjectId, ref: 'User' }]
+  friends: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  friendRequests: [{ type: Schema.Types.ObjectId, ref: 'User' }]
 });
 
 /**
@@ -228,10 +229,17 @@ UserSchema.methods = {
 
   //isma, a method to populate the friends field
   populateFriends: function(){
-       return this.constructor.populateAsync(this, 
+      var _this = this;
+       return _this.constructor.populateAsync(_this, 
         {
           path: "friends",
           select: "email name",  
+        }).then(function(){
+          return _this.constructor.populateAsync(_this, 
+          {
+            path: "friendRequests",
+            select: "email name"
+          })
         })
   }
 };
