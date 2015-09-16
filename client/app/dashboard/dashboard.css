@@ -1,0 +1,80 @@
+html, body {
+	height: 100%;
+}
+
+
+
+/*
+	Message container START
+*/
+.msg {
+	margin-bottom: 9px;
+}
+
+.msg:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.msg div {
+	max-width: 45%;
+}
+
+.msg .msg-out {
+	background-color: #ccc;
+	float: right;
+}
+
+.msg .msg-in {
+	background-color: #eee;
+	float: left;
+}
+
+/*
+	Message container END
+*/
+
+
+/*
+	Main layout CSS
+*/
+
+.wrapper {
+	height: 85%;
+	/*background-color: #fcc;*/
+}
+
+.contacts-main {
+	/*background-color: #afa;*/
+}
+
+.chat-main {
+	background-color: #aaf;
+	display: flex;
+	flex-direction: column;
+}
+
+.chat-header {
+	background-color: #faa;
+	display: flex;
+	flex-direction: row;
+	height: 55px;
+}
+
+.chat-body {
+	background-color: #cfc;
+	flex-grow: 1;
+}
+
+.chat-footer {
+	height: 60px;
+	padding: 10px 15px;
+	background-color: #ccc;
+	/*vertical-align: center;*/
+	/*border: 1px red solid;*/
+	/*background-color: #cfc;*/
+	/*position: absolute;*/
+	/*bottom: 10px;*/
+}
+

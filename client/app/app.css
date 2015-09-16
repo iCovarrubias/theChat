@@ -38,3 +38,6 @@
   padding: 0.2em 0;
 }
 
+.fill-parent-height {
+  height: 100%;
+}

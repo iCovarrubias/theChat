@@ -4,15 +4,51 @@
 		"selected_items":
 		[
 			[
+				"friendReque",
+				"friendRequests"
+			],
+			[
+				"frie",
+				"friendId"
+			],
+			[
+				"acce",
+				"acceptFriend"
+			],
+			[
+				"friendR",
+				"friendRequests"
+			],
+			[
+				"frien",
+				"friends"
+			],
+			[
+				"find",
+				"findByIdAsync"
+			],
+			[
+				"fri",
+				"friendRequests"
+			],
+			[
+				"friend",
+				"friendRequests"
+			],
+			[
+				"fried",
+				"friendId"
+			],
+			[
+				"friendL",
+				"friendList"
+			],
+			[
 				"emi",
 				"emitting"
 			],
 			[
 				"friendLis",
-				"friendListUpdated"
-			],
-			[
-				"friendL",
 				"friendListUpdated"
 			],
 			[
@@ -32,32 +68,16 @@
 				"UserEvents"
 			],
 			[
-				"frie",
-				"friends"
-			],
-			[
 				"update",
 				"updateFriendList"
-			],
-			[
-				"fri",
-				"friendId"
 			],
 			[
 				"s",
 				"status"
 			],
 			[
-				"friend",
-				"friendId"
-			],
-			[
 				"syn",
 				"syncFriendList"
-			],
-			[
-				"find",
-				"findByIdAndRemoveAsync"
 			],
 			[
 				"req",
@@ -494,60 +514,16 @@
 			[
 				"graph",
 				"graph-canvas"
-			],
-			[
-				"dire",
-				"verbose_directive	AngularJS"
-			],
-			[
-				"cou",
-				"counterService"
-			],
-			[
-				"mock",
-				"mockScope"
-			],
-			[
-				"ex",
-				"expect"
-			],
-			[
-				"bac",
-				"backend"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "server/config/socketio.js",
+			"file": "client/app/dashboard/dashboard.html",
 			"settings":
 			{
-				"buffer_size": 1820,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/api/user/user.socket.js",
-			"settings":
-			{
-				"buffer_size": 2003,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/dev/tuts/requireTEst/index.js",
-			"settings":
-			{
-				"buffer_size": 163,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/api/user/user.events.js",
-			"settings":
-			{
-				"buffer_size": 649,
+				"buffer_size": 2357,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,23 +531,7 @@
 			"file": "server/api/user/user.controller.js",
 			"settings":
 			{
-				"buffer_size": 5642,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/api/user/user.model.js",
-			"settings":
-			{
-				"buffer_size": 5125,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/components/socket/socket.service.js",
-			"settings":
-			{
-				"buffer_size": 2431,
+				"buffer_size": 8461,
 				"line_ending": "Unix"
 			}
 		},
@@ -579,31 +539,7 @@
 			"file": "client/app/dashboard/dashboard.controller.js",
 			"settings":
 			{
-				"buffer_size": 2868,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/api/user/index.js",
-			"settings":
-			{
-				"buffer_size": 763,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/main/main.controller.js",
-			"settings":
-			{
-				"buffer_size": 165,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/auth/auth.service.js",
-			"settings":
-			{
-				"buffer_size": 2386,
+				"buffer_size": 6625,
 				"line_ending": "Unix"
 			}
 		}
@@ -652,6 +588,20 @@
 	},
 	"file_history":
 	[
+		"/C/dev/TheChat/server/api/user/user.model.js",
+		"/C/Users/Ismael/Desktop/chavatest.html",
+		"/C/dev/TheChat/server/config/socketio.js",
+		"/C/dev/TheChat/server/api/user/user.socket.js",
+		"/C/dev/tuts/requireTEst/index.js",
+		"/C/dev/TheChat/server/api/user/user.events.js",
+		"/C/dev/TheChat/server/api/user/user.controller.js",
+		"/C/dev/TheChat/client/components/socket/socket.service.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
+		"/C/dev/TheChat/server/api/user/index.js",
+		"/C/dev/TheChat/client/app/main/main.controller.js",
+		"/C/dev/TheChat/server/auth/auth.service.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
+		"/C/dev/TheChat/client/components/auth/user.service.js",
 		"/C/dev/tuts/requireTEst/unmod.js",
 		"/C/dev/tuts/thechat_youtube_tut/app.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/client/app/main/main.controller.js",
@@ -660,21 +610,13 @@
 		"/C/dev/TheChat/server/config/seed.js",
 		"/C/dev/TheChat/server/config/local.env.js",
 		"/C/dev/tuts/angular-tube/server/config/socketio.js",
-		"/C/dev/TheChat/server/config/socketio.js",
-		"/C/dev/TheChat/client/app/main/main.controller.js",
 		"/C/dev/tuts/thechat_youtube_tut/public/index.html",
 		"/C/dev/tuts/angular-tube/server/app.js",
 		"/C/dev/tuts/angular-tube/server/config/express.js",
 		"/C/dev/tuts/angular-tube/server/api/comment/comment.socket.js",
 		"/C/dev/TheChat/server/api/thing/thing.socket.js",
-		"/C/dev/TheChat/client/components/auth/user.service.js",
-		"/C/dev/TheChat/server/api/user/index.js",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
 		"/C/dev/TheChat/server/api/thing/thing.events.js",
-		"/C/dev/TheChat/client/components/socket/socket.service.js",
 		"/C/dev/TheChat/client/app/account/login/login.html",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
-		"/C/dev/TheChat/server/api/user/user.controller.js",
 		"/C/dev/TheChat/client/components/auth/auth.service.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.events.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.socket.js",
@@ -683,10 +625,8 @@
 		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.integration.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.spec.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.model.js",
-		"/C/dev/TheChat/server/auth/auth.service.js",
 		"/C/dev/TheChat/client/app/dashboard/dashboard.css",
 		"/C/dev/TheChat/server/auth/index.js",
-		"/C/dev/TheChat/server/api/user/user.model.js",
 		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/C/dev/TheChat/client/app/account/signup/signup.html",
 		"/C/dev/TheChat/client/app/account/account.js",
@@ -775,11 +715,7 @@
 		"/C/dev/tuts/my-angular-project/client/app/register/register.html",
 		"/C/dev/tuts/my-angular-project/client/app/profile/profile.js",
 		"/C/dev/tuts/my-angular-project/client/app/profile/profile.html",
-		"/C/dev/tuts/my-angular-project/server/routes.js",
-		"/C/dev/tuts/my-angular-project/server/app.js",
-		"/C/dev/tuts/angular-tube/server/routes.js",
-		"/C/dev/tuts/my-angular-project/server/config/local.env.js",
-		"/C/dev/tuts/angular-tube/server/index.js"
+		"/C/dev/tuts/my-angular-project/server/routes.js"
 	],
 	"find":
 	{
@@ -787,7 +723,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"C:\\dev\\TheChat\\server",
@@ -869,6 +805,61 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"findByIdAndRemove",
+			"findBy",
+			"friendRequests",
+			"rejectfr",
+			"204",
+			"validationError",
+			"400",
+			"bad reque",
+			"status",
+			"can't find",
+			"(!friend)",
+			"req.user",
+			".catch",
+			"acceptFriendRequest",
+			"updateFriendList",
+			"acceptFriendRequest",
+			"saving friend",
+			"addfr",
+			"addFriend",
+			"addfriend",
+			"acceptFriendRequest",
+			"-salt",
+			"-passw",
+			"passw",
+			"save",
+			"acceptfriend",
+			"_this",
+			"populatef",
+			"return res.status(400",
+			"return user",
+			"acceptfrie",
+			"acceptff",
+			"acceptfi",
+			"populateFriends",
+			"populatef",
+			"acceptf",
+			"\"email name friendRequests\"",
+			"email",
+			"hashed",
+			"'-salt -hashedPassword -password'",
+			"'emai",
+			"findby",
+			"findByIdAsync",
+			"req.body",
+			"req.body\n",
+			"acceptFriendRequest",
+			"update",
+			"removeFriend",
+			"friendRequests",
+			"saveAsync",
+			"removeFriend",
+			"friendRequest",
+			"button group",
+			"buttongrou",
+			"button-group",
 			"friendListUpdated",
 			"safe_cb",
 			"safecb",
@@ -941,62 +932,7 @@
 			"validationError",
 			"saveAsync",
 			"findByIdAndRemoveAsync",
-			"new User",
-			"}\n",
-			"has-error",
-			"req.user",
-			"current",
-			"currentUser",
-			"pre",
-			"authenticate",
-			"login",
-			"//isma",
-			"req.user",
-			"currentUser",
-			".get(",
-			"title",
-			"navbar-right",
-			"\n            path: \"friends\",\n            select: \"email name\",  \n          }).then(function(userz) {\n            //update the user in res\n            console.log(\"pop\",userz)\n          });",
-			"async",
-			"handleError",
-			"500",
-			"handleError",
-			"findById",
-			"\\",
-			"findById",
-			"user.find",
-			"55f07e74e7bd0e8814388e22",
-			"saveAsync",
-			"console",
-			"validationError",
-			"};\n",
-			"authenticate",
-			"dashboard",
-			"/me",
-			"500",
-			"findOneAsync",
-			"findOneAsync\n",
-			"validationError",
-			"204",
-			"validationError",
-			"json",
-			"validationError",
-			"validationError\n",
-			"validationError",
-			"400",
-			"validationError",
-			"validationEr",
-			"validationER",
-			"saveAsync",
-			"},\n",
-			"getCurrentUser",
-			"currentUser",
-			"admin",
-			"UserSchema",
-			"object",
-			"id",
-			"object",
-			"ObjectId"
+			"new User"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1108,51 +1044,50 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "server/config/socketio.js",
+					"file": "client/app/dashboard/dashboard.html",
 					"settings":
 					{
-						"buffer_size": 1820,
+						"buffer_size": 2357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								190,
-								190
+								2212,
+								2212
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 120.0,
+						"translation.y": 960.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "server/api/user/user.socket.js",
+					"file": "server/api/user/user.controller.js",
 					"settings":
 					{
-						"buffer_size": 2003,
+						"buffer_size": 8461,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								680,
-								667
+								8251,
+								8270
 							]
 						],
 						"settings":
@@ -1162,161 +1097,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 6332.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/dev/tuts/requireTEst/index.js",
-					"settings":
-					{
-						"buffer_size": 163,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								132,
-								132
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "server/api/user/user.events.js",
-					"settings":
-					{
-						"buffer_size": 649,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3,
-								3
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "server/api/user/user.controller.js",
-					"settings":
-					{
-						"buffer_size": 5642,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1081,
-								1081
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 740.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "server/api/user/user.model.js",
-					"settings":
-					{
-						"buffer_size": 5125,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4848,
-								4848
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4230.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "client/components/socket/socket.service.js",
-					"settings":
-					{
-						"buffer_size": 2431,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1818,
-								1818
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1232.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "client/app/dashboard/dashboard.controller.js",
 					"settings":
 					{
-						"buffer_size": 2868,
+						"buffer_size": 6625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2503,
-								2390
+								5572,
+								5572
 							]
 						],
 						"settings":
@@ -1326,87 +1125,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1320.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "server/api/user/index.js",
-					"settings":
-					{
-						"buffer_size": 763,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								685,
-								685
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "client/app/main/main.controller.js",
-					"settings":
-					{
-						"buffer_size": 165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								165,
-								165
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "server/auth/auth.service.js",
-					"settings":
-					{
-						"buffer_size": 2386,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1035,
-								1035
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 155.0,
+						"translation.y": 3132.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1455,6 +1174,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"user.mode",
+				"TheChat/server/api/user/user.model.js"
+			],
+			[
+				"model",
+				"TheChat/server/api/user/user.model.js"
+			],
 			[
 				"server/config/socketio.js",
 				"server/config/socketio.js"
@@ -1770,10 +1497,6 @@
 			[
 				"jquery",
 				"_js/jquery-ui.js"
-			],
-			[
-				"model",
-				"scripts/model.js"
 			],
 			[
 				"comma",

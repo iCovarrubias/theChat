@@ -1,8 +1,8 @@
 <navbar></navbar>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-4">
+<div class="wrapper">
+		<!-- This is the contact section START -->
+		<div class="col-md-4 contacts-main fill-parent-height">
 			<div class="panel">
 				<h3>
 					My friends 
@@ -33,7 +33,8 @@
 				</p>
 				<ul class="list-group">
 					<li class="list-group-item"
-						ng-repeat="friend in friendList">
+						ng-repeat="friend in friendList"
+						ng-click="openChatPanel(friend)">
 
 						<div class="btn-group">
 							<button type="button" class="btn btn-default">{{friend.name}}</button>
@@ -66,7 +67,8 @@
 								ng-click="acceptFriend(friend._id)">
 								<span class="glyphicon glyphicon-ok"></span>
 							</button>
-							<button type="button" class="btn btn-default">
+							<button type="button" class="btn btn-default"
+								ng-click="rejectFriend(friend._id)">
 								<span class="glyphicon glyphicon-remove"></span>
 							</button>
 						</div>
@@ -74,5 +76,41 @@
 				</ul>
 			</div>
 		</div>
-	</div>
-</div>
+		<!-- This is the contacts session end -->
+		
+		<!-- This is the chat section START -->
+		<div class="col-md-8  fill-parent-height chat-main">
+			<!-- <div class="chat-main"> -->
+				<div class="chat-header">
+					<span >{{chat.name}}</span>
+				</div>
+
+				<div class="chat-body">
+					<div class="msg">
+						<div class="msg-out">
+							<span class="msg-content">Hello there!</span>
+						</div>
+					</div>
+					<div class="msg">
+						<div class="msg-in">
+							<span class="msg-content">Hello! I'm right here.</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="chat-footer">
+					<form name="msgForm" novalidate ng-submit="sendMessage(msgForm)">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Enter message"
+								name="message"/>
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit">Send</button>
+							</span>
+						</div>
+					</form>
+				</div>
+			<!-- </div> -->
+
+		</div>
+		<!-- This is the chat section END -->
+</div> <!-- container (bootstrap) -->

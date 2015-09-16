@@ -160,6 +160,33 @@ function acceptFriendRequest(req, res, next) {
 
 }
 
+/*
+  Rejects a friend request, to be user with updateFriendList
+*/
+function rejectFriendRequest(req, res, next) {
+  var friendId = req.body.friendId;
+  if(!friendId) {
+    return validationError(res,400)({
+      message: "Invalid request, you must send friendId"
+    });
+  }
+  var user = req.user;
+  
+  var idx = user.friendRequests.indexOf(friendId);
+  if(idx !== -1){
+    user.friendRequests.splice(idx, 1);
+    return user.saveAsync()
+      .then(function(){
+        console.log('no me mires con esos ojos');
+        res.status(200).json({friendId: friendId});
+      });
+  } else {
+    return res.status(204).end();
+  }
+
+}
+
+
 /**
  * Get list of users
  * restriction: 'admin'
@@ -302,6 +329,8 @@ exports.updateFriendList = function(req, res, next) {
   } else if(op === "acceptFriendRequest" )
   {
     acceptFriendRequest(req, res, next);
+  } else if(op === "rejectFriendRequest"){
+    rejectFriendRequest(req, res, next);
   } else {
     //error
     return validationError(res,400)({
