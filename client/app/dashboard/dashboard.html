@@ -80,37 +80,25 @@
 		
 		<!-- This is the chat section START -->
 		<div class="col-md-8  fill-parent-height chat-main">
-			<!-- <div class="chat-main"> -->
-				<div class="chat-header">
-					<span >{{chat.name}}</span>
-				</div>
+			<div class="chat-header">
+				<span >{{chat.name}}</span>
+			</div>
 
-				<div class="chat-body">
-					<div class="msg">
-						<div class="msg-out">
-							<span class="msg-content">Hello there!</span>
-						</div>
+			<div class="chat-body">
+				<conversation></conversation>
+			</div>
+
+			<div class="chat-footer">
+				<form name="msgForm" novalidate ng-submit="sendMessage(msgForm)">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Enter message"
+							name="message" ng-model="message"/>
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="submit">Send</button>
+						</span>
 					</div>
-					<div class="msg">
-						<div class="msg-in">
-							<span class="msg-content">Hello! I'm right here.</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="chat-footer">
-					<form name="msgForm" novalidate ng-submit="sendMessage(msgForm)">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Enter message"
-								name="message"/>
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="submit">Send</button>
-							</span>
-						</div>
-					</form>
-				</div>
-			<!-- </div> -->
-
+				</form>
+			</div>
 		</div>
 		<!-- This is the chat section END -->
 </div> <!-- container (bootstrap) -->

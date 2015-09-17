@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('theChatApp')
-  .controller('DashboardCtrl', function ($scope, Auth, User, socket) {
+  .controller('DashboardCtrl', function ($scope, $compile, Auth, User, socket) {
     $scope.errMsg = '';
     var user = Auth.getCurrentUser();
 
@@ -9,6 +9,7 @@ angular.module('theChatApp')
     $scope.friendRequests = user.friendRequests;
 
     $scope.user = user;
+    
 
     /*
         A helper function that returns the index of an object in an array
@@ -179,9 +180,7 @@ angular.module('theChatApp')
         $scope.friendRequests.push(data);
     });
 
-    $scope.$on('$destroy', function() {
-        socket.removeListener('friendRequest');
-    });
+
 
 
     /*
@@ -194,9 +193,21 @@ angular.module('theChatApp')
     */
     $scope.chat = {}; //an object representing the data in our chat
 
+    /*
+        We save messages here
+    */
+    $scope.chat.conversations = {}; //save all messages by user id
+    $scope.chat.currentFriend = null;//the current friend we are chatting with
+    $scope.chat.currentConversation = null;//the messages of the current friend
+
+
     $scope.openChatPanel = function(friend) {
-        console.log('chatting with', friend);
-        $scope.chat.currentFriend = friend; //the current friend we are chatting with
+        $scope.chat.currentFriend = friend;
+        if($scope.chat.conversations[friend._id] === undefined) {
+            //we haven't chat with this contact, initialize
+            $scope.chat.conversations[friend._id] = { messages: []};
+        }
+        $scope.chat.currentConversation = $scope.chat.conversations[friend._id];
 
         $scope.chat.name = friend.name; //display name
     }    
@@ -207,17 +218,66 @@ angular.module('theChatApp')
             return sendScribble();
 
         //send text message
-        console.log(msgForm);
-        console.log(msgForm.message);
-
-        sendMessage(msgForm.message)
+        sendMessage($scope.message);
     }
 
+    /* 
+        A function that compiles a <message>
+        arguments:
+            message: string|object
+                string: The message to be displayed
+                object: {message: "the message", type: "msg-out|msg-in"}
+            type: msg-out or msg-in 
+    */
+    function createMessage(message, type) {
+        if(typeof message === "object")
+        {
+            message = {message: message, type: type}
+        }
 
+        var scope = $scope.$new(true);
+        scope.msg = message;
+        return
+            $compile('<message type="msg.type" content="msg.message"')(null);
+    }
+
+    function sendMessage(msg){
+        //the message to be sent
+        var aMessage = {
+            message: msg,
+            to: $scope.chat.currentFriend._id
+        };
+
+        //save msg (the message to be displayed)
+        var dispMsg = { message: aMessage.message };
+        var conversation = $scope.chat.conversation;
+        conversation[$scope.chat.currentFriend._id].messages.push(dispMsg);
+
+        //update GUI ???
+
+
+
+        //emit
+        socket.emit('new message', aMessage, function(error, message) {
+            if(error) { return console.log(message);}
+            //isma, TODO receives back a time-stamped message from server
+            //you could implement something like sending/sent/received/vistotl
+        });
+    }
 
     function sendScribble(){
         //isma placeholder
         console.error('This functionalty is not available yet');
     }
+
+    socket.on('new message', function(data){
+        console.log('incoming message', data);
+    });
+
+    //isma, todo: these listeners should be removed on logout
+    $scope.$on('$destroy', function() {
+        socket.removeListener('friendRequest');
+        socket.removeListener('new message');
+    });
 
   });

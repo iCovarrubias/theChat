@@ -23,11 +23,14 @@ exports.register = function(socket) {
   }); 
 
   socket.on('friendRequest', function(data, cb) {
-    sendFriendRequest(socket, data, cb);
+    sendFriendRequest(data, cb);
   })
   users[socket.decoded_token._id] = socket;
 };
 
+exports.getUserSockets = function() {
+  return users;
+}
 
 /*
   This event is triggered when a user adds/removes a friend
@@ -50,7 +53,7 @@ exports.register = function(socket) {
   if callback cb is passed, it will responde with cb(bool error, str message)
 
  */
-function sendFriendRequest(socket, data, cb) {
+function sendFriendRequest(data, cb) {
   if(typeof cb === "function") {
     if(!data) {
       return cb(true, "No data was passed"); 

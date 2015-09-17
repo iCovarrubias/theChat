@@ -154,7 +154,6 @@ function acceptFriendRequest(req, res, next) {
         return res.status(200).json(friend);
     })
     .catch(function(error){
-      console.log("what's happening here", error);
       validationError(res)
     });
 
@@ -177,7 +176,6 @@ function rejectFriendRequest(req, res, next) {
     user.friendRequests.splice(idx, 1);
     return user.saveAsync()
       .then(function(){
-        console.log('no me mires con esos ojos');
         res.status(200).json({friendId: friendId});
       });
   } else {
