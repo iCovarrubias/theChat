@@ -35,13 +35,13 @@ function sendMessage(users, socket, data, cb) {
   // console.log("on socket sendMessage socket", socket)
   // console.log("on socket sendMessage data", data)
 
-  var fSocket = users[data.to];  //the friend's socket
+  var fSocket = users[data.friendId];  //the friend's socket
   if(fSocket) {
     //friend is online
-    data.from = socket.decoded_token._id;
+    data.friendId = socket.decoded_token._id;
     fSocket.emit('new message', data);
   } else {
-    cb(true, "User is offline [" + data.to + "]");
+    cb(true, "User is offline [" + data.friendId + "]");
   }
 }
 // function createListener(event, socket) {

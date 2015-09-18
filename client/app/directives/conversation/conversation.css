@@ -1,0 +1,30 @@
+
+.chat-header, .chat-header-placeholder {
+	background-color: #faa;
+	/*display: flex;*/
+	height: 55px;
+	flex-direction: row;
+	flex: none;
+}
+
+.chat-body, .chat-body-placeholder {
+	background-color: #cfc;
+	flex-grow: 1;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-bottom: 20px;
+}
+
+.chat-footer {
+	height: 60px;
+	padding: 10px 15px;
+	background-color: #ccc;
+	flex: none;
+	/*align-items: flex-end;*/
+	/*vertical-align: center;*/
+	/*border: 1px red solid;*/
+	/*background-color: #cfc;*/
+	/*position: absolute;*/
+	/*bottom: 10px;*/
+}
+

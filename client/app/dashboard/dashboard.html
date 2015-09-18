@@ -1,104 +1,88 @@
 <navbar></navbar>
 
 <div class="wrapper">
-		<!-- This is the contact section START -->
-		<div class="col-md-4 contacts-main fill-parent-height">
-			<div class="panel">
-				<h3>
-					My friends 
-					<span 
-						class="btn btn-primary glyphicon glyphicon-user"></span>
-				</h3>
-				
-				<form novalidate name="form" ng-submit="addFriend(form)">
-					<div class="input-group">
-						<input type="text" name="email" ng-model="email" 
-							placeholder="Friend's Email" 
-							class="form-control" />
-						<span class="input-group-btn">
-							<button type="submit" 
-								class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
-						</span>
-					</div>
-					<div class="form-group has-error">
-						<p class="help-block" ng-show="errMsg">
-							Error: {{errMsg}}
-						</p>
-					</div>
-				</form>
-			</div>
-			<div class="panel">
-				<p>I'll have to style and code my own contact directive
-					take a look on the ones by web.whatsapp
-				</p>
-				<ul class="list-group">
-					<li class="list-group-item"
-						ng-repeat="friend in friendList"
-						ng-click="openChatPanel(friend)">
-
-						<div class="btn-group">
-							<button type="button" class="btn btn-default">{{friend.name}}</button>
-
-							<button type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-info-sign"></span>
-							</button>
-							<button type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-remove"></span>
-							</button>
-							<button type="button" class="btn btn-default"
-								ng-click="removeFriend(friend._id)">
-								<span class="glyphicon glyphicon-trash"></span>
-							</button>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="panel">
-				<h4>Friend requests</h4>
-				Rehuse the contacts directive we haven't created or maybe create a new one
-				<ul class="list-group">
-					<li class="list-group-item"
-						ng-repeat="friend in friendRequests">
-
-						<div class="btn-group">
-							<button type="button" class="btn btn-default">{{friend.name}}</button>
-
-							<button type="button" class="btn btn-default" 
-								ng-click="acceptFriend(friend._id)">
-								<span class="glyphicon glyphicon-ok"></span>
-							</button>
-							<button type="button" class="btn btn-default"
-								ng-click="rejectFriend(friend._id)">
-								<span class="glyphicon glyphicon-remove"></span>
-							</button>
-						</div>
-					</li>
-				</ul>
-			</div>
+	<!-- This is the contact section START -->
+	<div class="col-md-4 contacts-main fill-parent-height">
+		<div class="panel">
+			<h3>
+				My friends 
+				<span 
+					class="btn btn-primary glyphicon glyphicon-user"></span>
+			</h3>
+			
+			<form novalidate name="form" ng-submit="addFriend(form)">
+				<div class="input-group">
+					<input type="text" name="email" ng-model="email" 
+						placeholder="Friend's Email" 
+						class="form-control" />
+					<span class="input-group-btn">
+						<button type="submit" 
+							class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></button>
+					</span>
+				</div>
+				<div class="form-group has-error">
+					<p class="help-block" ng-show="errMsg">
+						Error: {{errMsg}}
+					</p>
+				</div>
+			</form>
 		</div>
-		<!-- This is the contacts session end -->
-		
-		<!-- This is the chat section START -->
-		<div class="col-md-8  fill-parent-height chat-main">
-			<div class="chat-header">
-				<span >{{chat.name}}</span>
-			</div>
+		<div class="panel">
+			<p>I'll have to style and code my own contact directive
+				take a look on the ones by web.whatsapp
+			</p>
+			<ul class="list-group">
+				<li class="list-group-item"
+					ng-repeat="friend in friendList"
+					ng-click="openChatPanel(friend)">
 
-			<div class="chat-body">
-				<conversation></conversation>
-			</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">{{friend.name}}</button>
 
-			<div class="chat-footer">
-				<form name="msgForm" novalidate ng-submit="sendMessage(msgForm)">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Enter message"
-							name="message" ng-model="message"/>
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="submit">Send</button>
-						</span>
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-info-sign"></span>
+						</button>
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-remove"></span>
+						</button>
+						<button type="button" class="btn btn-default"
+							ng-click="removeFriend(friend._id)">
+							<span class="glyphicon glyphicon-trash"></span>
+						</button>
 					</div>
-				</form>
-			</div>
+				</li>
+			</ul>
 		</div>
-		<!-- This is the chat section END -->
+		<div class="panel">
+			<h4>Friend requests</h4>
+			Rehuse the contacts directive we haven't created or maybe create a new one
+			<ul class="list-group">
+				<li class="list-group-item"
+					ng-repeat="friend in friendRequests">
+
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">{{friend.name}}</button>
+
+						<button type="button" class="btn btn-default" 
+							ng-click="acceptFriend(friend._id)">
+							<span class="glyphicon glyphicon-ok"></span>
+						</button>
+						<button type="button" class="btn btn-default"
+							ng-click="rejectFriend(friend._id)">
+							<span class="glyphicon glyphicon-remove"></span>
+						</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- This is the contacts session end -->
+	
+	<!-- This is the chat section START -->
+	<div class="col-md-8  fill-parent-height">
+		<conversation class="chat-main fill-parent-height ng-cloak"
+			current-friend="currentFriend" 
+			on-send-message="onSendMessage(message, contentType)"></conversation>
+	</div>
+	<!-- This is the chat section END -->
 </div> <!-- container (bootstrap) -->

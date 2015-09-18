@@ -1,0 +1,23 @@
+.msg {
+	margin-bottom: 9px;
+}
+
+.msg:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.msg div {
+	max-width: 45%;
+}
+
+.msg .msg-out {
+	background-color: #ccc;
+	float: right;
+}
+
+.msg .msg-in {
+	background-color: #eee;
+	float: left;
+}
