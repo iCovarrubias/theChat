@@ -15,7 +15,7 @@ angular.module('theChatApp')
     function createMessage(scope, message, type) {
         if(typeof message === "string")
         {
-            message = {message: message, type: type}
+            message = {message: message, type: type};
         }
        
         scope.msg = message;
@@ -47,7 +47,7 @@ angular.module('theChatApp')
       //isma, TODO, use this object to save all message elements by userId
       this way we don't have to re-compile messages when switching between users
     */
-    var messageElements = {};
+    // var messageElements = {};
 
     return {
       templateUrl: 'app/directives/conversation/conversation.html',
@@ -88,7 +88,7 @@ angular.module('theChatApp')
         scope.$on('new message', function(event, message) {
           //you must add the message only if the current window is selected
           //if not selected, messages are retrieved from service
-          if(message.friendId == scope.currentFriend._id) {
+          if(message.friendId === scope.currentFriend._id) {
             addMessage(scope, message, $chatBody)
           }
         });

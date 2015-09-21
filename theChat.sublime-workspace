@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"cur",
+				"currentFriend"
+			],
+			[
+				"frien",
+				"friendId"
+			],
+			[
+				"sae",
+				"saveMessage"
+			],
+			[
+				"conver",
+				"conversations"
+			],
+			[
+				"mess",
+				"message"
+			],
+			[
+				"conve",
+				"conversations"
+			],
+			[
+				"cure",
+				"currentConversation"
+			],
+			[
+				"conversa",
+				"conversationManager"
+			],
+			[
 				"current",
 				"currentFriend"
 			],
@@ -62,10 +94,6 @@
 			[
 				"friendR",
 				"friendRequests"
-			],
-			[
-				"frien",
-				"friends"
 			],
 			[
 				"find",
@@ -486,44 +514,16 @@
 			[
 				"add",
 				"addImage"
-			],
-			[
-				"tot",
-				"totalPages"
-			],
-			[
-				"pag",
-				"page"
-			],
-			[
-				"page",
-				"imgsPerPage"
-			],
-			[
-				"e",
-				"endIdx"
-			],
-			[
-				"imag",
-				"imgsPerPage"
-			],
-			[
-				"imgRetrieverP",
-				"imgRetrieverProvider"
-			],
-			[
-				"service",
-				"serviceUrl"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "client/app/dashboard/dashboard.html",
+			"file": "client/app/services/conversationManager/conversationManager.service.js",
 			"settings":
 			{
-				"buffer_size": 2655,
+				"buffer_size": 1495,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,23 +531,7 @@
 			"file": "client/app/dashboard/dashboard.controller.js",
 			"settings":
 			{
-				"buffer_size": 8258,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/directives/conversation/conversation.directive.js",
-			"settings":
-			{
-				"buffer_size": 1079,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/services/messageManager/messageManager.service.js",
-			"settings":
-			{
-				"buffer_size": 691,
+				"buffer_size": 7919,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +539,39 @@
 			"file": "client/app/directives/conversation/conversation.html",
 			"settings":
 			{
-				"buffer_size": 462,
+				"buffer_size": 808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/directives/conversation/conversation.directive.js",
+			"settings":
+			{
+				"buffer_size": 3171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/dashboard/dashboard.css",
+			"settings":
+			{
+				"buffer_size": 259,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/app/directives/conversation/conversation.css",
+			"settings":
+			{
+				"buffer_size": 535,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/app/app.css",
+			"settings":
+			{
+				"buffer_size": 1768,
 				"line_ending": "Unix"
 			}
 		}
@@ -604,11 +620,17 @@
 	},
 	"file_history":
 	[
-		"/C/dev/TheChat/client/app/directives/conversation/conversation.html",
-		"/C/dev/TheChat/client/index.html",
-		"/C/dev/TheChat/server/index.js",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
 		"/C/dev/TheChat/server/api/message/message.socket.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
+		"/C/dev/TheChat/client/app/services/conversationManager/conversationManager.service.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.css",
+		"/C/dev/TheChat/client/app/directives/message/message.css",
+		"/C/dev/TheChat/client/app/directives/conversation/conversation.css",
+		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/C/dev/TheChat/client/index.html",
+		"/C/dev/TheChat/client/app/services/messageManager/messageManager.service.js",
+		"/C/dev/TheChat/client/app/directives/conversation/conversation.html",
+		"/C/dev/TheChat/server/index.js",
 		"/C/dev/TheChat/server/api/user/user.socket.js",
 		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
 		"/C/dev/TheChat/client/app/directives/message/message.directive.js",
@@ -623,8 +645,6 @@
 		"/C/dev/TheChat/server/api/user/user.model.js",
 		"/C/dev/TheChat/server/api/user/user.controller.js",
 		"/C/dev/TheChat/client/app/account/login/login.html",
-		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.css",
 		"/C/dev/TheChat/client/app/main/main.css",
 		"/C/dev/TheChat/client/app/app.css",
 		"/C/dev/TheChat/client/app/account/login/login.directive.js",
@@ -727,11 +747,7 @@
 		"/C/dev/tuts/redditColne/flapper-news/models/Comments.js",
 		"/C/dev/tuts/redditColne/nada/algo/routes/index.js",
 		"/C/dev/tuts/redditColne/index.html",
-		"/C/dev/tuts/redditColne/app.js",
-		"/C/dev/tuts/redditColne/flapper-news/package.json",
-		"/C/dev/tuts/my-angular-project/client/app/app.js",
-		"/C/dev/tuts/my-angular-project/client/components/navbar/navbar.html",
-		"/C/dev/tuts/my-angular-project/client/app/login/login.js"
+		"/C/dev/tuts/redditColne/app.js"
 	],
 	"find":
 	{
@@ -739,9 +755,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 0.0,
 		"where_history":
 		[
+			"C:\\dev\\TheChat\\client\\app",
 			"C:\\dev\\TheChat\\client",
 			"C:\\dev\\TheChat\\server",
 			"C:\\dev\\tuts\\angular-tube\\server\\api\\comment",
@@ -822,6 +839,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"chatBody",
+			"$chatBody",
+			"chatbod",
+			"saveMessage",
+			"scope.chat",
+			"conversation",
+			"contentType",
+			"sendMessage",
+			"send-message",
+			"send-nessage",
+			"currentConversation",
+			"conversat",
+			"chat",
+			".chat-main",
+			"ccf",
+			"ccf;",
+			"flex",
+			"atest",
+			"Chat-main",
+			"chat-ma",
+			"messages",
 			"cfriend",
 			"currentFriend",
 			"currentuser",
@@ -928,28 +966,7 @@
 			"noop",
 			"emit",
 			"friendRequest",
-			"friendListUpdated",
-			"fid",
-			"addFriend",
-			"unsyncUpdates",
-			"connectedat",
-			"friendListUpdated",
-			"connect",
-			"Socket",
-			"socket",
-			"soc",
-			"soc'",
-			"token",
-			"UserEvents",
-			"422",
-			"socket",
-			"node-in",
-			"debug",
-			"updateFriendList",
-			"expres",
-			"sock\\",
-			"socket",
-			"connect"
+			"friendListUpdated"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1061,104 +1078,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/app/dashboard/dashboard.html",
+					"file": "client/app/services/conversationManager/conversationManager.service.js",
 					"settings":
 					{
-						"buffer_size": 2655,
+						"buffer_size": 1495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2452,
-								2452
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1260.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/app/dashboard/dashboard.controller.js",
-					"settings":
-					{
-						"buffer_size": 8258,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6157,
-								6157
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3772.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/app/directives/conversation/conversation.directive.js",
-					"settings":
-					{
-						"buffer_size": 1079,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								977,
-								977
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 200.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "client/app/services/messageManager/messageManager.service.js",
-					"settings":
-					{
-						"buffer_size": 691,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								427,
-								427
+								905,
+								905
 							]
 						],
 						"settings":
@@ -1168,33 +1104,171 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 652.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "client/app/directives/conversation/conversation.html",
+					"buffer": 1,
+					"file": "client/app/dashboard/dashboard.controller.js",
 					"settings":
 					{
-						"buffer_size": 462,
+						"buffer_size": 7919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								88,
-								88
+								6925,
+								6933
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3946.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/app/directives/conversation/conversation.html",
+					"settings":
+					{
+						"buffer_size": 808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								419,
+								419
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/app/directives/conversation/conversation.directive.js",
+					"settings":
+					{
+						"buffer_size": 3171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2775,
+								2775
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1006.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/app/dashboard/dashboard.css",
+					"settings":
+					{
+						"buffer_size": 259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								256,
+								256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/app/directives/conversation/conversation.css",
+					"settings":
+					{
+						"buffer_size": 535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								477,
+								477
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/app/app.css",
+					"settings":
+					{
+						"buffer_size": 1768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1580,
+								1580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 706.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1243,6 +1317,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"conversationmana",
+				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
+			],
 			[
 				"user.mode",
 				"TheChat/server/api/user/user.model.js"

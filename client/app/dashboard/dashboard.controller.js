@@ -28,7 +28,7 @@ angular.module('theChatApp')
         for(var i = 0;  i < len; i++)
         {
             if(arr[i][propName] === propValue)
-                return i;
+            {    return i;  }
         }
         return -1;
     }
@@ -46,7 +46,7 @@ angular.module('theChatApp')
             undefined if not found
     */
     function findByIdAndRemove(id, arr){
-        var idx = getIndexBy("_id", id, arr);
+        var idx = getIndexBy('_id', id, arr);
         if(idx !== -1) {
             return arr.splice(idx, 1);
         }
@@ -65,8 +65,8 @@ angular.module('theChatApp')
                 console.log('addFriend response', friend);
                 //update GUI
                 $scope.friendList.push(friend);
-                $scope.errMsg = "";
-                $scope.email = "";
+                $scope.errMsg = '';
+                $scope.email = '';
                 return friend;
             })
             .then( function(friend) {
@@ -102,7 +102,7 @@ angular.module('theChatApp')
             .$promise
             .then(function(data) {
                 var friendId = data.friendId;
-                if(!friendId) throw new Error("No friendId returned by server");
+                if(!friendId) { throw new Error('No friendId returned by server'); }
 
                 findByIdAndRemove(friendId, $scope.friendList);
                 // var len = $scope.friendList.length;
@@ -122,7 +122,7 @@ angular.module('theChatApp')
                 {
                     console.error('Unprocessable server response', res);
                 }
-            })
+            });
     };
 
     /*
@@ -135,7 +135,7 @@ angular.module('theChatApp')
             .$promise
             .then(function(data){
                 var friendId = data._id;
-                if(!friendId) throw new Error("No friendId returned by server");
+                if(!friendId){ throw new Error('No friendId returned by server'); }
 
                 //updat GUI
                 //remove from friend requests
@@ -162,7 +162,7 @@ angular.module('theChatApp')
                     console.error('Unprocessable server response', res);
                 }
             });
-    }
+    };
 
     $scope.rejectFriend = function(friendId) {
         var myId = user._id;
@@ -192,14 +192,14 @@ angular.module('theChatApp')
     $scope.openChatPanel = function(friend) {
         //change the currentFriend, the <conversation> directive reacts to this change 
         $scope.currentFriend = friend;
-    }
+    };
 
     $scope.onSendMessage = function(message, contentType) {
         if(false)
             return sendScribble();
 
         sendTextMessage(message, contentType);
-    }
+    };
 
     
     function sendTextMessage(msg, contentType){
@@ -208,7 +208,7 @@ angular.module('theChatApp')
             message: msg,
             friendId: $scope.currentFriend._id,
             contentType: contentType,
-            type: "msg-out"
+            type: 'msg-out'
         };
 
         //save msg (the message to be displayed)

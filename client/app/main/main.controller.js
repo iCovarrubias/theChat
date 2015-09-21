@@ -2,9 +2,9 @@
 
 angular.module('theChatApp')
 .controller('MainCtrl', [
-'$scope',
-'socket',
-function($scope, socket) {
+// '$scope',
+// 'socket',
+function() {
 	// $scope.isLoggedIn = Auth.isLoggedIn;
 	
 }]);

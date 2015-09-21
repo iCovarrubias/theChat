@@ -9,7 +9,7 @@ angular.module('theChatApp')
       $scope.submitted = true;
 
       form.passwordConfirm.$setValidity('match', function() {
-        return $scope.user.password === $scope.user.passwordConfirm
+        return $scope.user.password === $scope.user.passwordConfirm;
       });
         
 

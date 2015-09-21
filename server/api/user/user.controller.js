@@ -47,7 +47,7 @@ function addFriend(req, res, next) {
       }
       
       //contact already exists
-      if(user.friends.indexOf(friend._id) != -1)
+      if(user.friends.indexOf(friend._id) !== -1)
       {
         //return it like this instead of User.update with $addToSet because 
         //we don't have a callback for the update operation
@@ -84,7 +84,7 @@ function addFriend(req, res, next) {
     }).catch(function(err) {
       return next(err);
     });
-};
+}
 
 /**
  * Remove friend, to be used with updateFriendList
@@ -94,7 +94,7 @@ function removeFriend(req, res, next) {
   var user = req.user;
 
   var idx = user.friends.indexOf(friendId);
-  if(idx == -1) {
+  if(idx === -1) {
     res.status(400).json({message: "Friend already removed"});
   }
   user.friends.splice(idx, 1);
@@ -110,7 +110,7 @@ function removeFriend(req, res, next) {
         return;
       }
       var idx = friend.friendRequests.indexOf(user._id);
-      if(idx != -1) {
+      if(idx !== -1) {
         friend.friendRequests.splice(idx, 1);
         return friend.saveAsync();
       }
@@ -138,7 +138,7 @@ function acceptFriendRequest(req, res, next) {
       }
       //remove from friendRequests
       var idx = user.friendRequests.indexOf(id);
-      if(idx != -1) {
+      if(idx !== -1) {
         user.friendRequests.splice(idx, 1);
       }
 
