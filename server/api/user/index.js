@@ -2,6 +2,7 @@
 
 var express = require('express');
 var controller = require('./user.controller');
+var groupController = require('./../group/group.controller');
 var auth = require('../../auth/auth.service');
 
 var router = express.Router();
@@ -17,5 +18,6 @@ router.post('/', controller.create);
 //custom routes
 router.put('/:id/update', auth.isAuthenticated(), controller.update);
 router.put('/:id/updateFriendList', auth.isAuthenticated(), controller.updateFriendList);
+router.put('/:id/updateGroups', auth.isAuthenticated(), groupController.updateGroups);
 
 module.exports = router;

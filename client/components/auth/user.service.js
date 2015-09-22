@@ -24,6 +24,12 @@ angular.module('theChatApp')
           controller: 'updateFriendList'            
         }
       },
+      updateGroups: {
+        method: 'PUT',
+        params: {
+          controller: 'updateGroups'
+        }
+      },
       update: {
         method: 'PUT',
         params: {

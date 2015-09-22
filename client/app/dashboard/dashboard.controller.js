@@ -9,7 +9,7 @@ angular.module('theChatApp')
     $scope.friendRequests = user.friendRequests;
 
     $scope.user = user;
-    
+    console.log('groups', user.groups);
 
     /*
         A helper function that returns the index of an object in an array
@@ -179,11 +179,33 @@ angular.module('theChatApp')
     socket.on('friendRequest', function(data) {
         $scope.friendRequests.push(data);
     });
-
-
     /*
         ADDING/REMOVING CONTACTS code ends here.
     */
+
+
+    /*
+        GROUP MANAGEMENT code starts here
+    */
+    $scope.createGroup = function(form) {
+        var myId = user._id;
+        User
+            .updateGroups({id: myId},{op:'create', name: $scope.groupName})
+            .$promise
+            .then(function(res) {
+                //isma TODO, update view
+                console.log('group created successfully', res);
+            })
+            .catch(function(res) {
+                console.error('There was an error creating group: ', res.data.message);
+            })
+    }
+    /*
+        GROUP MANAGEMENT code ends here
+    */
+
+
+
 
 
     /*

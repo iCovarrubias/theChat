@@ -47,7 +47,7 @@ angular.module('theChatApp', [
   .run(function($rootScope, $state, Auth) {
     // Redirect to login if route requires auth and the user is not logged in
     $rootScope.$on('$stateChangeStart', function(event, next) {
-      console.log('next state:', next);
+      // console.log('next state:', next);
       if (next.authenticate) {
         Auth.isLoggedIn(function(loggedIn) {
           if (!loggedIn) {

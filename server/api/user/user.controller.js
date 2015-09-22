@@ -278,7 +278,7 @@ exports.me = function(req, res, next) {
       if (!user) {
         return res.status(401).end();
       }
-      return user.populateFriends();
+      return user.populateMembers();
     })
     .then(function(user) {
       if(!user) {
@@ -330,9 +330,11 @@ exports.updateFriendList = function(req, res, next) {
   } else if(op === "rejectFriendRequest"){
     rejectFriendRequest(req, res, next);
   } else {
+    //isma, TODO, tes if we actually get this error
     //error
     return validationError(res,400)({
-      message: "op parameter is missing, expected op='add'|'remove'"
+      message: 
+        "op parameter is missing, expected op=add|remove|acceptFriendRequest|rejectFriendRequest"
     });
   }
 }

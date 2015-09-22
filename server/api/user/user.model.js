@@ -21,9 +21,10 @@ var UserSchema = new Schema({
   facebook: {},
   twitter: {},
   google: {},
-  github: {},
+  // github: {},
   friends: [{ type: Schema.Types.ObjectId, ref: 'User' }],
-  friendRequests: [{ type: Schema.Types.ObjectId, ref: 'User' }]
+  friendRequests: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  groups: [{ type: Schema.Types.ObjectId, ref: 'Group' }]
 });
 
 /**
@@ -227,7 +228,7 @@ UserSchema.methods = {
   },
 
 
-  //isma, a method to populate the friends field
+  //A method to populate the friends field
   populateFriends: function(){
       var _this = this;
        return _this.constructor.populateAsync(_this, 
@@ -241,7 +242,25 @@ UserSchema.methods = {
             select: "email name"
           })
         })
-  }
+    },
+
+    //add this group to the current user
+    addToGroup: function(group) {
+      //isma, TODO, don't add the same group twice?
+      this.groups.push(group); 
+    },
+
+    //current user leave group
+    leaveGroup: function(group) {
+      //isma leaving group
+      for(var i = 0; i < this.groups.length; i++) {
+        if(group._id === group[i]._id) {
+          this.groups.splice(i, 1);
+          return;
+        }
+      }
+    }
+
 };
 
 module.exports = mongoose.model('User', UserSchema);
