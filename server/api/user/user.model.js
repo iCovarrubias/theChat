@@ -252,7 +252,7 @@ UserSchema.methods = {
     leaveGroup: function(group) {
       //isma leaving group
       for(var i = 0; i < this.groups.length; i++) {
-        if(group._id === group[i]._id) {
+        if(group._id.equals(this.groups[i])) {
           this.groups.splice(i, 1);
           return;
         }

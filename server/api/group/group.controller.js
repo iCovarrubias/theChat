@@ -190,13 +190,18 @@ function leaveGroup(req, res) {
   Group.findByIdAsync(req.body.groupId)
     .then(handleEntityNotFound(res))
     .then(function(group) {
+      // console.log("leaving", group);
       group.leave(user);
-      return group.saveAsync();
+      // console.log("leaved", group);
+      return group.saveAsync().then(function(){return group});
     }).then(function(group) {
+      // console.log("saved", group);
+      // console.log("user is leaving", user);
       user.leaveGroup(group);
+      // console.log("user leaved", user);
       return user.saveAsync();
     }).then(function(user) {
-      console.log('leaveGroup, removed from user', user);
+      // console.log('leaveGroup, removed from user', user);
       res.status(200).end();
     }).catch(handleError(res));
 }

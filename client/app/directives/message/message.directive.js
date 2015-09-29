@@ -9,20 +9,17 @@
 angular.module('theChatApp')
   .directive('message', function () {
     return {
-      template: '<div class="msg">\
-						<div ng-class="type">\
-							<span class="msg-content" ng-transclude></span>\
-						</div>\
-					</div>',
+      templateUrl: 'app/directives/message/message.html',
       restrict: 'E',
-      transclude: true,
+      // transclude: true,
       scope: {
-        type: "="
+        // type: "=",
+        msg: "="
       },
       link: function (scope, element, attrs) {
         
         // console.log('in dirrective t', attrs.type);
-        scope.type = scope.type || 'msg-out';
+        // scope.type = scope.type || 'msg-out';
 
       },
     };

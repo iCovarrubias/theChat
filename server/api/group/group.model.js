@@ -11,6 +11,12 @@ var GroupSchema = new Schema({
   members: [{ _id: Schema.Types.ObjectId, name: String, email: String}]
 });
 
+GroupSchema.post("save", function(group) {
+	if(group.members.length === 0) {
+		group.removeAsync();
+	}
+});
+
 GroupSchema.methods = {
 	addMember: function(users) {
 		if(!Array.isArray(users)) {

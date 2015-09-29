@@ -39,13 +39,17 @@ angular.module('theChatApp')
           $scope.$emit('openChatPanel', contact);
         });
 
-        $scope.$on('contact element removed' , function(event, element, contact) {
+        $scope.$on('contact element removed' , function(event, childScope,  element, contact) {
           if(contact.members) {
-            console.error('WIP, leavea  group', contact );
-            contactManager.leaveGroup(contact);
+            contactManager.leaveGroup(contact)
+              .then(function(){
+                childScope.$destroy();
+                element.remove();
+              });
           } else {
             contactManager.removeContact(contact)
               .then(function() {
+                childScope.$destroy();
                 element.remove();
               })
           }

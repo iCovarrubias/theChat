@@ -11,14 +11,17 @@ angular.module('theChatApp')
                 object: {message: "the message", type: "msg-out|msg-in"}
             type: msg-out or msg-in 
     */
+
     function createMessage(scope, message, type) {
         if(typeof message === "string")
         {
             message = {message: message, type: type};
         }
-        //isma TODO: we can re-use the same compile function and just change the scope
+        //isma TODO: we can re-use the same compile function and just change the scope??
+        console.log('message is:', message);
         scope.msg = message;
-        var elem = $compile('<message type="msg.type">{{msg.message}}</message>')(scope);
+        var messageCompileFn = $compile('<message msg="msg"></message>'); 
+        var elem = messageCompileFn(scope);
         return elem;
     }
 
@@ -86,10 +89,10 @@ angular.module('theChatApp')
           }
       	});
 
-        scope.$on('new message', function(event, message) {
+        scope.$on('new message', function(event, friendId, message) {
           //you must add the message only if the current window is selected
           //if not selected, messages are retrieved from service
-          if(scope.currentFriend && message.friendId === scope.currentFriend._id) {
+          if(scope.currentFriend && friendId === scope.currentFriend._id) {
             addMessage(scope, message, $chatBody)
           }
         });

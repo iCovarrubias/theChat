@@ -20,7 +20,7 @@ exports.register = function(socket) {
     // socket.on('disconnect', removeListener(event, listener));
   // }
 
-  socket.on('new message', function(data, cb) { 
+  socket.on('new message', function(data, cb) {
     var users = require('../user/user.socket').getUserSockets();
     if(data.isGroupMessage !== true) {
       sendMessage(users, socket, data, cb);
@@ -51,13 +51,20 @@ function sendMessage(users, socket, data, cb) {
 }
 
 function sendGroupMessage(users, socket, data, cb) {
+  var senderId = socket.decoded_token._id;
+
   Group.findByIdAsync(data.friendId)
     .then(function(group) {
       if(!group) {
         cb(true, "Can't find group [" + data.friendId + "]");
         return;
       }
+      delete data.type;
       for(var i=0; i<group.members.length; i++) {
+        if(group.members[i]._id.equals(senderId)) {
+          continue;
+          // console.log('sender = recipient' );
+        }
         var memberId = group.members[i]._id;
         var memberSocket = users[memberId];
         if(!memberSocket) {continue;}
@@ -65,14 +72,3 @@ function sendGroupMessage(users, socket, data, cb) {
       }
     });
 }
-// function createListener(event, socket) {
-//   return function(doc) {
-//     socket.emit(event, doc);
-//   };
-// }
-
-// function removeListener(event, listener) {
-//   return function() {
-//     MessageEvents.removeListener(event, listener);
-//   };
-// }

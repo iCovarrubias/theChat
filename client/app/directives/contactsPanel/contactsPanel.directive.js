@@ -42,7 +42,7 @@ angular.module('theChatApp')
      
 
 
-        scope.$on('contact element removed', function(event, friend) {
+        scope.$on('contact element removed', function(event, childScope, element, friend) {
           //attach panelId and propagate
           if(attrs['panelId']) {
             event.panelId = attrs['panelId'];

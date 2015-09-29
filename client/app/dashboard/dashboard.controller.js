@@ -27,7 +27,6 @@ angular.module('theChatApp')
     });
 
     socket.on('addedToGroup', function(data) {
-        console.log('you have been added to a group', data);
         contactManager.onAddedToGroup(data);
     });
     /*
@@ -52,13 +51,13 @@ angular.module('theChatApp')
     };
 
     
+    //isma, TODO, do we use this function?
     function sendTextMessage(msg, contentType, isGroupMessage){
         //the message to be sent
         var aMessage = {
             message: msg,
             friendId: $scope.currentFriend._id,
             contentType: contentType,
-            type: 'msg-out',
             from: user.name
         };
         
@@ -69,7 +68,6 @@ angular.module('theChatApp')
 
 
         //emit
-        console.log('send message to: ', aMessage.to);
         socket.emit('new message', aMessage, function(error, message) {
             if(error) { return console.log(message);}
             //isma, TODO receives back a time-stamped message from server
@@ -83,14 +81,7 @@ angular.module('theChatApp')
     }
 
     socket.on('new message', function(data){
-        console.log('incoming message', data);
-        var aMessage = {
-            message: data.message,
-            contentType: data.contentType,
-            type: 'msg-in',
-            friendId: data.friendId
-        };
-        conversationManager.saveMessage(aMessage, data.friendId);
+        conversationManager.saveMessage(data, data.friendId, "msg-in");
     });
 
     //isma, todo: these listeners should be removed on logout

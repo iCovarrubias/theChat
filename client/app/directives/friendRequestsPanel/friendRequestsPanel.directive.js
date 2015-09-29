@@ -8,10 +8,11 @@ angular.module('theChatApp')
       scope: {},
       controller: function($scope) {
     		
-        $scope.$on('contact element removed', function(event, element, contact) {
+        $scope.$on('contact element removed', function(event, childScope, element, contact) {
     			event.stopPropagation();
     			contactManager.rejectFriendRequest(contact)
     				.then(function() {
+              childScope.$destroy();
     					element.remove();
     				})
     				.catch(function(err) {

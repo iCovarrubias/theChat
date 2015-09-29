@@ -63,9 +63,10 @@ angular.module('theChatApp')
         });
 
 
-        $scope.$on('contact element removed', function(event, element, friend) {
+        $scope.$on('contact element removed', function(event, childScope, element, friend) {
           if(event.panelId === 'selectedContacts') {
             removeFromArray(friend, $scope.selectedContacts);
+            childScope.$destroy();
             element.remove();
           }
           event.stopPropagation();
