@@ -1,0 +1,15 @@
+
+
+.chat-title-avatar {
+	margin-right: 15px;
+	/*flex: none;*/
+}
+
+.chat-title-body {
+	flex-grow: 1;
+}
+
+.chat-title-options {
+	margin-left: 20px;
+	/*flex: none;*/
+}

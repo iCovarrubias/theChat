@@ -5,7 +5,7 @@
 'use strict';
 
 // var MessageEvents = require('./message.events');
-
+var Group = require('../group/group.model');
 
 // Model events to emit
 // var events = ['save', 'remove'];
@@ -22,7 +22,11 @@ exports.register = function(socket) {
 
   socket.on('new message', function(data, cb) { 
     var users = require('../user/user.socket').getUserSockets();
-    sendMessage(users, socket, data, cb);
+    if(data.isGroupMessage !== true) {
+      sendMessage(users, socket, data, cb);
+    } else {
+      sendGroupMessage(users, socket, data, cb);
+    }
   });
 };
 
@@ -34,6 +38,7 @@ function sendMessage(users, socket, data, cb) {
   // console.log("on socket sendMessage usr", users)
   // console.log("on socket sendMessage socket", socket)
   // console.log("on socket sendMessage data", data)
+  
 
   var fSocket = users[data.friendId];  //the friend's socket
   if(fSocket) {
@@ -43,6 +48,22 @@ function sendMessage(users, socket, data, cb) {
   } else {
     cb(true, "User is offline [" + data.friendId + "]");
   }
+}
+
+function sendGroupMessage(users, socket, data, cb) {
+  Group.findByIdAsync(data.friendId)
+    .then(function(group) {
+      if(!group) {
+        cb(true, "Can't find group [" + data.friendId + "]");
+        return;
+      }
+      for(var i=0; i<group.members.length; i++) {
+        var memberId = group.members[i]._id;
+        var memberSocket = users[memberId];
+        if(!memberSocket) {continue;}
+        memberSocket.emit('new message', data);
+      }
+    });
 }
 // function createListener(event, socket) {
 //   return function(doc) {

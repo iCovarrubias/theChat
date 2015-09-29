@@ -8,20 +8,26 @@ var GroupSchema = new Schema({
   	type: String, 
   	default: 'New Group'
   },
-  members: [{ type: Schema.Types.ObjectId, ref: 'User' }]
+  members: [{ _id: Schema.Types.ObjectId, name: String, email: String}]
 });
 
 GroupSchema.methods = {
-	addMemeber: function(user) {
-		//isma, TODO: push unique memebers, return -1 if user already exists
-		members.push(user);
+	addMember: function(users) {
+		if(!Array.isArray(users)) {
+			users = [users];
+		}
+
+		for(var i=0; i < users.length; i++) {
+			var user = users[i];			
+			this.members.addToSet(user);	
+		}
 	},
 
 	leave: function(user) {
 		var memberId = user._id;
-		for(var i = 0; i < members.length; i++) {
-			if(memberId === members[i]) {
-				members.splice(i, 1);
+		for(var i = 0; i < this.members.length; i++) {
+			if(memberId.equals( this.members[i]._id) ){
+				this.members.splice(i, 1);
 				return;
 			}
 		}

@@ -1,0 +1,77 @@
+/*
+	Contacts header START 
+*/
+.contacts-header {
+	background-color: #90f;
+	display: flex;
+	height: 55px;
+	flex-direction: row;
+	flex: none;
+	align-items: center;
+}
+
+.contacts-main-go-back {
+	background-color: #98f;
+	/*display: flex;*/
+	/*height: 55px;*/
+	/*flex-direction: row;*/
+	/*flex: none;*/
+	/*marg*/
+}
+.contacts-main-go-back h4 {
+	margin: 0;
+}
+
+.contacts-header-avatar {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	margin-left: 5px;
+	background: no-repeat center url("../../../assets/images/placeholder.png");
+	background-size: cover;
+	border-radius: 50%;
+}
+
+
+.contacts-header-body {
+	flex-grow: 1;
+	margin-right: 15px;
+}
+
+.btn-contacts-header {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 0;
+}
+.btn.btn-contacts-header-options {
+	/*boder: 0;*/
+}
+
+.btn-contacts-header .glyphicon {
+	font-size: 125%;
+	padding-top: 4px;
+}
+
+.btn-contacts-header-friendrequests + div {
+	/*The badge that holds how many friend requests we have*/
+	position: absolute;
+}
+
+.btn-contacts-header-friendrequests + div > span {
+	position: relative;
+	bottom: 40px;
+	left: 28px;
+	background-color: #f00;
+}
+/*
+	Contacts header END 
+*/
+
+.contacts-body {
+	flex-grow: 1;
+	background-color: #afa;
+}

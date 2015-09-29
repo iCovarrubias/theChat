@@ -1,4 +1,4 @@
-<div ng-hide="currentFriend" class="fill-parent-height chat-main">
+<div ng-hide="currentFriend" class="fill-parent-height flex-column">
 	<div class="chat-header-placeholder">
 		<h3><span>Select a friend to start chatting!</span></h3>
 	</div>
@@ -8,24 +8,25 @@
 	</div>
 </div>
 
-<div ng-show="currentFriend" class="fill-parent-height chat-main">
-<div class="chat-header">
-	<span >{{currentFriend.name}}</span>
-</div>
+<div ng-show="currentFriend" class="fill-parent-height flex-column">
+	<conversation-head 
+		class="chat-header" 
+		current-friend="currentFriend" >
+	</conversation-head>
 
-<div class="chat-body">
-</div>
+	<div class="chat-body">
+	</div>
 
-<div class="chat-footer">
-	<form name="msgForm" novalidate 
-		ng-submit="sendMessage(message)">
-		<div class="input-group">
-			<input type="text" class="form-control" placeholder="Enter message"
-				name="message" ng-model="message"/>
-			<span class="input-group-btn">
-				<button class="btn btn-default" type="submit">Send</button>
-			</span>
-		</div>
-	</form>
+	<div class="chat-footer">
+		<form name="msgForm" novalidate 
+			ng-submit="sendMessage(message)">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Enter message"
+					name="message" ng-model="message"/>
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="submit">Send</button>
+				</span>
+			</div>
+		</form>
+	</div>
 </div>
-<!-- </div>

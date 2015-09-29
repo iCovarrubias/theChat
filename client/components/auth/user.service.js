@@ -18,6 +18,13 @@ angular.module('theChatApp')
           id:'me'
         }
       },
+      getByEmail: {
+        url: '/api/users/getByEmail',
+        method: 'GET',
+        params: {
+          // email: '@email'
+        }
+      },
       updateFriendList: {
         method: 'PUT',
         params: {

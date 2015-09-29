@@ -1,0 +1,22 @@
+.group-panel-selected-contacts {
+	border: 1px solid #98f;
+	padding: 5px;
+}
+
+.group-panel-selected-contacts contacts-panel{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.group-panel-selected-contacts .contact {
+	margin: 2px 5px;
+	border: 1px solid #ccf;
+	padding: 5px;
+}
+
+.head-group-name {
+	font-weight: bold;
+	font-size: 1.2em;
+	/*color: red;*/
+}

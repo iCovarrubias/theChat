@@ -103,36 +103,70 @@ exports.destroy = function(req, res) {
 };
 
 
+function addUserToGroup(userId, group) {
+  return User.findByIdAsync(userId)
+    .then(function(user){ 
+      user.addToGroup(group);
+      return user.saveAsync().then(function(){
+        return user;
+      });
+    });
+}
+
 /*
   Creates a new group, to be used with exports.updateGroups
 */
 function createGroup(req, res) {
   var user = req.user;
-  console.log('creating group');
+  console.log('create group');
   Group.createAsync({
     name: req.body.name,
     members: [user]
   })
-    .then(handleEntityNotFound(res))
-    .then(function(group){
-      console.log('created', group);
-      user.addToGroup(group);
-      return user.saveAsync().then(function(theuser){
-       console.log('saved the user', theuser);
-       return group;
-     });
-    }).then(function(group) {
-      console.log('responding with', group);
+  .then(handleEntityNotFound(res))
+  .then(function(group){
+    console.log('a new group created', group._id);
+    //add members
+    var members = req.body.members;
+    if(members && members.length) {
+      group.addMember(members);
+    }
+    group.addMember(user);
+    return group.saveAsync().then(function(g) {
+      return group; //isma, after save, you loose the model reference to group
+    });
+  })
+  .then(function(group) {
+    //save in user info
+    user.addToGroup(group);
+    return user.saveAsync().then(function(theuser){
       return group;
-    })
-    .then(responseWithResult(res, 201))
-    .catch(handleError(res));
+   });
+  })
+  .then(function(group) {
+    //save in members
+    for(var i = 0; i < group.members.length; i++) {
+     addUserToGroup(group.members[i]._id, group);
+    }
+    return group;
+  })
+  .then(function(group) {
+    //send group requests?
+    return group;
+  })
+  .then(responseWithResult(res, 201))
+  .catch(handleError(res));
 }
 
 function addGroupMember(req, res) {
-  console.log('adding group member', groupId);
+  //isma, work in progress
+  if(true) {
+    return res.status(500).json({err: "this service is not available yet"});
+  }
   var user = req.user;
-  var groupId = req.body.group._id;
+  var groupId = req.body.groupId;
+  console.log('adding group member[s]', groupId);
+  
   Group.findByIdAsync(groupId)
     .then(handleEntityNotFound(res))
     .then(function(group){
@@ -152,20 +186,22 @@ function addGroupMember(req, res) {
 
 function leaveGroup(req, res) {
   var user = req.user;
+
   Group.findByIdAsync(req.body.groupId)
     .then(handleEntityNotFound(res))
     .then(function(group) {
       group.leave(user);
       return group.saveAsync();
     }).then(function(group) {
-      console.log('leaveGroup', group);
-      user.leaveGroup();
+      user.leaveGroup(group);
       return user.saveAsync();
     }).then(function(user) {
-      console.log('leaveGroup 2', user);
+      console.log('leaveGroup, removed from user', user);
       res.status(200).end();
     }).catch(handleError(res));
 }
+
+
 /*
   Deals with the many operations related to groups, Create, add members, leave group, rename group
   This is accessed through the api/users/:id/updateGroups route, where :id is the 
@@ -178,14 +214,14 @@ exports.updateGroups = function(req, res) {
     createGroup(req, res);
   } else if(op === 'addMember') {
     addGroupMemeber(req, res);
-  } else if(op === 'leaveGroup') {
+  } else if(op === 'leave') {
     leaveGroup(req, res);
   } else if(op === 'rename') {
 
   } else {
   //error
     return handleError(res,400)({
-      message: "op parameter is missing, expected op=create|addMember|leaveGroup|rename"
+      message: "op parameter is missing, expected op=create|addMember|leave|rename"
     });
   }
 };

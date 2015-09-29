@@ -25,6 +25,10 @@ exports.register = function(socket) {
   socket.on('friendRequest', function(data, cb) {
     sendFriendRequest(data, cb);
   })
+
+  socket.on('addedToGroup', function(data, cb) {
+    addedUsersToGroup(data, cb);
+  })
   users[socket.decoded_token._id] = socket;
 };
 
@@ -66,6 +70,19 @@ function sendFriendRequest(data, cb) {
   if(fSocket) {
     //friend is online, send contact request w/id email and name
     fSocket.emit('friendRequest', data.friendRequest);
+  }
+}
+
+function addedUsersToGroup(data, cb) {
+  //isma, todo: validation
+
+  //notify users that they have been added to a group
+  for(var i=0; i<data.members.length; i++) {
+    var memberId = data.members[i]._id;
+    var memberSocket = users[memberId];
+    if(memberSocket) {
+      memberSocket.emit('addedToGroup' , data);
+    }
   }
 }
 

@@ -233,21 +233,19 @@ UserSchema.methods = {
       var _this = this;
        return _this.constructor.populateAsync(_this, 
         {
-          path: "friends",
+          path: "friends friendRequests",
           select: "email name",  
         }).then(function(){
           return _this.constructor.populateAsync(_this, 
           {
-            path: "friendRequests",
-            select: "email name"
+            path: "groups"
           })
         })
     },
 
     //add this group to the current user
     addToGroup: function(group) {
-      //isma, TODO, don't add the same group twice?
-      this.groups.push(group); 
+      this.groups.addToSet(group); 
     },
 
     //current user leave group

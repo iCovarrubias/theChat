@@ -4,12 +4,240 @@
 		"selected_items":
 		[
 			[
-				"cur",
-				"currentFriend"
+				"use",
+				"users"
+			],
+			[
+				"contact",
+				"contactManager"
+			],
+			[
+				"conta",
+				"contact"
+			],
+			[
+				"fri",
+				"friends"
+			],
+			[
+				"contacTs",
+				"contactStr"
+			],
+			[
+				"frie",
+				"friendRequests"
+			],
+			[
+				"no",
+				"noOkBtn"
+			],
+			[
+				"ele",
+				"element"
+			],
+			[
+				"CONTAC",
+				"contactManager"
 			],
 			[
 				"frien",
+				"friend"
+			],
+			[
+				"addTo",
+				"addToGroup"
+			],
+			[
+				"lg",
+				"log"
+			],
+			[
+				"mem",
+				"members"
+			],
+			[
+				"meme",
+				"memberArr"
+			],
+			[
+				"membe",
+				"members"
+			],
+			[
+				"member",
+				"memberArr"
+			],
+			[
+				"fnt",
+				"font-size"
+			],
+			[
+				"font-w",
+				"font-weight"
+			],
+			[
+				"font",
+				"font"
+			],
+			[
+				"fr",
+				"friendList"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"selecte",
+				"selectedContacts"
+			],
+			[
+				"memb",
+				"members"
+			],
+			[
+				"gro",
+				"group"
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"contactMa",
+				"contactsMainCtrl"
+			],
+			[
+				"direc",
+				"verbose_directive	AngularJS"
+			],
+			[
+				"dire",
+				"verbose_directive	AngularJS"
+			],
+			[
+				"Friend",
 				"friendId"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"fre",
+				"friendRes"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"handle",
+				"handleEntityNotFound"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"getC",
+				"getContactInfoBy"
+			],
+			[
+				"para",
+				"params"
+			],
+			[
+				"contr",
+				"controller	AngularJS"
+			],
+			[
+				"ng-swic",
+				"ng-switch-when	AngularJS"
+			],
+			[
+				"con",
+				"contacts-main-header"
+			],
+			[
+				"f",
+				"fill-parent-height"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"get",
+				"getContacts"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"chat",
+				"chat-title-avatar"
+			],
+			[
+				"mart",
+				"margin-right"
+			],
+			[
+				"grop",
+				"groupId"
+			],
+			[
+				"han",
+				"handleEntityNotFound"
+			],
+			[
+				"lev",
+				"leaveGroup"
+			],
+			[
+				"hand",
+				"handleError"
+			],
+			[
+				"Gru",
+				"GroupSchema"
+			],
+			[
+				"upda",
+				"updateGroups"
+			],
+			[
+				"cur",
+				"currentFriend"
 			],
 			[
 				"sae",
@@ -44,20 +272,12 @@
 				"conversations"
 			],
 			[
-				"dire",
-				"directive"
-			],
-			[
 				"curre",
 				"currentFriend"
 			],
 			[
 				"msg",
 				"msgForm"
-			],
-			[
-				"fri",
-				"friend"
 			],
 			[
 				"di",
@@ -68,24 +288,12 @@
 				"width"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
 				"friend",
 				"friendId"
 			],
 			[
 				"friendReque",
 				"friendRequests"
-			],
-			[
-				"frie",
-				"friendId"
 			],
 			[
 				"acce",
@@ -148,14 +356,6 @@
 				"req"
 			],
 			[
-				"fr",
-				"friend"
-			],
-			[
-				"fre",
-				"friends"
-			],
-			[
 				"co",
 				"console"
 			],
@@ -176,10 +376,6 @@
 				"authenticated"
 			],
 			[
-				"contr",
-				"controller_arr	AngularJS"
-			],
-			[
 				"flapp",
 				"flapper-news-token"
 			],
@@ -192,10 +388,6 @@
 				"resolve"
 			],
 			[
-				"li",
-				"link	Tag"
-			],
-			[
 				"fun",
 				"fun	Function"
 			],
@@ -206,10 +398,6 @@
 			[
 				"meetu",
 				"meetupsController"
-			],
-			[
-				"font",
-				"font-style"
 			],
 			[
 				"whi",
@@ -228,10 +416,6 @@
 				"indexOf"
 			],
 			[
-				"bor",
-				"border-top"
-			],
-			[
 				"bord",
 				"border-bottom"
 			],
@@ -242,10 +426,6 @@
 			[
 				"error",
 				"errorhandler"
-			],
-			[
-				"get",
-				"getValue"
 			],
 			[
 				"nex",
@@ -278,10 +458,6 @@
 			[
 				"coll",
 				"collectionName"
-			],
-			[
-				"res",
-				"result"
 			],
 			[
 				"c",
@@ -338,192 +514,16 @@
 			[
 				"articl",
 				"articles"
-			],
-			[
-				"fu",
-				"function"
-			],
-			[
-				"db",
-				"dbUrl"
-			],
-			[
-				"mong",
-				"mongoskin"
-			],
-			[
-				"findo",
-				"findOneAndAddText"
-			],
-			[
-				"pi",
-				"published"
-			],
-			[
-				"fo",
-				"form-group"
-			],
-			[
-				"ser",
-				"server"
-			],
-			[
-				"wrap",
-				"wrapper"
-			],
-			[
-				"quer",
-				"queryNoteFn"
-			],
-			[
-				"data",
-				"appData"
-			],
-			[
-				"def",
-				"deferred"
-			],
-			[
-				"rest",
-				"restapi"
-			],
-			[
-				"al",
-				"vertical-align"
-			],
-			[
-				"max",
-				"max-width"
-			],
-			[
-				"to",
-				"text-top"
-			],
-			[
-				"head",
-				"header	Tag"
-			],
-			[
-				"must",
-				"mustInsert"
-			],
-			[
-				"in",
-				"inOrderTraverseNode"
-			],
-			[
-				"fon",
-				"font-style"
-			],
-			[
-				"for",
-				"for	for (…) {…}"
-			],
-			[
-				"valid",
-				"valid"
-			],
-			[
-				"val",
-				"validateType"
-			],
-			[
-				"valida",
-				"validateType"
-			],
-			[
-				"va",
-				"validateType"
-			],
-			[
-				"ngMode",
-				"ngModelCtrl"
-			],
-			[
-				"valia",
-				"validateEqual"
-			],
-			[
-				"wr",
-				"wrapper"
-			],
-			[
-				"the",
-				"thewrapper"
-			],
-			[
-				"gal",
-				"galleryRequest"
-			],
-			[
-				"serv",
-				"serverData"
-			],
-			[
-				"sc",
-				"scrollTop"
-			],
-			[
-				"a",
-				"angular	AngularJS"
-			],
-			[
-				"ri",
-				"ridx"
-			],
-			[
-				"rig",
-				"rightIdx"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"server",
-				"serverImg"
-			],
-			[
-				"proces",
-				"processFailResponse"
-			],
-			[
-				"process",
-				"processSuccessResponse"
-			],
-			[
-				"img",
-				"imgUrlPath"
-			],
-			[
-				"dat",
-				"dataArrayPath"
-			],
-			[
-				"max-",
-				"max-height"
-			],
-			[
-				"mar",
-				"margin"
-			],
-			[
-				"galle",
-				"galleryRequestProvider"
-			],
-			[
-				"add",
-				"addImage"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "client/app/services/conversationManager/conversationManager.service.js",
+			"file": "client/app/directives/conversation/conversation.directive.js",
 			"settings":
 			{
-				"buffer_size": 1495,
+				"buffer_size": 3212,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,47 +531,23 @@
 			"file": "client/app/dashboard/dashboard.controller.js",
 			"settings":
 			{
-				"buffer_size": 7919,
+				"buffer_size": 2923,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/directives/conversation/conversation.html",
+			"file": "server/api/message/message.socket.js",
 			"settings":
 			{
-				"buffer_size": 808,
+				"buffer_size": 1769,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/directives/conversation/conversation.directive.js",
+			"file": "client/app/dashboard/dashboard.html",
 			"settings":
 			{
-				"buffer_size": 3171,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/dashboard/dashboard.css",
-			"settings":
-			{
-				"buffer_size": 259,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client/app/directives/conversation/conversation.css",
-			"settings":
-			{
-				"buffer_size": 535,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client/app/app.css",
-			"settings":
-			{
-				"buffer_size": 1768,
+				"buffer_size": 542,
 				"line_ending": "Unix"
 			}
 		}
@@ -579,7 +555,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 127.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -603,7 +579,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 472.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -620,41 +596,106 @@
 	},
 	"file_history":
 	[
-		"/C/dev/TheChat/server/api/message/message.socket.js",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
-		"/C/dev/TheChat/client/app/services/conversationManager/conversationManager.service.js",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.css",
-		"/C/dev/TheChat/client/app/directives/message/message.css",
-		"/C/dev/TheChat/client/app/directives/conversation/conversation.css",
-		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
-		"/C/dev/TheChat/client/index.html",
-		"/C/dev/TheChat/client/app/services/messageManager/messageManager.service.js",
-		"/C/dev/TheChat/client/app/directives/conversation/conversation.html",
-		"/C/dev/TheChat/server/index.js",
-		"/C/dev/TheChat/server/api/user/user.socket.js",
+		"/C/dev/TheChat/client/app/services/contactManager/contactManager.service.js",
+		"/C/dev/TheChat/client/app/directives/addUserPanel/addUserPanel.directive.js",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.directive.js",
+		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.html",
+		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.js",
 		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
+		"/C/dev/TheChat/server/api/group/group.controller.js",
+		"/C/dev/TheChat/client/app/directives/contact/contact.directive.js",
+		"/C/dev/TheChat/client/app/directives/contact/contact.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.html",
+		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.html",
+		"/C/dev/TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js",
+		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.js",
+		"/C/dev/TheChat/server/api/user/user.controller.js",
+		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.css",
+		"/C/dev/TheChat/server/api/user/user.model.js",
+		"/C/dev/TheChat/client/app/directives/contactsMain/include/contactsPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contact/contact.css",
+		"/C/dev/TheChat/client/index.html",
+		"/C/dev/TheChat/client/app/directives/contactsPanel/contactsPanel.html",
+		"/C/dev/TheChat/client/app/directives/contactsPanelWorker/contactsPanelWorker.directive.js",
+		"/C/dev/TheChat/client/app/directives/contactsPanelWorker/contactsPanelWorker.html",
+		"/C/dev/TheChat/server/api/user/user.socket.js",
+		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.css",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.css",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
+		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.spec.js",
+		"/C/dev/TheChat/client/app/directives/contactsMain/include/friendRequestsContainer.html",
+		"/C/dev/TheChat/server/api/message/message.socket.js",
+		"/C/dev/TheChat/client/app/directives/addUserPanel/addUserPanel.html",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.spec.js",
+		"/C/Users/Ismael/Desktop/the chat a todo.txt",
+		"/C/dev/TheChat/server/api/group/group.model.js",
+		"/C/Users/Ismael/Documents/Algorithm Friday/blood types.js",
+		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.spec.js",
+		"/C/dev/TheChat/client/app/directives/conversation/conversation.directive.js",
+		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.js",
+		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.spec.js",
+		"/C/dev/TheChat/client/app/directives/conversation/conversation.html",
+		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.html",
+		"/C/dev/TheChat/server/api/user/index.js",
+		"/C/dev/TheChat/server/api/group/index.js",
+		"/C/dev/TheChat/client/components/auth/user.service.js",
+		"/C/dev/TheChat/client/app/services/conversationManager/conversationManager.service.js",
+		"/C/dev/TheChat/server/auth/auth.service.js",
+		"/C/dev/TheChat/server/config/express.js",
+		"/C/dev/TheChat/client/app/directives/contactsMain/include/createGroupPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/createGroupPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/include/addUserPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/addUserPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsPanel-container.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain - Copy.html",
+		"/C/dev/TheChat/client/app/contactManager/contactManager/contactManager.service.js",
+		"/C/dev/TheChat/client/app/directives/addUserPanel/addUserPanel.css",
+		"/C/dev/TheChat/client/bower_components/bootstrap/.bower.json",
+		"/C/dev/TheChat/client/bower_components/bootstrap/bower.json",
+		"/C/dev/TheChat/bower.json",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/bower_components/bootstrap/.bower.json",
+		"/C/dev/TheChat/server/api/message/message.controller.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/bower_components/bootstrap/bower.json",
+		"/C/dev/TheChat/Gruntfile.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/Gruntfile.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/index.html",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.css",
+		"/C/Users/Ismael/Desktop/the chat a todo.txgt",
+		"/C/dev/tuts/DaftMonk-mean-generator/client/bower_components/angular-bootstrap/ui-bootstrap.js",
+		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.css",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.js",
+		"/C/dev/TheChat/client/app/directives/groupMaker/groupMaker.html",
+		"/C/dev/TheChat/client/app/directives/groupMaker/groupMaker.directive.js",
+		"/C/dev/TheChat/client/app/directives/conversation/conversation.css",
+		"/C/dev/TheChat/client/app/directives/groupConversation/groupConversation.directive.js",
+		"/C/dev/TheChat/server/api/group/group.socket.js",
+		"/C/dev/TheChat/client/app/app.js",
+		"/C/dev/TheChat/client/app/app.css",
+		"/C/dev/TheChat/server/app.js",
+		"/C/dev/TheChat/server/api/user/user.model.spec.js",
+		"/C/dev/TheChat/client/app/main/main.html",
 		"/C/dev/TheChat/client/app/directives/message/message.directive.js",
+		"/C/dev/TheChat/client/app/main/main.controller.js",
+		"/C/dev/TheChat/client/app/account/login/login.directive.js",
+		"/C/dev/TheChat/client/app/account/signup/signup.controller.js",
+		"/C/dev/TheChat/client/app/directives/message/message.css",
+		"/C/dev/TheChat/client/app/services/messageManager/messageManager.service.js",
+		"/C/dev/TheChat/server/index.js",
 		"/C/dev/TheChat/client/app/account/login/login.controller.js",
 		"/C/dev/TheChat/server/routes.js",
-		"/C/dev/TheChat/server/api/user/index.js",
 		"/C/dev/TheChat/client/components/auth/auth.service.js",
 		"/C/dev/TheChat/client/app/account/account.js",
-		"/C/dev/TheChat/client/app/app.js",
 		"/C/dev/TheChat/client/app/main/main.js",
-		"/C/dev/TheChat/client/components/auth/user.service.js",
-		"/C/dev/TheChat/server/api/user/user.model.js",
-		"/C/dev/TheChat/server/api/user/user.controller.js",
 		"/C/dev/TheChat/client/app/account/login/login.html",
 		"/C/dev/TheChat/client/app/main/main.css",
-		"/C/dev/TheChat/client/app/app.css",
-		"/C/dev/TheChat/client/app/account/login/login.directive.js",
 		"/C/Users/Ismael/Desktop/chavatest.html",
 		"/C/dev/TheChat/server/config/socketio.js",
 		"/C/dev/tuts/requireTEst/index.js",
 		"/C/dev/TheChat/server/api/user/user.events.js",
 		"/C/dev/TheChat/client/components/socket/socket.service.js",
-		"/C/dev/TheChat/client/app/main/main.controller.js",
-		"/C/dev/TheChat/server/auth/auth.service.js",
 		"/C/dev/tuts/requireTEst/unmod.js",
 		"/C/dev/tuts/thechat_youtube_tut/app.js",
 		"/C/dev/tuts/DaftMonk-mean-generator/client/app/main/main.controller.js",
@@ -678,76 +719,11 @@
 		"/C/dev/TheChat/server/auth/index.js",
 		"/C/dev/TheChat/client/app/account/signup/signup.html",
 		"/C/dev/TheChat/theChat.sublime-project",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.js",
 		"/C/dev/TheChat/server/api/dashboard/index.js",
-		"/C/dev/TheChat/Gruntfile.js",
 		"/C/dev/TheChat/client/components/match/match.directive.js",
-		"/C/dev/TheChat/client/app/account/signup/signup.controller.js",
 		"/C/dev/projects/angularJS-exercises/angularJS/04-FormMatch/matchDirective/app/scripts/directives/validatematch.js",
 		"/C/dev/projects/angularJS-exercises/angularJS/04-FormMatch/matchDirective/app/views/main.html",
-		"/C/dev/TheChat/client/app/account/login/loginSocial/loginSocial.html",
-		"/C/dev/TheChat/client/components/navbar/navbar.controller.js",
-		"/C/dev/TheChat/node_modules/grunt-node-inspector/README.md",
-		"/C/dev/TheChat/node_modules/grunt-node-inspector/package.json",
-		"/C/dev/TheChat/package.json",
-		"/C/dev/tuts/DaftMonk-mean-generator/package.json",
-		"/C/dev/TheChat/client/components/navbar/navbar.html",
-		"/C/dev/TheChat/client/app/main/main.html",
-		"/C/dev/TheChat/client/bower_components/angular-ui-router/src/urlRouter.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/client/components/auth/auth.service.js",
-		"/C/dev/TheChat/server/auth/local/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/client/app/account/login/login.controller.js",
-		"/C/dev/TheChat/client/app/account/login/logSocial/logSocial.html",
-		"/C/dev/TheChat/client/app/account/login/logSocial/logSocial.directive.js",
-		"/C/dev/TheChat/client/app/account/login/loginSocial/loginSocial.directive.js",
-		"/C/dev/TheChat/client/app/main/main.controller.spec.js",
-		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css.map",
-		"/C/dev/TheChat/client/app/account/login/login.css",
-		"/C/dev/TheChat/client/app/account/login/logSocial/logSocial.css",
-		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css",
-		"/C/dev/TheChat/server/config/environment/development.js",
-		"/C/dev/TheChat/server/app.js",
-		"/C/dev/TheChat/dist/server/auth/auth.service.js",
-		"/C/dev/TheChat/.gitignore",
-		"/C/dev/TheChat/server/config/environment/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/config/environment/development.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/config/local.env.js",
-		"/C/dev/TheChat/server/config/environment/production.js",
-		"/C/dev/TheChat/server/config/local.env.sample.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/client/app/app.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/local/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/facebook/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/facebook/passport.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/auth.service.js",
-		"/C/Users/Ismael/Desktop/absmin - Chapoy - Isma.html",
-		"/C/dev/tuts/DaftMonk-mean-generator/node_modules/passport-facebook/lib/strategy.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/config/environment/index.js",
-		"/C/dev/tuts/redditColne/flapper-news/public/javascripts/AngularApp.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/user/user.integration.js",
-		"/C/Users/Ismael/Desktop/absmin.html",
-		"/C/Users/Ismael/Desktop/absmin - Chapoy.html",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/local/passport.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/user/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/index.js",
-		"/C/dev/tuts/redditColne/flapper-news/app.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/routes.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/config/socketio.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/config/express.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/auth/twitter/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/user/user.model.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/client/index.html",
-		"/C/dev/tuts/redditColne/flapper-news/models/Users.js",
-		"/C/dev/tuts/redditColne/flapper-news/views/index.ejs",
-		"/C/dev/tuts/redditColne/flapper-news/routes/index.js",
-		"/C/dev/tuts/redditColne/flapper-news/config/passport.js",
-		"/C/dev/PracticalNodeJS/ch9/editor/redis-server.bat",
-		"/C/dev/tuts/redditColne/flapper-news/config/config.js",
-		"/C/dev/tuts/redditColne/flapper-news/models/User.js",
-		"/C/dev/tuts/redditColne/flapper-news/models/Posts.js",
-		"/C/dev/tuts/redditColne/flapper-news/models/Comments.js",
-		"/C/dev/tuts/redditColne/nada/algo/routes/index.js",
-		"/C/dev/tuts/redditColne/index.html",
-		"/C/dev/tuts/redditColne/app.js"
+		"/C/dev/TheChat/client/app/account/login/loginSocial/loginSocial.html"
 	],
 	"find":
 	{
@@ -755,9 +731,15 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 96.0,
 		"where_history":
 		[
+			"C:\\dev\\TheChat\\client\\app",
+			"C:\\dev\\TheChat\\server",
+			"C:\\dev\\TheChat\\client\\app",
+			"C:\\dev\\TheChat\\client\\app\\directives",
+			"C:\\dev\\TheChat\\client",
+			"C:\\dev\\TheChat\\server",
 			"C:\\dev\\TheChat\\client\\app",
 			"C:\\dev\\TheChat\\client",
 			"C:\\dev\\TheChat\\server",
@@ -839,134 +821,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"chatBody",
-			"$chatBody",
-			"chatbod",
-			"saveMessage",
-			"scope.chat",
-			"conversation",
-			"contentType",
+			"sendGroupMessage",
+			"sendmessage",
+			"onSendMessage",
 			"sendMessage",
-			"send-message",
-			"send-nessage",
-			"currentConversation",
-			"conversat",
-			"chat",
-			".chat-main",
-			"ccf",
-			"ccf;",
-			"flex",
-			"atest",
-			"Chat-main",
-			"chat-ma",
-			"messages",
-			"cfriend",
-			"currentFriend",
-			"currentuser",
-			"chat.",
-			"currentUSer",
-			"service",
-			"dashboard",
-			"session",
-			"justamsg",
-			"sendMessage",
-			"ng-repeat",
-			"currentConversation",
-			"currentFriend",
+			".friendL",
+			"friendL",
+			"contact created",
+			"finishAddContact",
+			"saveContact",
+			"finishAddContact",
+			"saveContact",
+			"contact created",
+			"acceptFriendRequest ",
+			"isma",
 			"friendreq",
-			"emit",
-			"socket.emit",
-			"socket.",
-			"directive",
-			"directi",
-			"authInterceptor",
-			"('main'",
-			": 'main'",
-			"main",
-			"authenticate",
-			"bearer",
-			"authenticate",
-			"emit",
-			"new message",
-			"new messa",
-			"exports",
-			"console.",
-			"console.lo",
-			"no me mires con",
-			"socket.em",
-			"message",
-			"chat-title",
-			"msg-container",
-			"footer",
-			"main-wra",
-			"height",
-			"height: 100",
-			"height: 100%",
-			"float: le",
-			"height",
-			"@media",
-			"findByIdAndRemove",
-			"findBy",
+			"accept",
+			"group-panel-selected-contacts",
+			"createGroup",
+			"creategr",
+			"leaveGroup",
+			"leabve",
+			"leave",
+			"leave\"",
+			"leave",
+			"contactsuser.\ncontactsuser.\nleaveGroup",
+			"contactsuser.\nleaveGroup",
+			"leaveGroup",
+			"wip",
+			"contact selected",
 			"friendRequests",
-			"rejectfr",
-			"204",
-			"validationError",
-			"400",
-			"bad reque",
-			"status",
-			"can't find",
-			"(!friend)",
-			"req.user",
-			".catch",
-			"acceptFriendRequest",
-			"updateFriendList",
-			"acceptFriendRequest",
-			"saving friend",
-			"addfr",
-			"addFriend",
-			"addfriend",
-			"acceptFriendRequest",
-			"-salt",
-			"-passw",
-			"passw",
-			"save",
-			"acceptfriend",
-			"_this",
-			"populatef",
-			"return res.status(400",
-			"return user",
-			"acceptfrie",
-			"acceptff",
-			"acceptfi",
-			"populateFriends",
-			"populatef",
-			"acceptf",
-			"\"email name friendRequests\"",
-			"email",
-			"hashed",
-			"'-salt -hashedPassword -password'",
-			"'emai",
-			"findby",
-			"findByIdAsync",
-			"req.body",
-			"req.body\n",
-			"acceptFriendRequest",
+			"new friend request",
+			"no-ok",
+			"Worker",
+			"contactsPanel",
+			"friendList",
+			"friendRequests",
+			"createContactElement",
+			"contact created",
+			"contactlist",
+			"<contact",
+			"getFriendRequests",
+			"contactmanager",
+			"friend",
+			"removeFriend",
+			"friendreq",
+			"new mess",
+			"rootscope",
+			"$rootScope",
+			"friendRequests",
+			"friendreques",
+			"friendRequests",
+			"friendreq",
+			"font-size: 125%;",
+			"friendRequests",
+			"switchContactsMainView",
+			"Contact",
+			"contact element removed",
+			"removecontact",
+			"contact element removed",
+			"pass",
+			";\n",
+			"addtog",
+			"mongoose",
+			"friendRequests",
+			"addToSet",
+			"groups:",
+			"group",
+			"createGroup",
+			"memebers",
+			"createGroup",
 			"update",
-			"removeFriend",
+			"User.update",
+			"$addtoset",
+			"createGroup",
+			"updateGroups",
+			"group",
+			"flex-",
 			"friendRequests",
-			"saveAsync",
+			"ng-repeat",
+			"scope._id",
+			"attrs",
+			"contact created",
+			"friendList",
+			"contactManager",
+			"contact create",
+			"openChatPanel",
+			"scope",
+			"openChatPanel",
+			"contactspane",
+			"contactI",
+			"adduserpa",
+			"Panel.js",
+			"conversation-Head",
+			"group",
+			"finishAddContact",
+			"group",
+			"group'",
+			"create",
+			"handleError",
+			"===",
+			"memebers",
+			": true",
+			"handleEntityNotFound",
 			"removeFriend",
-			"friendRequest",
-			"button group",
-			"buttongrou",
-			"button-group",
-			"friendListUpdated",
-			"safe_cb",
-			"safecb",
-			"noop",
-			"emit",
-			"friendRequest",
-			"friendListUpdated"
+			"createGroup",
+			"addContactsToGroup",
+			"addgroupme",
+			"grou",
+			"updategroups",
+			"opencha",
+			"openchatpa",
+			"contactManager",
+			"contactsMainCtrl",
+			"removeFriend",
+			"saveContact",
+			"initConversation",
+			"contacts ",
+			"user.getcontacts",
+			"contacts",
+			"findoneand",
+			"findone",
+			"emoveFriend(contac",
+			"contactsPanel",
+			"createco",
+			": row",
+			"flex:",
+			"flex: r",
+			"contacts-body"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1078,23 +1060,23 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/app/services/conversationManager/conversationManager.service.js",
+					"file": "client/app/directives/conversation/conversation.directive.js",
 					"settings":
 					{
-						"buffer_size": 1495,
+						"buffer_size": 3212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								905,
-								905
+								2106,
+								2106
 							]
 						],
 						"settings":
@@ -1104,7 +1086,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 652.0,
+						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1114,15 +1096,15 @@
 					"file": "client/app/dashboard/dashboard.controller.js",
 					"settings":
 					{
-						"buffer_size": 7919,
+						"buffer_size": 2923,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6925,
-								6933
+								1507,
+								1507
 							]
 						],
 						"settings":
@@ -1132,52 +1114,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3946.0,
+						"translation.y": 840.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "client/app/directives/conversation/conversation.html",
+					"file": "server/api/message/message.socket.js",
 					"settings":
 					{
-						"buffer_size": 808,
+						"buffer_size": 1769,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								419,
-								419
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 60.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "client/app/directives/conversation/conversation.directive.js",
-					"settings":
-					{
-						"buffer_size": 3171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2775,
-								2775
+								708,
+								708
 							]
 						],
 						"settings":
@@ -1187,88 +1142,34 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1006.0,
+						"translation.y": 692.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "client/app/dashboard/dashboard.css",
+					"buffer": 3,
+					"file": "client/app/dashboard/dashboard.html",
 					"settings":
 					{
-						"buffer_size": 259,
+						"buffer_size": 542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								256,
-								256
+								508,
+								508
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "client/app/directives/conversation/conversation.css",
-					"settings":
-					{
-						"buffer_size": 535,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "client/app/app.css",
-					"settings":
-					{
-						"buffer_size": 1768,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1580,
-								1580
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 706.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1318,12 +1219,428 @@
 		"selected_items":
 		[
 			[
-				"conversationmana",
-				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
+				"dash",
+				"TheChat/client/app/dashboard/dashboard.html"
+			],
+			[
+				"message.s",
+				"TheChat/server/api/message/message.socket.js"
+			],
+			[
+				"conversation",
+				"TheChat/client/app/directives/conversation/conversation.directive.js"
+			],
+			[
+				"groupc",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"dashb",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"contact/d",
+				"TheChat/client/app/directives/contact/contact.directive.js"
+			],
+			[
+				"contact",
+				"TheChat/client/app/directives/contact/contact.html"
+			],
+			[
+				"friendreq",
+				"TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.js"
+			],
+			[
+				"creategrou",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.css"
+			],
+			[
+				"contact.j",
+				"TheChat/client/app/directives/contact/contact.directive.js"
 			],
 			[
 				"user.mode",
 				"TheChat/server/api/user/user.model.js"
+			],
+			[
+				"groupcon",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"ser.contr",
+				"TheChat/server/api/user/user.controller.js"
+			],
+			[
+				"contacts",
+				"TheChat/client/app/directives/contactsMain/include/contactsPanelContainer.html"
+			],
+			[
+				"contactsma",
+				"TheChat/client/app/directives/contactsMain/contactsMain.html"
+			],
+			[
+				"creategroup",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.html"
+			],
+			[
+				"contactpane",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js"
+			],
+			[
+				"creategro",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.js"
+			],
+			[
+				"friendre",
+				"TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.html"
+			],
+			[
+				"contactma",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
+			],
+			[
+				"contactmna",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
+			],
+			[
+				"contac",
+				"TheChat/client/app/directives/contact/contact.html"
+			],
+			[
+				"contact.",
+				"TheChat/client/app/directives/contact/contact.css"
+			],
+			[
+				"cotnacts",
+				"TheChat/client/app/directives/contactsMain/contactsMain.directive.js"
+			],
+			[
+				"index.",
+				"TheChat/client/index.html"
+			],
+			[
+				"contactspanel.htm",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.html"
+			],
+			[
+				"contactpa",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.html"
+			],
+			[
+				"contactmana",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
+			],
+			[
+				"contactspane",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js"
+			],
+			[
+				"contact.h",
+				"TheChat/client/app/directives/contact/contact.html"
+			],
+			[
+				"main",
+				"TheChat/client/app/directives/contactsMain/contactsMain.css"
+			],
+			[
+				"contact.js",
+				"TheChat/client/app/directives/contact/contact.directive.js"
+			],
+			[
+				"user.contr",
+				"TheChat/server/api/user/user.controller.js"
+			],
+			[
+				"dashboar",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"contacmanag",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
+			],
+			[
+				"friendrequestdir",
+				"TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.js"
+			],
+			[
+				"friendreqeuse",
+				"TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.spec.js"
+			],
+			[
+				"socket.",
+				"TheChat/server/api/user/user.socket.js"
+			],
+			[
+				"dashbor",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"creategr",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.html"
+			],
+			[
+				"add",
+				"TheChat/client/app/directives/addUserPanel/addUserPanel.html"
+			],
+			[
+				"dashbo",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"dashbp",
+				"TheChat/client/app/dashboard/dashboard.controller.spec.js"
+			],
+			[
+				"contactsmain",
+				"TheChat/client/app/directives/contactsMain/contactsMain.html"
+			],
+			[
+				"adduserpa",
+				"TheChat/client/app/directives/addUserPanel/addUserPanel.directive.js"
+			],
+			[
+				"group.contr",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"contact.dri",
+				"TheChat/client/app/directives/contact/contact.directive.js"
+			],
+			[
+				"groupcre",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.js"
+			],
+			[
+				"contact.css",
+				"TheChat/client/app/directives/contact/contact.css"
+			],
+			[
+				"contactpan",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.html"
+			],
+			[
+				"contactmanage",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
+			],
+			[
+				"dashbo/",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"contactsmain.",
+				"TheChat/client/app/directives/contactsMain/contactsMain.directive.js"
+			],
+			[
+				"user",
+				"TheChat/server/api/user/user.model.js"
+			],
+			[
+				"group.mo",
+				"TheChat/server/api/group/group.model.js"
+			],
+			[
+				".model",
+				"TheChat/server/api/group/group.model.js"
+			],
+			[
+				"user.mod",
+				"TheChat/server/api/user/user.model.js"
+			],
+			[
+				"user.conr",
+				"TheChat/server/api/user/user.controller.js"
+			],
+			[
+				"groupmode",
+				"TheChat/server/api/group/group.model.js"
+			],
+			[
+				"conta",
+				"TheChat/client/app/directives/contact/contact.html"
+			],
+			[
+				"dashboardc",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"dashboard",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"contactspan",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js"
+			],
+			[
+				"contact.dire",
+				"TheChat/client/app/directives/contact/contact.directive.js"
+			],
+			[
+				"index.ht",
+				"TheChat/client/index.html"
+			],
+			[
+				"conversationhe",
+				"TheChat/client/app/directives/conversation/conversationHead/conversationHead.html"
+			],
+			[
+				"conversationhead",
+				"TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.js"
+			],
+			[
+				"adduser",
+				"TheChat/client/app/directives/addUserPanel/addUserPanel.directive.js"
+			],
+			[
+				"usermode",
+				"TheChat/server/api/user/user.model.js"
+			],
+			[
+				"index",
+				"TheChat/server/api/user/index.js"
+			],
+			[
+				"group/i",
+				"TheChat/server/api/group/index.js"
+			],
+			[
+				"group.co",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"user.c",
+				"TheChat/server/api/user/user.controller.js"
+			],
+			[
+				"express",
+				"TheChat/server/config/express.js"
+			],
+			[
+				"auth.s",
+				"TheChat/server/auth/auth.service.js"
+			],
+			[
+				"conversationmana",
+				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
+			],
+			[
+				"conversation.d",
+				"TheChat/client/app/directives/conversation/conversation.directive.js"
+			],
+			[
+				"addus",
+				"TheChat/client/app/directives/addUserPanel/addUserPanel.html"
+			],
+			[
+				"user.co",
+				"TheChat/server/api/user/user.controller.js"
+			],
+			[
+				"provi",
+				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
+			],
+			[
+				"das",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"conversationman",
+				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
+			],
+			[
+				"message.con",
+				"TheChat/server/api/message/message.controller.js"
+			],
+			[
+				"user.",
+				"TheChat/client/components/auth/user.service.js"
+			],
+			[
+				"user.ser",
+				"TheChat/client/components/auth/user.service.js"
+			],
+			[
+				"user.s",
+				"TheChat/client/components/auth/user.service.js"
+			],
+			[
+				"usercon",
+				"TheChat/server/api/user/user.controller.js"
+			],
+			[
+				"user.serv",
+				"TheChat/client/components/auth/user.service.js"
+			],
+			[
+				"user/in",
+				"TheChat/server/api/user/index.js"
+			],
+			[
+				"contactsmain.di",
+				"TheChat/client/app/directives/contactsMain/contactsMain.directive.js"
+			],
+			[
+				"bower",
+				"TheChat/bower.json"
+			],
+			[
+				"i",
+				"TheChat/client/index.html"
+			],
+			[
+				"dashboardcon",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"group",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"inde",
+				"TheChat/client/index.html"
+			],
+			[
+				"groupmo",
+				"TheChat/server/api/group/group.model.js"
+			],
+			[
+				"app.js",
+				"TheChat/client/app/app.js"
+			],
+			[
+				"pp.",
+				"TheChat/client/app/app.css"
+			],
+			[
+				"app.",
+				"TheChat/server/app.js"
+			],
+			[
+				"user/inde",
+				"TheChat/server/api/user/index.js"
+			],
+			[
+				"app/directives/message/message.directive.js",
+				"TheChat/client/app/directives/message/message.directive.js"
+			],
+			[
+				"main.cont",
+				"TheChat/client/app/main/main.controller.js"
+			],
+			[
+				"lient/app/app.js",
+				"TheChat/client/app/app.js"
+			],
+			[
+				"client/app/account/signup/signup.controller.js",
+				"TheChat/client/app/account/signup/signup.controller.js"
+			],
+			[
+				"client/app/account/login/login.directive.js",
+				"TheChat/client/app/account/login/login.directive.js"
+			],
+			[
+				"user.controller.js",
+				"TheChat/server/api/user/user.controller.js"
 			],
 			[
 				"login",
@@ -1354,18 +1671,6 @@
 				"server/auth/auth.service.js"
 			],
 			[
-				"user.ser",
-				"client/components/auth/user.service.js"
-			],
-			[
-				"user.contr",
-				"server/api/user/user.controller.js"
-			],
-			[
-				"user.serv",
-				"client/components/auth/user.service.js"
-			],
-			[
 				"auth.serv",
 				"client/components/auth/auth.service.js"
 			],
@@ -1380,10 +1685,6 @@
 			[
 				"config/envi",
 				"server/config/environment/development.js"
-			],
-			[
-				"user",
-				"redditColne/flapper-news/models/Users.js"
 			],
 			[
 				"index.ej",
@@ -1428,250 +1729,6 @@
 			[
 				"main.css",
 				"06_Using_UI-Route/mySample/app/styles/main.css"
-			],
-			[
-				"spoiler.h",
-				"06_Using_UI-Route/mySample/app/views/state/spoiler.html"
-			],
-			[
-				"main.",
-				"07_Notes/notesApp/app/styles/main.css"
-			],
-			[
-				"main.cs",
-				"07_Notes/notesApp/.tmp/styles/main.css"
-			],
-			[
-				"notemodel.js",
-				"07_Notes/notesApp/app/scripts/services/notemodel.js"
-			],
-			[
-				"angular.j",
-				"07_Notes/notesApp/bower_components/angular/angular.js"
-			],
-			[
-				"bootstr",
-				"07_Notes/notesApp/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"bootstrac",
-				"07_Notes/notesApp/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"top.ht",
-				"mySample/app/views/top.html"
-			],
-			[
-				"top.h",
-				"mySample/app/views/top.html"
-			],
-			[
-				"main.html",
-				"mySample/app/views/main.html"
-			],
-			[
-				"top.htm",
-				"mySample/app/views/top.html"
-			],
-			[
-				"bootstra.j",
-				"mySample/bower_components/bootstrap/dist/js/bootstrap.js"
-			],
-			[
-				"bootstrap.cs",
-				"mySample/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"boots",
-				"Chapter12 - Forms/angularjs/bootstrap-theme.css"
-			],
-			[
-				"index.",
-				"04-FormMatch/matchDirective/app/index.html"
-			],
-			[
-				"main.js",
-				"04-FormMatch/matchDirective/app/scripts/controllers/main.js"
-			],
-			[
-				"validatet",
-				"04-FormMatch/matchDirective/app/scripts/directives/validatetype.js"
-			],
-			[
-				"validaterang",
-				"04-FormMatch/matchDirective/app/scripts/directives/validaterange.js"
-			],
-			[
-				"validatem",
-				"04-FormMatch/matchDirective/app/scripts/directives/validatematch.js"
-			],
-			[
-				"match.js",
-				"04-FormMatch/matchDirective/app/scripts/directives/match.js"
-			],
-			[
-				"main",
-				"matchDirective/app/views/main.html"
-			],
-			[
-				"mainh",
-				"matchDirective/app/views/main.html"
-			],
-			[
-				"main.ht",
-				"matchDirective/app/views/main.html"
-			],
-			[
-				"foo.js",
-				"matchDirective/app/scripts/directives/foo.js"
-			],
-			[
-				"index",
-				"spoiler/app/index.html"
-			],
-			[
-				"inde",
-				"spoiler/app/index.html"
-			],
-			[
-				"myhide",
-				"spoiler/app/scripts/directives/myhide.js"
-			],
-			[
-				"readme.m",
-				"01 - Graph Directive/graph/node_modules/grunt/node_modules/colors/ReadMe.md"
-			],
-			[
-				"gallery",
-				"03 - Gallery/gallery/app/scripts/services/galleryrequest.js"
-			],
-			[
-				"main.htm",
-				"03 - Gallery/gallery/app/views/main.html"
-			],
-			[
-				"dummyda",
-				"03 - Gallery/gallery/app/scripts/services/dummydata.js"
-			],
-			[
-				"bootstra",
-				"01 - Graph Directive/graph/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"galler",
-				"03 - Gallery/gallery/app/scripts/services/galleryrequest.js"
-			],
-			[
-				"imgretriev",
-				"03 - Gallery/gallery/app/scripts/services/imgretriever.js"
-			],
-			[
-				"dummydat",
-				"03 - Gallery/gallery/app/scripts/services/dummydata.js"
-			],
-			[
-				"dummydata",
-				"03 - Gallery/gallery/app/scripts/services/dummydata.js"
-			],
-			[
-				"charts",
-				"graph/app/scripts/services/chartservice.js"
-			],
-			[
-				"spreadsh",
-				"graph/app/scripts/directives/spreadsheet.js"
-			],
-			[
-				"spreads",
-				"graph/app/scripts/controllers/spreadsheet.js"
-			],
-			[
-				"chartserv",
-				"graph/app/scripts/services/chartservice.js"
-			],
-			[
-				"graphren",
-				"graph/app/scripts/services/graphrender.js"
-			],
-			[
-				"chartser",
-				"graph/app/scripts/services/chartservice.js"
-			],
-			[
-				"graphrender",
-				"graph/test/spec/services/graphrender.js"
-			],
-			[
-				"bootstrap.css",
-				"graph/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"bootr",
-				"angularJS/01 - Graph Directice/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"boo",
-				"angularJS/01 - Graph Directice/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"angul",
-				"Chapter17 - Advanced Directives/angularjs/angular.js"
-			],
-			[
-				"ang",
-				"Chapter17 - Advanced Directives/angularjs/angular.js"
-			],
-			[
-				"angu",
-				"Chapter17 - Advanced Directives/angularjs/angular.js"
-			],
-			[
-				"admincontrollers.js",
-				"controllers/adminControllers.js"
-			],
-			[
-				"app.ht",
-				"dev/angularjs/app.html"
-			],
-			[
-				"boos",
-				"dev/angularjs/bootstrap.css"
-			],
-			[
-				"panel",
-				"AngularJS/Chapter 08/views/adminOrders.html"
-			],
-			[
-				"regext",
-				"js3e-master/testbed/regex_tester.html"
-			],
-			[
-				"css/todo.css",
-				"js3e-master/chapter14/css/todo.css"
-			],
-			[
-				"jquery",
-				"_js/jquery-ui.js"
-			],
-			[
-				"comma",
-				"exercises/scripts/undoRedo/commands.js"
-			],
-			[
-				"shape",
-				"exercises/scripts/shapesApp/ShapeFactory.js"
-			],
-			[
-				"view",
-				"exercises/scripts/view.js"
-			],
-			[
-				"dic",
-				"exercises/res/dictionary_english.txt"
-			],
-			[
-				"dict",
-				"exercises/res/dictionary_english.txt"
 			]
 		],
 		"width": 0.0

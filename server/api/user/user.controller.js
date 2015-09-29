@@ -41,11 +41,10 @@ function addFriend(req, res, next) {
     .then(function(friend) {
       //email not registered
       if(!friend) {
-        return res.status(400).json({
+        return res.status(404).json({
           message: "Can't find this user " + email
         });
       }
-      
       //contact already exists
       if(user.friends.indexOf(friend._id) !== -1)
       {
@@ -63,6 +62,7 @@ function addFriend(req, res, next) {
           //   friend.friendRequests = []; //for those users without this field
           //update: all of users have such field, we'll leave this code here as an example
           //of what to do if a new field is added and the current user doesn't have such field
+          //isma, TODO, don't use push, use $addToSet or add a method inside the user model
           friend.friendRequests.push(user);
           return friend.saveAsync();
         })
@@ -95,7 +95,7 @@ function removeFriend(req, res, next) {
 
   var idx = user.friends.indexOf(friendId);
   if(idx === -1) {
-    res.status(400).json({message: "Friend already removed"});
+    return res.status(400).json({message: "Friend already removed"});
   }
   user.friends.splice(idx, 1);
   user.saveAsync()
@@ -278,7 +278,7 @@ exports.me = function(req, res, next) {
       if (!user) {
         return res.status(401).end();
       }
-      return user.populateMembers();
+      return user.populateFriends();
     })
     .then(function(user) {
       if(!user) {
@@ -339,4 +339,24 @@ exports.updateFriendList = function(req, res, next) {
   }
 }
 
+/* 
+  Returns the information of a user by email
+*/
+exports.getByEmail = function(req, res, next) {
+  var email = req.query.email;
+  if(!email) {
+    return res.status(400).json({message: 'email param missing in query'});
+  }
 
+  User.findOneAsync({ email: email }, "email name")
+    .then(function(user) {
+      if(!user) {
+        return res.status(404).json({message: "User not found, please check the email"});
+      }
+
+      res.status(200).json(user);
+
+    })
+    .catch(handleError(res));
+  // res.status(200).json({msg: 'ok'});
+}

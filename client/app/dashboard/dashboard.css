@@ -8,11 +8,20 @@ html, body {
 }
 
 .contacts-main {
-	background-color: #afa;
+	background-color: #f00; /*If we see bright red, something is wrong*/
+}
+
+.contacts-wrapper {
+	/*background-color: #ccc;*/
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .chat-main {
 	background-color: #f00; /*If we see bright red, something is wrong*/
+}
+
+.flex-column {
 	display: flex;
 	flex-direction: column;
 }

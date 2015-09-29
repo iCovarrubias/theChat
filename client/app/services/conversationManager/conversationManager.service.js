@@ -8,7 +8,6 @@ angular.module('theChatApp')
    
     /*
       A helper method that initializes the necessary data to chat with friendId,
-      this method must be called before saveMessage
     */
     function initConversation(friendId) {
       conversations[friendId] = {

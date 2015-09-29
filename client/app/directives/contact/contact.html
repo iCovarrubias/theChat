@@ -1,0 +1,19 @@
+<div class="contact" ng-click="selectContact(contactInfo)">
+	<div class="contact-name">
+		<h4>{{contactInfo.name}}</h4>
+	</div>
+	<button class="btn contact-btn-ok"
+		type="button"
+		ng-click="acceptFriend(contactInfo)">
+		<span class="glyphicon glyphicon-ok"></span>
+		<!-- <span class="glyphicon glyphicon-align-center"></span> -->
+	</button>
+	<button class="btn contact-btn-cancel"
+		type="button"
+		ng-click="removeFriend(contactInfo)">
+		<span class="glyphicon glyphicon-remove"></span>
+		<!-- <span class="glyphicon glyphicon-align-center"></span> -->
+	</button>
+
+
+</div>

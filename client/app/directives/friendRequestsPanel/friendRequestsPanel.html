@@ -1,0 +1,9 @@
+
+<div ng-hide="friendRequests.length">
+	<h3>You don't have any pending friend requests</h3>
+</div>
+
+<div ng-show="friendRequests.length">
+	<h3>Your friend requests</h3>
+	<contacts-panel contact-list="friendRequests"></contacts-panel>
+</div>

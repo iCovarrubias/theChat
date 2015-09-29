@@ -7,6 +7,9 @@ var auth = require('../../auth/auth.service');
 
 var router = express.Router();
 
+//must be before /:id
+router.get('/getByEmail', auth.isAuthenticated(), controller.getByEmail);
+
 //auto generated routes
 router.get('/', auth.hasRole('admin'), controller.index);
 router.delete('/:id', auth.hasRole('admin'), controller.destroy);
