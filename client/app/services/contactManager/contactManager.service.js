@@ -271,7 +271,7 @@ angular.module('theChatApp')
                 members: res.members,
                 name: res.name
               };
-              addToSet(user.groups, result, "_id");
+              addToSet(result, user.groups, "_id");
               return result;
           })
           .catch(function(res) {

@@ -44,14 +44,14 @@ angular.module('theChatApp')
     };
 
     $scope.onSendMessage = function(message, contentType, isGroupMessage) {
-        if(false)
-            return sendScribble();
-
-        sendTextMessage(message, contentType, isGroupMessage);
+        if(contentType === "text") {
+            sendTextMessage(message, contentType, isGroupMessage);
+        } else {
+            return sendScribble(message, contentType, isGroupMessage);
+        }
     };
 
     
-    //isma, TODO, do we use this function?
     function sendTextMessage(msg, contentType, isGroupMessage){
         //the message to be sent
         var aMessage = {
@@ -75,9 +75,26 @@ angular.module('theChatApp')
         });
     }
 
-    function sendScribble(){
-        //isma placeholder
-        console.error('This functionalty is not available yet');
+    function sendScribble(data, contentType, isGroupMessage){
+        var aMessage = {
+            message: data,
+            friendId: $scope.currentFriend._id,
+            contentType: contentType,
+            from: user.name
+        };
+        
+        if(isGroupMessage === true) { aMessage.isGroupMessage = true; }
+
+        //save msg (the message to be displayed)
+        conversationManager.saveMessage(aMessage, aMessage.friendId);
+
+
+        //emit
+        socket.emit('new message', aMessage, function(error, message) {
+            if(error) { return console.log(message);}
+            //isma, TODO receives back a time-stamped message from server
+            //you could implement something like sending/sent/received/visto
+        });
     }
 
     socket.on('new message', function(data){

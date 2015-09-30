@@ -1,3 +1,11 @@
+.chat-header, .chat-header-placeholder {
+	background-color: #faa;
+	display: flex;
+	height: 55px;
+	flex-direction: row;
+	flex: none;
+	align-items: center;
+}
 
 
 .chat-title-avatar {

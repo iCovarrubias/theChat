@@ -1,8 +1,8 @@
-.msg {
+.msg, .scribble {
 	margin-bottom: 9px;
 }
 
-.msg:after {
+.msg:after, .scribble:after {
 	content: '';
 	display: table;
 	clear: both;
@@ -12,12 +12,12 @@
 	max-width: 45%;
 }
 
-.msg .msg-out {
+.msg .msg-out, .scribble .msg-out {
 	background-color: #ccc;
 	float: right;
 }
 
-.msg .msg-in {
+.msg .msg-in, .scribble .msg-in {
 	background-color: #eee;
 	float: left;
 }

@@ -15,14 +15,29 @@ angular.module('theChatApp')
     function createMessage(scope, message, type) {
         if(typeof message === "string")
         {
-            message = {message: message, type: type};
+          type = type===undefined?"msg-out":type;
+          message = {message: message, type: type};
         }
         //isma TODO: we can re-use the same compile function and just change the scope??
-        console.log('message is:', message);
+        // console.log('message is:', message);
         scope.msg = message;
         var messageCompileFn = $compile('<message msg="msg"></message>'); 
         var elem = messageCompileFn(scope);
         return elem;
+    }
+
+    /* 
+        A function that compiles a <scribble>
+        arguments:
+            message: object
+                object: {message: data, type: "msg-out|msg-in"}
+            type: msg-out or msg-in 
+    */
+    function createScribble(scope, message, type) {
+      scope.msg = message;
+      var scribbleCompileFn = $compile('<scribble msg="msg"></scribble>'); 
+      var elem = scribbleCompileFn(scope);
+      return elem;
     }
 
     /*
@@ -40,7 +55,9 @@ angular.module('theChatApp')
       //isma, TODO, this can be greatly optimized if we cache elements too
       for(var i = 0; i < len; i++) {
         var msgScope = scope.$new(true); //isma, TODO: ask ivan, is it a good idea to create this many scopes?
-        var msg = createMessage(msgScope, messages[i]);
+        var msgType = messages[i].contentType;
+        var msg = msgType === "text"?
+          createMessage(msgScope, messages[i]):createScribble(msgScope, messages[i]);
         element.append(msg);
       }
     }
@@ -106,9 +123,15 @@ angular.module('theChatApp')
             controller: 'ScribbleEditorCtrl'
           });
           modalInstance.result.then(function (data) {
-            console.warn('WIP, modal OK', data);
+            var msg = {
+              message: data,
+              contentType:  "scribble",
+              isGroupMessage: !!$scope.currentFriend.members
+            };
+            
+            $scope.onSendMessage(msg);
           }, function () {
-            console.warn('WIP, Modal dismissed at');
+            console.warn('WIP, Modal dismissed');
           });
         };
       }
