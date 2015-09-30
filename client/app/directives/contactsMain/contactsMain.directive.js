@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('theChatApp')
-  .directive('contactsMain', function (contactManager) {
+  .directive('contactsMain', function (Auth, contactManager) {
    
 
     //directive definition object
@@ -10,6 +10,8 @@ angular.module('theChatApp')
       restrict: 'E',
       scope: {},
       controller: function($scope, contactManager) {
+
+        $scope.user = Auth.getCurrentUser();
         var viewUrls = { 
           contacts:     'app/directives/contactsMain/include/contactsPanelContainer.html',
           addUser:      'app/directives/contactsMain/include/addUserPanelContainer.html',

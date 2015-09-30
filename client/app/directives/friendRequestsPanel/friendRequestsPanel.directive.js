@@ -13,7 +13,7 @@ angular.module('theChatApp')
     			contactManager.rejectFriendRequest(contact)
     				.then(function() {
               childScope.$destroy();
-    					element.remove();
+              element.remove();
     				})
     				.catch(function(err) {
     					console.error('something went wrong while rejecting friend', contact._id);

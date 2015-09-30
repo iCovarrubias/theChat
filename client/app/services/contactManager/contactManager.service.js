@@ -27,6 +27,43 @@ angular.module('theChatApp')
     }
 
     /*
+      A function that adds unique entries in an array
+      parameters:
+      1. The entry to be added
+      2. array
+      3. if the first parameter is an array of objects, this param is mandatory 
+          you can use this  parameter to set which property must not be repeated
+         if the array is an array of primitives, this parameter is optional
+
+      returns: false if entry already exists
+                true if entry was added
+    */
+    function addToSet(entry, array, property) {
+      if(!angular.isArray(array)) {throw new Error('second parameter must be an array'); }
+
+      var idx = -1;
+      if(typeof entry === "object") {
+        if(property === undefined) { throw new Error('property not set'); }
+
+        //we receive an array of objects
+        for(var i = 0; i < array.length; i++) {
+          if(array[i][property] === entry[property]) {
+            idx = i;
+            break;
+          }
+        }
+      } else {
+        //we are receiving an array of primitives
+        idx = array.indexOf(entry);
+      }
+      if(idx === -1) { 
+        array.push(entry); 
+        return true;
+      }
+      return false;
+    }
+
+    /*
       A helper function that looks for an element in an array
       using the _id property and removes it.
 
@@ -81,23 +118,29 @@ angular.module('theChatApp')
         return User
           .updateFriendList({id: myId}, {op: 'acceptFriendRequest', friendId: friendId})
           .$promise
-          .then(function(friendRes){
-            var friendId = friendRes._id;
-            if(!friendId){ throw new Error('No friendId returned by server'); }
+          .then(function(res){
+            //ok, remove the friend request
+            findByIdAndRemove(contact._id, user.friendRequests);//isma, WARN, this can de-sync our app
+
+            if(!res._id){
+              // No contact returned by the server, although we had no errors. We can get this
+              // response if we are accepting a friend request from a user we already have.
+              return contact;
+            }
             
-             var result = {
-              _id: friendRes._id,
-              email: friendRes.email,
-              name: friendRes.name
+            var result = {
+              _id: res._id,
+              email: res.email,
+              name: res.name
             };
 
-            findByIdAndRemove(result._id, user.friendRequests);//isma, WARN, this can de-sync our app
-            user.friends.push(result);//isma, WARN, this can de-sync our app
+            
+            addToSet(result, user.friends, "_id");//isma, WARN, this can de-sync our app
             return result;
           })
           .then(function(friend) {
-             $rootScope.$broadcast('contact created', contact);
-             return friend;
+            $rootScope.$broadcast('contact created', contact);
+            return friend;
           });
       },
 
@@ -113,8 +156,10 @@ angular.module('theChatApp')
       },
 
       onNewFriendRequest: function(data) {
-        user.friendRequests.push(data); //isma, WARN, this can potentially de-sync our app
-        $rootScope.$broadcast('new friend request', data);
+        var res = addToSet(data, user.friendRequests, "_id"); //isma, WARN, this can potentially de-sync our app
+        if(res === true ) { 
+          $rootScope.$broadcast('new friend request', data);
+        }
       },
 
       onAddedToGroup: function(data) {
@@ -124,7 +169,7 @@ angular.module('theChatApp')
             return; //already a member of such group
           }
         }
-        user.groups.push(data);
+        addToSet(data, user.groups, "_id");
         $rootScope.$broadcast('added to group', data);
       },
 
@@ -141,7 +186,7 @@ angular.module('theChatApp')
               email: friendRes.email,
               name: friendRes.name
             };
-            user.friends.push(result);
+            addToSet(result, user.friends, "_id");
             return result;
           }).then( function(friend) {
             $rootScope.$broadcast('contact created', friend);
@@ -226,7 +271,7 @@ angular.module('theChatApp')
                 members: res.members,
                 name: res.name
               };
-              user.groups.push(result);
+              addToSet(user.groups, result, "_id");
               return result;
           })
           .catch(function(res) {
@@ -244,7 +289,8 @@ angular.module('theChatApp')
         var contactScope = scope.$new(true);
         contactScope.contact = contactInfo;
         // var contactStr = '<contact contact-info="contact"></contact>';
-        var contactStr = '<contact contact-info="contact" ';
+        var contactStr = '<contact cid="' + contactInfo._id + '" ';
+        contactStr += 'contact-info="contact" ';
         if(scope.noCancelBtn) { contactStr += 'no-cancel-btn ';}
         if(scope.noOkBtn) { contactStr += 'no-ok-btn ';}
 

@@ -134,27 +134,36 @@ function acceptFriendRequest(req, res, next) {
     .then(function(friend){
       if(!friend) {
         //the user probably erased his account
-        throw new Error({message: "Can't find user"});
+        throw new Error({status: 404, message: "Can't find user"});
       }
-      //remove from friendRequests
+
       var idx = user.friendRequests.indexOf(id);
+      //remove from friendRequests
       if(idx !== -1) {
         user.friendRequests.splice(idx, 1);
       }
 
+      //se if user is already on friend list
+      idx = user.friends.indexOf(id);
+      if(idx !== -1) {
+        console.log('OK! response 204');
+        return res.status(204).end();
+      }
+
+
       //add to my friends
-      user.friends.push(id);
+      user.friends.addToSet(id);
       return user.saveAsync().then(function(){
-        return friend;
+        console.log('OK! response 200')
+        res.status(200).json(friend);
       });
     })
-    .then(function(friend) {
-        // console.log('Friend Reqest correctly accepted', friend);
-        //only return "_id email name"
-        return res.status(200).json(friend);
-    })
     .catch(function(error){
-      validationError(res)
+      if(error && error.status) {
+        res.status(error.status);
+      } else {
+        res.status(500).end();
+      }
     });
 
 }

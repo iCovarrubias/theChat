@@ -1,0 +1,22 @@
+<div class="modal-draw-scribble">
+	<div class="modal-header">
+		<form name="modalScribble" novalidate ng-submit="ok($event)">
+			<h3 class="modal-title">Draw something!</h3>
+			<div class="modal-body">
+				<div class="canvas-wrapper">
+					<div pw-canvas options="{width: 500, height: 150, color: myColor, opacity: 0.9}"></div>
+				</div>
+				<div pw-color-selector="['#000', '#9CB199', '#CF3759', '#485247', '#E77547', '#D38E47', '#0A6A74', '#153974']" color="myColor"></div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" ng-click="pickColor()">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</button>
+				<button class="btn btn-primary" type="submit">OK</button>
+		        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+			</div>
+
+		</form>
+	</div>
+</div>

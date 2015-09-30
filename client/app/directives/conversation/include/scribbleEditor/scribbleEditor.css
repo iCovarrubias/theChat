@@ -1,0 +1,19 @@
+.pwColor {
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border: 2px solid transparent;
+}
+
+.modal-draw-scribble .canvas-wrapper {
+	padding: 5px;
+	border: 1px #ccc solid;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.modal-draw-scribble .canvas-wrapper .pwCanvasPaint {
+	margin: 0 auto;
+}

@@ -30,6 +30,7 @@
       <link rel="stylesheet" href="app/directives/contactsPanel/contactsPanel.css">
       <link rel="stylesheet" href="app/directives/conversation/conversation.css">
       <link rel="stylesheet" href="app/directives/conversation/conversationHead/conversationHead.css">
+      <link rel="stylesheet" href="app/directives/conversation/include/scribbleEditor/scribbleEditor.css">
       <link rel="stylesheet" href="app/directives/createGroupPanel/createGroupPanel.css">
       <link rel="stylesheet" href="app/directives/friendRequestsPanel/friendRequestsPanel.css">
       <link rel="stylesheet" href="app/directives/message/message.css">
@@ -37,6 +38,7 @@
       <link rel="stylesheet" href="components/footer/footer.css">
       <link rel="stylesheet" href="components/modal/modal.css">
       <!-- endinjector -->
+      <link rel="stylesheet" href="app/directives/conversation/include/scribbleEditor/scribbleEditor.css">
     <!-- endbuild -->
   </head>
   <body ng-app="theChatApp">
@@ -66,13 +68,14 @@
       <!-- bower:js -->
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/angular-resource/angular-resource.js"></script>
-      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
       <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-canvas-painter/dist/angular-canvas-painter.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
       <script src="bower_components/angular-socket-io/socket.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <!-- endbower -->
       <script src="socket.io-client/socket.io.js"></script>
     <!-- endbuild -->
@@ -95,6 +98,7 @@
       <script src="app/directives/contactsPanel/contactsPanel.directive.js"></script>
       <script src="app/directives/conversation/conversation.directive.js"></script>
       <script src="app/directives/conversation/conversationHead/conversationHead.directive.js"></script>
+      <script src="app/directives/conversation/include/scribbleEditor/scribbleEditor.controller.js"></script>
       <script src="app/directives/createGroupPanel/createGroupPanel.directive.js"></script>
       <script src="app/directives/friendRequestsPanel/friendRequestsPanel.directive.js"></script>
       <script src="app/directives/message/message.directive.js"></script>

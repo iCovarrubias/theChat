@@ -97,6 +97,20 @@ angular.module('theChatApp')
           }
         });
 
+      },
+      controller: function($scope, $modal) {
+        $scope.openScribbleEditor = function() {
+          var modalInstance = $modal.open({
+            animation: true,
+            templateUrl: 'app/directives/conversation/include/scribbleEditor/modalDrawScribble.html',
+            controller: 'ScribbleEditorCtrl'
+          });
+          modalInstance.result.then(function (data) {
+            console.warn('WIP, modal OK', data);
+          }, function () {
+            console.warn('WIP, Modal dismissed at');
+          });
+        };
       }
     };
   });
