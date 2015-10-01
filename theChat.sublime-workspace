@@ -4,28 +4,116 @@
 		"selected_items":
 		[
 			[
+				"conve",
+				"conversation"
+			],
+			[
+				"cnve",
+				"conversationHead"
+			],
+			[
+				"grou",
+				"groupId"
+			],
+			[
+				"gr",
+				"group"
+			],
+			[
+				"memb",
+				"members"
+			],
+			[
+				"membe",
+				"memberArr"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"contact",
+				"contactInfo"
+			],
+			[
+				"contac",
+				"contactInfo"
+			],
+			[
+				"elem",
+				"elementPan"
+			],
+			[
+				"co",
+				"contact"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"conta",
+				"contact-btn-cancel"
+			],
+			[
+				"msg",
+				"msg-out"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"frien",
+				"friend"
+			],
+			[
+				"obe",
+				"object"
+			],
+			[
+				"frie",
+				"friendId"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"friend",
+				"friends"
+			],
+			[
+				"send",
+				"senderId"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"Gro",
+				"GroupSchema"
+			],
+			[
+				"mem",
+				"members"
+			],
+			[
 				"le",
 				"length"
 			],
 			[
-				"mem",
-				"memberSocket"
-			],
-			[
-				"memb",
-				"memberId"
-			],
-			[
 				"gro",
 				"groupData"
-			],
-			[
-				"grou",
-				"groupData"
-			],
-			[
-				"user",
-				"userId"
 			],
 			[
 				"fin",
@@ -44,20 +132,8 @@
 				"users"
 			],
 			[
-				"contact",
-				"contactManager"
-			],
-			[
-				"conta",
-				"contact"
-			],
-			[
 				"contacTs",
 				"contactStr"
-			],
-			[
-				"frie",
-				"friendRequests"
 			],
 			[
 				"no",
@@ -72,20 +148,12 @@
 				"contactManager"
 			],
 			[
-				"frien",
-				"friend"
-			],
-			[
 				"addTo",
 				"addToGroup"
 			],
 			[
 				"lg",
 				"log"
-			],
-			[
-				"membe",
-				"members"
 			],
 			[
 				"member",
@@ -110,10 +178,6 @@
 			[
 				"pad",
 				"padding-top"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"padd",
@@ -174,10 +238,6 @@
 			[
 				"res",
 				"result"
-			],
-			[
-				"cons",
-				"console"
 			],
 			[
 				"getC",
@@ -268,10 +328,6 @@
 				"message"
 			],
 			[
-				"conve",
-				"conversations"
-			],
-			[
 				"cure",
 				"currentConversation"
 			],
@@ -292,20 +348,12 @@
 				"currentFriend"
 			],
 			[
-				"msg",
-				"msgForm"
-			],
-			[
 				"di",
 				"display"
 			],
 			[
 				"wi",
 				"width"
-			],
-			[
-				"friend",
-				"friendId"
 			],
 			[
 				"friendReque",
@@ -370,10 +418,6 @@
 			[
 				"req",
 				"req"
-			],
-			[
-				"co",
-				"console"
 			],
 			[
 				"cont",
@@ -470,118 +514,93 @@
 			[
 				"collectio",
 				"collections"
-			],
-			[
-				"coll",
-				"collectionName"
-			],
-			[
-				"c",
-				"collections"
-			],
-			[
-				"n",
-				"null"
-			],
-			[
-				"eq",
-				"eql"
-			],
-			[
-				"article",
-				"Article"
-			],
-			[
-				"AUth",
-				"handleAuthCallbackError"
-			],
-			[
-				"FACEB",
-				"FACEBOOK_APP_SECRET"
-			],
-			[
-				"eve",
-				"everyauth"
-			],
-			[
-				"ever",
-				"everymodule"
-			],
-			[
-				"YAHOO",
-				"YAHOO_CONSUMER_SECRET"
-			],
-			[
-				"seed",
-				"seedArticles"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "client/app/directives/addUserPanel/addUserPanel.directive.js",
+			"file": "client/app/directives/contactsMain/contactsMain.directive.js",
 			"settings":
 			{
-				"buffer_size": 1973,
+				"buffer_size": 3057,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/directives/createGroupPanel/createGroupPanel.directive.js",
+			"contents": "Searching 484 files for \"contact selected\"\n\nC:\\dev\\TheChat\\client\\app\\directives\\contact\\contact.directive.js:\n   49        	scope.selectContact= function(contact) {\n   50        		// contactsMainCtrl.openChatPanel(contact);\n   51:           scope.$emit('contact selected', scope, element, contact);\n   52        	}\n   53  \n\nC:\\dev\\TheChat\\client\\app\\directives\\contactsMain\\contactsMain.directive.js:\n   39          $scope.switchView('contacts');\n   40  \n   41:         $scope.$on('contact selected', function(event, contact) {\n   42            console.log('open chat panel ', contact);\n   43            $scope.$emit('openChatPanel', contact);\n\nC:\\dev\\TheChat\\client\\app\\directives\\createGroupPanel\\createGroupPanel.directive.js:\n   62          // });\n   63  \n   64:         $scope.$on('contact selected', function(event, childScope, element, contact) {\n   65            event.stopPropagation();\n   66            //don't add if its repeated\n\n3 matches across 3 files\n\n\nSearching 484 files for \"facebook\"\n\nC:\\dev\\TheChat\\client\\app\\account\\login\\loginSocial\\loginSocial.css:\n    1: .btn-facebook {\n    2    color: #fff;\n    3    background-color: #3B5998;\n\nC:\\dev\\TheChat\\client\\app\\account\\login\\loginSocial\\loginSocial.html:\n    1  <div>\n    2    <p>Or login with your favorite social network:</p>\n    3:   <a class=\"btn btn-facebook\" href=\"\" ng-click=\"loginOauth('facebook')\">\n    4:     <i class=\"fa fa-facebook\"></i> F\n    5    </a>\n    6    <!-- <a class=\"btn btn-google-plus\" href=\"\" ng-click=\"loginOauth('google')\"> -->\n\nC:\\dev\\TheChat\\client\\bower_components\\font-awesome\\css\\font-awesome.css:\n  558    content: \"\\f081\";\n  559  }\n  560: .fa-facebook-square:before {\n  561    content: \"\\f082\";\n  562  }\n  ...\n  628    content: \"\\f099\";\n  629  }\n  630: .fa-facebook-f:before,\n  631: .fa-facebook:before {\n  632    content: \"\\f09a\";\n  633  }\n  ...\n 1784    content: \"\\f22d\";\n 1785  }\n 1786: .fa-facebook-official:before {\n 1787    content: \"\\f230\";\n 1788  }\n\nC:\\dev\\TheChat\\client\\bower_components\\font-awesome\\css\\font-awesome.min.css:\n    2   *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome\n    3   *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n    4:  */@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.4.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);-webkit-transform:scale(1, -1);-ms-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:\"\\f000\"}.fa-music:before{content:\"\\f001\"}.fa-search:before{content:\"\\f002\"}.fa-envelope-o:before{content:\"\\f003\"}.fa-heart:before{content:\"\\f004\"}.fa-star:before{content:\"\\f005\"}.fa-star-o:before{content:\"\\f006\"}.fa-user:before{content:\"\\f007\"}.fa-film:before{content:\"\\f008\"}.fa-th-large:before{content:\"\\f009\"}.fa-th:before{content:\"\\f00a\"}.fa-th-list:before{content:\"\\f00b\"}.fa-check:before{content:\"\\f00c\"}.fa-remove:before,.fa-close:before,.fa-times:before{content:\"\\f00d\"}.fa-search-plus:before{content:\"\\f00e\"}.fa-search-minus:before{content:\"\\f010\"}.fa-power-off:before{content:\"\\f011\"}.fa-signal:before{content:\"\\f012\"}.fa-gear:before,.fa-cog:before{content:\"\\f013\"}.fa-trash-o:before{content:\"\\f014\"}.fa-home:before{content:\"\\f015\"}.fa-file-o:before{content:\"\\f016\"}.fa-clock-o:before{content:\"\\f017\"}.fa-road:before{content:\"\\f018\"}.fa-download:before{content:\"\\f019\"}.fa-arrow-circle-o-down:before{content:\"\\f01a\"}.fa-arrow-circle-o-up:before{content:\"\\f01b\"}.fa-inbox:before{content:\"\\f01c\"}.fa-play-circle-o:before{content:\"\\f01d\"}.fa-rotate-right:before,.fa-repeat:before{content:\"\\f01e\"}.fa-refresh:before{content:\"\\f021\"}.fa-list-alt:before{content:\"\\f022\"}.fa-lock:before{content:\"\\f023\"}.fa-flag:before{content:\"\\f024\"}.fa-headphones:before{content:\"\\f025\"}.fa-volume-off:before{content:\"\\f026\"}.fa-volume-down:before{content:\"\\f027\"}.fa-volume-up:before{content:\"\\f028\"}.fa-qrcode:before{content:\"\\f029\"}.fa-barcode:before{content:\"\\f02a\"}.fa-tag:before{content:\"\\f02b\"}.fa-tags:before{content:\"\\f02c\"}.fa-book:before{content:\"\\f02d\"}.fa-bookmark:before{content:\"\\f02e\"}.fa-print:before{content:\"\\f02f\"}.fa-camera:before{content:\"\\f030\"}.fa-font:before{content:\"\\f031\"}.fa-bold:before{content:\"\\f032\"}.fa-italic:before{content:\"\\f033\"}.fa-text-height:before{content:\"\\f034\"}.fa-text-width:before{content:\"\\f035\"}.fa-align-left:before{content:\"\\f036\"}.fa-align-center:before{content:\"\\f037\"}.fa-align-right:before{content:\"\\f038\"}.fa-align-justify:before{content:\"\\f039\"}.fa-list:before{content:\"\\f03a\"}.fa-dedent:before,.fa-outdent:before{content:\"\\f03b\"}.fa-indent:before{content:\"\\f03c\"}.fa-video-camera:before{content:\"\\f03d\"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:\"\\f03e\"}.fa-pencil:before{content:\"\\f040\"}.fa-map-marker:before{content:\"\\f041\"}.fa-adjust:before{content:\"\\f042\"}.fa-tint:before{content:\"\\f043\"}.fa-edit:before,.fa-pencil-square-o:before{content:\"\\f044\"}.fa-share-square-o:before{content:\"\\f045\"}.fa-check-square-o:before{content:\"\\f046\"}.fa-arrows:before{content:\"\\f047\"}.fa-step-backward:before{content:\"\\f048\"}.fa-fast-backward:before{content:\"\\f049\"}.fa-backward:before{content:\"\\f04a\"}.fa-play:before{content:\"\\f04b\"}.fa-pause:before{content:\"\\f04c\"}.fa-stop:before{content:\"\\f04d\"}.fa-forward:before{content:\"\\f04e\"}.fa-fast-forward:before{content:\"\\f050\"}.fa-step-forward:before{content:\"\\f051\"}.fa-eject:before{content:\"\\f052\"}.fa-chevron-left:before{content:\"\\f053\"}.fa-chevron-right:before{content:\"\\f054\"}.fa-plus-circle:before{content:\"\\f055\"}.fa-minus-circle:before{content:\"\\f056\"}.fa-times-circle:before{content:\"\\f057\"}.fa-check-circle:before{content:\"\\f058\"}.fa-question-circle:before{content:\"\\f059\"}.fa-info-circle:before{content:\"\\f05a\"}.fa-crosshairs:before{content:\"\\f05b\"}.fa-times-circle-o:before{content:\"\\f05c\"}.fa-check-circle-o:before{content:\"\\f05d\"}.fa-ban:before{content:\"\\f05e\"}.fa-arrow-left:before{content:\"\\f060\"}.fa-arrow-right:before{content:\"\\f061\"}.fa-arrow-up:before{content:\"\\f062\"}.fa-arrow-down:before{content:\"\\f063\"}.fa-mail-forward:before,.fa-share:before{content:\"\\f064\"}.fa-expand:before{content:\"\\f065\"}.fa-compress:before{content:\"\\f066\"}.fa-plus:before{content:\"\\f067\"}.fa-minus:before{content:\"\\f068\"}.fa-asterisk:before{content:\"\\f069\"}.fa-exclamation-circle:before{content:\"\\f06a\"}.fa-gift:before{content:\"\\f06b\"}.fa-leaf:before{content:\"\\f06c\"}.fa-fire:before{content:\"\\f06d\"}.fa-eye:before{content:\"\\f06e\"}.fa-eye-slash:before{content:\"\\f070\"}.fa-warning:before,.fa-exclamation-triangle:before{content:\"\\f071\"}.fa-plane:before{content:\"\\f072\"}.fa-calendar:before{content:\"\\f073\"}.fa-random:before{content:\"\\f074\"}.fa-comment:before{content:\"\\f075\"}.fa-magnet:before{content:\"\\f076\"}.fa-chevron-up:before{content:\"\\f077\"}.fa-chevron-down:before{content:\"\\f078\"}.fa-retweet:before{content:\"\\f079\"}.fa-shopping-cart:before{content:\"\\f07a\"}.fa-folder:before{content:\"\\f07b\"}.fa-folder-open:before{content:\"\\f07c\"}.fa-arrows-v:before{content:\"\\f07d\"}.fa-arrows-h:before{content:\"\\f07e\"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:\"\\f080\"}.fa-twitter-square:before{content:\"\\f081\"}.fa-facebook-square:before{content:\"\\f082\"}.fa-camera-retro:before{content:\"\\f083\"}.fa-key:before{content:\"\\f084\"}.fa-gears:before,.fa-cogs:before{content:\"\\f085\"}.fa-comments:before{content:\"\\f086\"}.fa-thumbs-o-up:before{content:\"\\f087\"}.fa-thumbs-o-down:before{content:\"\\f088\"}.fa-star-half:before{content:\"\\f089\"}.fa-heart-o:before{content:\"\\f08a\"}.fa-sign-out:before{content:\"\\f08b\"}.fa-linkedin-square:before{content:\"\\f08c\"}.fa-thumb-tack:before{content:\"\\f08d\"}.fa-external-link:before{content:\"\\f08e\"}.fa-sign-in:before{content:\"\\f090\"}.fa-trophy:before{content:\"\\f091\"}.fa-github-square:before{content:\"\\f092\"}.fa-upload:before{content:\"\\f093\"}.fa-lemon-o:before{content:\"\\f094\"}.fa-phone:before{content:\"\\f095\"}.fa-square-o:before{content:\"\\f096\"}.fa-bookmark-o:before{content:\"\\f097\"}.fa-phone-square:before{content:\"\\f098\"}.fa-twitter:before{content:\"\\f099\"}.fa-facebook-f:before,.fa-facebook:before{content:\"\\f09a\"}.fa-github:before{content:\"\\f09b\"}.fa-unlock:before{content:\"\\f09c\"}.fa-credit-card:before{content:\"\\f09d\"}.fa-feed:before,.fa-rss:before{content:\"\\f09e\"}.fa-hdd-o:before{content:\"\\f0a0\"}.fa-bullhorn:before{content:\"\\f0a1\"}.fa-bell:before{content:\"\\f0f3\"}.fa-certificate:before{content:\"\\f0a3\"}.fa-hand-o-right:before{content:\"\\f0a4\"}.fa-hand-o-left:before{content:\"\\f0a5\"}.fa-hand-o-up:before{content:\"\\f0a6\"}.fa-hand-o-down:before{content:\"\\f0a7\"}.fa-arrow-circle-left:before{content:\"\\f0a8\"}.fa-arrow-circle-right:before{content:\"\\f0a9\"}.fa-arrow-circle-up:before{content:\"\\f0aa\"}.fa-arrow-circle-down:before{content:\"\\f0ab\"}.fa-globe:before{content:\"\\f0ac\"}.fa-wrench:before{content:\"\\f0ad\"}.fa-tasks:before{content:\"\\f0ae\"}.fa-filter:before{content:\"\\f0b0\"}.fa-briefcase:before{content:\"\\f0b1\"}.fa-arrows-alt:before{content:\"\\f0b2\"}.fa-group:before,.fa-users:before{content:\"\\f0c0\"}.fa-chain:before,.fa-link:before{content:\"\\f0c1\"}.fa-cloud:before{content:\"\\f0c2\"}.fa-flask:before{content:\"\\f0c3\"}.fa-cut:before,.fa-scissors:before{content:\"\\f0c4\"}.fa-copy:before,.fa-files-o:before{content:\"\\f0c5\"}.fa-paperclip:before{content:\"\\f0c6\"}.fa-save:before,.fa-floppy-o:before{content:\"\\f0c7\"}.fa-square:before{content:\"\\f0c8\"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:\"\\f0c9\"}.fa-list-ul:before{content:\"\\f0ca\"}.fa-list-ol:before{content:\"\\f0cb\"}.fa-strikethrough:before{content:\"\\f0cc\"}.fa-underline:before{content:\"\\f0cd\"}.fa-table:before{content:\"\\f0ce\"}.fa-magic:before{content:\"\\f0d0\"}.fa-truck:before{content:\"\\f0d1\"}.fa-pinterest:before{content:\"\\f0d2\"}.fa-pinterest-square:before{content:\"\\f0d3\"}.fa-google-plus-square:before{content:\"\\f0d4\"}.fa-google-plus:before{content:\"\\f0d5\"}.fa-money:before{content:\"\\f0d6\"}.fa-caret-down:before{content:\"\\f0d7\"}.fa-caret-up:before{content:\"\\f0d8\"}.fa-caret-left:before{content:\"\\f0d9\"}.fa-caret-right:before{content:\"\\f0da\"}.fa-columns:before{content:\"\\f0db\"}.fa-unsorted:before,.fa-sort:before{content:\"\\f0dc\"}.fa-sort-down:before,.fa-sort-desc:before{content:\"\\f0dd\"}.fa-sort-up:before,.fa-sort-asc:before{content:\"\\f0de\"}.fa-envelope:before{content:\"\\f0e0\"}.fa-linkedin:before{content:\"\\f0e1\"}.fa-rotate-left:before,.fa-undo:before{content:\"\\f0e2\"}.fa-legal:before,.fa-gavel:before{content:\"\\f0e3\"}.fa-dashboard:before,.fa-tachometer:before{content:\"\\f0e4\"}.fa-comment-o:before{content:\"\\f0e5\"}.fa-comments-o:before{content:\"\\f0e6\"}.fa-flash:before,.fa-bolt:before{content:\"\\f0e7\"}.fa-sitemap:before{content:\"\\f0e8\"}.fa-umbrella:before{content:\"\\f0e9\"}.fa-paste:before,.fa-clipboard:before{content:\"\\f0ea\"}.fa-lightbulb-o:before{content:\"\\f0eb\"}.fa-exchange:before{content:\"\\f0ec\"}.fa-cloud-download:before{content:\"\\f0ed\"}.fa-cloud-upload:before{content:\"\\f0ee\"}.fa-user-md:before{content:\"\\f0f0\"}.fa-stethoscope:before{content:\"\\f0f1\"}.fa-suitcase:before{content:\"\\f0f2\"}.fa-bell-o:before{content:\"\\f0a2\"}.fa-coffee:before{content:\"\\f0f4\"}.fa-cutlery:before{content:\"\\f0f5\"}.fa-file-text-o:before{content:\"\\f0f6\"}.fa-building-o:before{content:\"\\f0f7\"}.fa-hospital-o:before{content:\"\\f0f8\"}.fa-ambulance:before{content:\"\\f0f9\"}.fa-medkit:before{content:\"\\f0fa\"}.fa-fighter-jet:before{content:\"\\f0fb\"}.fa-beer:before{content:\"\\f0fc\"}.fa-h-square:before{content:\"\\f0fd\"}.fa-plus-square:before{content:\"\\f0fe\"}.fa-angle-double-left:before{content:\"\\f100\"}.fa-angle-double-right:before{content:\"\\f101\"}.fa-angle-double-up:before{content:\"\\f102\"}.fa-angle-double-down:before{content:\"\\f103\"}.fa-angle-left:before{content:\"\\f104\"}.fa-angle-right:before{content:\"\\f105\"}.fa-angle-up:before{content:\"\\f106\"}.fa-angle-down:before{content:\"\\f107\"}.fa-desktop:before{content:\"\\f108\"}.fa-laptop:before{content:\"\\f109\"}.fa-tablet:before{content:\"\\f10a\"}.fa-mobile-phone:before,.fa-mobile:before{content:\"\\f10b\"}.fa-circle-o:before{content:\"\\f10c\"}.fa-quote-left:before{content:\"\\f10d\"}.fa-quote-right:before{content:\"\\f10e\"}.fa-spinner:before{content:\"\\f110\"}.fa-circle:before{content:\"\\f111\"}.fa-mail-reply:before,.fa-reply:before{content:\"\\f112\"}.fa-github-alt:before{content:\"\\f113\"}.fa-folder-o:before{content:\"\\f114\"}.fa-folder-open-o:before{content:\"\\f115\"}.fa-smile-o:before{content:\"\\f118\"}.fa-frown-o:before{content:\"\\f119\"}.fa-meh-o:before{content:\"\\f11a\"}.fa-gamepad:before{content:\"\\f11b\"}.fa-keyboard-o:before{content:\"\\f11c\"}.fa-flag-o:before{content:\"\\f11d\"}.fa-flag-checkered:before{content:\"\\f11e\"}.fa-terminal:before{content:\"\\f120\"}.fa-code:before{content:\"\\f121\"}.fa-mail-reply-all:before,.fa-reply-all:before{content:\"\\f122\"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:\"\\f123\"}.fa-location-arrow:before{content:\"\\f124\"}.fa-crop:before{content:\"\\f125\"}.fa-code-fork:before{content:\"\\f126\"}.fa-unlink:before,.fa-chain-broken:before{content:\"\\f127\"}.fa-question:before{content:\"\\f128\"}.fa-info:before{content:\"\\f129\"}.fa-exclamation:before{content:\"\\f12a\"}.fa-superscript:before{content:\"\\f12b\"}.fa-subscript:before{content:\"\\f12c\"}.fa-eraser:before{content:\"\\f12d\"}.fa-puzzle-piece:before{content:\"\\f12e\"}.fa-microphone:before{content:\"\\f130\"}.fa-microphone-slash:before{content:\"\\f131\"}.fa-shield:before{content:\"\\f132\"}.fa-calendar-o:before{content:\"\\f133\"}.fa-fire-extinguisher:before{content:\"\\f134\"}.fa-rocket:before{content:\"\\f135\"}.fa-maxcdn:before{content:\"\\f136\"}.fa-chevron-circle-left:before{content:\"\\f137\"}.fa-chevron-circle-right:before{content:\"\\f138\"}.fa-chevron-circle-up:before{content:\"\\f139\"}.fa-chevron-circle-down:before{content:\"\\f13a\"}.fa-html5:before{content:\"\\f13b\"}.fa-css3:before{content:\"\\f13c\"}.fa-anchor:before{content:\"\\f13d\"}.fa-unlock-alt:before{content:\"\\f13e\"}.fa-bullseye:before{content:\"\\f140\"}.fa-ellipsis-h:before{content:\"\\f141\"}.fa-ellipsis-v:before{content:\"\\f142\"}.fa-rss-square:before{content:\"\\f143\"}.fa-play-circle:before{content:\"\\f144\"}.fa-ticket:before{content:\"\\f145\"}.fa-minus-square:before{content:\"\\f146\"}.fa-minus-square-o:before{content:\"\\f147\"}.fa-level-up:before{content:\"\\f148\"}.fa-level-down:before{content:\"\\f149\"}.fa-check-square:before{content:\"\\f14a\"}.fa-pencil-square:before{content:\"\\f14b\"}.fa-external-link-square:before{content:\"\\f14c\"}.fa-share-square:before{content:\"\\f14d\"}.fa-compass:before{content:\"\\f14e\"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:\"\\f150\"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:\"\\f151\"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:\"\\f152\"}.fa-euro:before,.fa-eur:before{content:\"\\f153\"}.fa-gbp:before{content:\"\\f154\"}.fa-dollar:before,.fa-usd:before{content:\"\\f155\"}.fa-rupee:before,.fa-inr:before{content:\"\\f156\"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:\"\\f157\"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:\"\\f158\"}.fa-won:before,.fa-krw:before{content:\"\\f159\"}.fa-bitcoin:before,.fa-btc:before{content:\"\\f15a\"}.fa-file:before{content:\"\\f15b\"}.fa-file-text:before{content:\"\\f15c\"}.fa-sort-alpha-asc:before{content:\"\\f15d\"}.fa-sort-alpha-desc:before{content:\"\\f15e\"}.fa-sort-amount-asc:before{content:\"\\f160\"}.fa-sort-amount-desc:before{content:\"\\f161\"}.fa-sort-numeric-asc:before{content:\"\\f162\"}.fa-sort-numeric-desc:before{content:\"\\f163\"}.fa-thumbs-up:before{content:\"\\f164\"}.fa-thumbs-down:before{content:\"\\f165\"}.fa-youtube-square:before{content:\"\\f166\"}.fa-youtube:before{content:\"\\f167\"}.fa-xing:before{content:\"\\f168\"}.fa-xing-square:before{content:\"\\f169\"}.fa-youtube-play:before{content:\"\\f16a\"}.fa-dropbox:before{content:\"\\f16b\"}.fa-stack-overflow:before{content:\"\\f16c\"}.fa-instagram:before{content:\"\\f16d\"}.fa-flickr:before{content:\"\\f16e\"}.fa-adn:before{content:\"\\f170\"}.fa-bitbucket:before{content:\"\\f171\"}.fa-bitbucket-square:before{content:\"\\f172\"}.fa-tumblr:before{content:\"\\f173\"}.fa-tumblr-square:before{content:\"\\f174\"}.fa-long-arrow-down:before{content:\"\\f175\"}.fa-long-arrow-up:before{content:\"\\f176\"}.fa-long-arrow-left:before{content:\"\\f177\"}.fa-long-arrow-right:before{content:\"\\f178\"}.fa-apple:before{content:\"\\f179\"}.fa-windows:before{content:\"\\f17a\"}.fa-android:before{content:\"\\f17b\"}.fa-linux:before{content:\"\\f17c\"}.fa-dribbble:before{content:\"\\f17d\"}.fa-skype:before{content:\"\\f17e\"}.fa-foursquare:before{content:\"\\f180\"}.fa-trello:before{content:\"\\f181\"}.fa-female:before{content:\"\\f182\"}.fa-male:before{content:\"\\f183\"}.fa-gittip:before,.fa-gratipay:before{content:\"\\f184\"}.fa-sun-o:before{content:\"\\f185\"}.fa-moon-o:before{content:\"\\f186\"}.fa-archive:before{content:\"\\f187\"}.fa-bug:before{content:\"\\f188\"}.fa-vk:before{content:\"\\f189\"}.fa-weibo:before{content:\"\\f18a\"}.fa-renren:before{content:\"\\f18b\"}.fa-pagelines:before{content:\"\\f18c\"}.fa-stack-exchange:before{content:\"\\f18d\"}.fa-arrow-circle-o-right:before{content:\"\\f18e\"}.fa-arrow-circle-o-left:before{content:\"\\f190\"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:\"\\f191\"}.fa-dot-circle-o:before{content:\"\\f192\"}.fa-wheelchair:before{content:\"\\f193\"}.fa-vimeo-square:before{content:\"\\f194\"}.fa-turkish-lira:before,.fa-try:before{content:\"\\f195\"}.fa-plus-square-o:before{content:\"\\f196\"}.fa-space-shuttle:before{content:\"\\f197\"}.fa-slack:before{content:\"\\f198\"}.fa-envelope-square:before{content:\"\\f199\"}.fa-wordpress:before{content:\"\\f19a\"}.fa-openid:before{content:\"\\f19b\"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:\"\\f19c\"}.fa-mortar-board:before,.fa-graduation-cap:before{content:\"\\f19d\"}.fa-yahoo:before{content:\"\\f19e\"}.fa-google:before{content:\"\\f1a0\"}.fa-reddit:before{content:\"\\f1a1\"}.fa-reddit-square:before{content:\"\\f1a2\"}.fa-stumbleupon-circle:before{content:\"\\f1a3\"}.fa-stumbleupon:before{content:\"\\f1a4\"}.fa-delicious:before{content:\"\\f1a5\"}.fa-digg:before{content:\"\\f1a6\"}.fa-pied-piper:before{content:\"\\f1a7\"}.fa-pied-piper-alt:before{content:\"\\f1a8\"}.fa-drupal:before{content:\"\\f1a9\"}.fa-joomla:before{content:\"\\f1aa\"}.fa-language:before{content:\"\\f1ab\"}.fa-fax:before{content:\"\\f1ac\"}.fa-building:before{content:\"\\f1ad\"}.fa-child:before{content:\"\\f1ae\"}.fa-paw:before{content:\"\\f1b0\"}.fa-spoon:before{content:\"\\f1b1\"}.fa-cube:before{content:\"\\f1b2\"}.fa-cubes:before{content:\"\\f1b3\"}.fa-behance:before{content:\"\\f1b4\"}.fa-behance-square:before{content:\"\\f1b5\"}.fa-steam:before{content:\"\\f1b6\"}.fa-steam-square:before{content:\"\\f1b7\"}.fa-recycle:before{content:\"\\f1b8\"}.fa-automobile:before,.fa-car:before{content:\"\\f1b9\"}.fa-cab:before,.fa-taxi:before{content:\"\\f1ba\"}.fa-tree:before{content:\"\\f1bb\"}.fa-spotify:before{content:\"\\f1bc\"}.fa-deviantart:before{content:\"\\f1bd\"}.fa-soundcloud:before{content:\"\\f1be\"}.fa-database:before{content:\"\\f1c0\"}.fa-file-pdf-o:before{content:\"\\f1c1\"}.fa-file-word-o:before{content:\"\\f1c2\"}.fa-file-excel-o:before{content:\"\\f1c3\"}.fa-file-powerpoint-o:before{content:\"\\f1c4\"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:\"\\f1c5\"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:\"\\f1c6\"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:\"\\f1c7\"}.fa-file-movie-o:before,.fa-file-video-o:before{content:\"\\f1c8\"}.fa-file-code-o:before{content:\"\\f1c9\"}.fa-vine:before{content:\"\\f1ca\"}.fa-codepen:before{content:\"\\f1cb\"}.fa-jsfiddle:before{content:\"\\f1cc\"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:\"\\f1cd\"}.fa-circle-o-notch:before{content:\"\\f1ce\"}.fa-ra:before,.fa-rebel:before{content:\"\\f1d0\"}.fa-ge:before,.fa-empire:before{content:\"\\f1d1\"}.fa-git-square:before{content:\"\\f1d2\"}.fa-git:before{content:\"\\f1d3\"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:\"\\f1d4\"}.fa-tencent-weibo:before{content:\"\\f1d5\"}.fa-qq:before{content:\"\\f1d6\"}.fa-wechat:before,.fa-weixin:before{content:\"\\f1d7\"}.fa-send:before,.fa-paper-plane:before{content:\"\\f1d8\"}.fa-send-o:before,.fa-paper-plane-o:before{content:\"\\f1d9\"}.fa-history:before{content:\"\\f1da\"}.fa-circle-thin:before{content:\"\\f1db\"}.fa-header:before{content:\"\\f1dc\"}.fa-paragraph:before{content:\"\\f1dd\"}.fa-sliders:before{content:\"\\f1de\"}.fa-share-alt:before{content:\"\\f1e0\"}.fa-share-alt-square:before{content:\"\\f1e1\"}.fa-bomb:before{content:\"\\f1e2\"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:\"\\f1e3\"}.fa-tty:before{content:\"\\f1e4\"}.fa-binoculars:before{content:\"\\f1e5\"}.fa-plug:before{content:\"\\f1e6\"}.fa-slideshare:before{content:\"\\f1e7\"}.fa-twitch:before{content:\"\\f1e8\"}.fa-yelp:before{content:\"\\f1e9\"}.fa-newspaper-o:before{content:\"\\f1ea\"}.fa-wifi:before{content:\"\\f1eb\"}.fa-calculator:before{content:\"\\f1ec\"}.fa-paypal:before{content:\"\\f1ed\"}.fa-google-wallet:before{content:\"\\f1ee\"}.fa-cc-visa:before{content:\"\\f1f0\"}.fa-cc-mastercard:before{content:\"\\f1f1\"}.fa-cc-discover:before{content:\"\\f1f2\"}.fa-cc-amex:before{content:\"\\f1f3\"}.fa-cc-paypal:before{content:\"\\f1f4\"}.fa-cc-stripe:before{content:\"\\f1f5\"}.fa-bell-slash:before{content:\"\\f1f6\"}.fa-bell-slash-o:before{content:\"\\f1f7\"}.fa-trash:before{content:\"\\f1f8\"}.fa-copyright:before{content:\"\\f1f9\"}.fa-at:before{content:\"\\f1fa\"}.fa-eyedropper:before{content:\"\\f1fb\"}.fa-paint-brush:before{content:\"\\f1fc\"}.fa-birthday-cake:before{content:\"\\f1fd\"}.fa-area-chart:before{content:\"\\f1fe\"}.fa-pie-chart:before{content:\"\\f200\"}.fa-line-chart:before{content:\"\\f201\"}.fa-lastfm:before{content:\"\\f202\"}.fa-lastfm-square:before{content:\"\\f203\"}.fa-toggle-off:before{content:\"\\f204\"}.fa-toggle-on:before{content:\"\\f205\"}.fa-bicycle:before{content:\"\\f206\"}.fa-bus:before{content:\"\\f207\"}.fa-ioxhost:before{content:\"\\f208\"}.fa-angellist:before{content:\"\\f209\"}.fa-cc:before{content:\"\\f20a\"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:\"\\f20b\"}.fa-meanpath:before{content:\"\\f20c\"}.fa-buysellads:before{content:\"\\f20d\"}.fa-connectdevelop:before{content:\"\\f20e\"}.fa-dashcube:before{content:\"\\f210\"}.fa-forumbee:before{content:\"\\f211\"}.fa-leanpub:before{content:\"\\f212\"}.fa-sellsy:before{content:\"\\f213\"}.fa-shirtsinbulk:before{content:\"\\f214\"}.fa-simplybuilt:before{content:\"\\f215\"}.fa-skyatlas:before{content:\"\\f216\"}.fa-cart-plus:before{content:\"\\f217\"}.fa-cart-arrow-down:before{content:\"\\f218\"}.fa-diamond:before{content:\"\\f219\"}.fa-ship:before{content:\"\\f21a\"}.fa-user-secret:before{content:\"\\f21b\"}.fa-motorcycle:before{content:\"\\f21c\"}.fa-street-view:before{content:\"\\f21d\"}.fa-heartbeat:before{content:\"\\f21e\"}.fa-venus:before{content:\"\\f221\"}.fa-mars:before{content:\"\\f222\"}.fa-mercury:before{content:\"\\f223\"}.fa-intersex:before,.fa-transgender:before{content:\"\\f224\"}.fa-transgender-alt:before{content:\"\\f225\"}.fa-venus-double:before{content:\"\\f226\"}.fa-mars-double:before{content:\"\\f227\"}.fa-venus-mars:before{content:\"\\f228\"}.fa-mars-stroke:before{content:\"\\f229\"}.fa-mars-stroke-v:before{content:\"\\f22a\"}.fa-mars-stroke-h:before{content:\"\\f22b\"}.fa-neuter:before{content:\"\\f22c\"}.fa-genderless:before{content:\"\\f22d\"}.fa-facebook-official:before{content:\"\\f230\"}.fa-pinterest-p:before{content:\"\\f231\"}.fa-whatsapp:before{content:\"\\f232\"}.fa-server:before{content:\"\\f233\"}.fa-user-plus:before{content:\"\\f234\"}.fa-user-times:before{content:\"\\f235\"}.fa-hotel:before,.fa-bed:before{content:\"\\f236\"}.fa-viacoin:before{content:\"\\f237\"}.fa-train:before{content:\"\\f238\"}.fa-subway:before{content:\"\\f239\"}.fa-medium:before{content:\"\\f23a\"}.fa-yc:before,.fa-y-combinator:before{content:\"\\f23b\"}.fa-optin-monster:before{content:\"\\f23c\"}.fa-opencart:before{content:\"\\f23d\"}.fa-expeditedssl:before{content:\"\\f23e\"}.fa-battery-4:before,.fa-battery-full:before{content:\"\\f240\"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:\"\\f241\"}.fa-battery-2:before,.fa-battery-half:before{content:\"\\f242\"}.fa-battery-1:before,.fa-battery-quarter:before{content:\"\\f243\"}.fa-battery-0:before,.fa-battery-empty:before{content:\"\\f244\"}.fa-mouse-pointer:before{content:\"\\f245\"}.fa-i-cursor:before{content:\"\\f246\"}.fa-object-group:before{content:\"\\f247\"}.fa-object-ungroup:before{content:\"\\f248\"}.fa-sticky-note:before{content:\"\\f249\"}.fa-sticky-note-o:before{content:\"\\f24a\"}.fa-cc-jcb:before{content:\"\\f24b\"}.fa-cc-diners-club:before{content:\"\\f24c\"}.fa-clone:before{content:\"\\f24d\"}.fa-balance-scale:before{content:\"\\f24e\"}.fa-hourglass-o:before{content:\"\\f250\"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:\"\\f251\"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:\"\\f252\"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:\"\\f253\"}.fa-hourglass:before{content:\"\\f254\"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:\"\\f255\"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:\"\\f256\"}.fa-hand-scissors-o:before{content:\"\\f257\"}.fa-hand-lizard-o:before{content:\"\\f258\"}.fa-hand-spock-o:before{content:\"\\f259\"}.fa-hand-pointer-o:before{content:\"\\f25a\"}.fa-hand-peace-o:before{content:\"\\f25b\"}.fa-trademark:before{content:\"\\f25c\"}.fa-registered:before{content:\"\\f25d\"}.fa-creative-commons:before{content:\"\\f25e\"}.fa-gg:before{content:\"\\f260\"}.fa-gg-circle:before{content:\"\\f261\"}.fa-tripadvisor:before{content:\"\\f262\"}.fa-odnoklassniki:before{content:\"\\f263\"}.fa-odnoklassniki-square:before{content:\"\\f264\"}.fa-get-pocket:before{content:\"\\f265\"}.fa-wikipedia-w:before{content:\"\\f266\"}.fa-safari:before{content:\"\\f267\"}.fa-chrome:before{content:\"\\f268\"}.fa-firefox:before{content:\"\\f269\"}.fa-opera:before{content:\"\\f26a\"}.fa-internet-explorer:before{content:\"\\f26b\"}.fa-tv:before,.fa-television:before{content:\"\\f26c\"}.fa-contao:before{content:\"\\f26d\"}.fa-500px:before{content:\"\\f26e\"}.fa-amazon:before{content:\"\\f270\"}.fa-calendar-plus-o:before{content:\"\\f271\"}.fa-calendar-minus-o:before{content:\"\\f272\"}.fa-calendar-times-o:before{content:\"\\f273\"}.fa-calendar-check-o:before{content:\"\\f274\"}.fa-industry:before{content:\"\\f275\"}.fa-map-pin:before{content:\"\\f276\"}.fa-map-signs:before{content:\"\\f277\"}.fa-map-o:before{content:\"\\f278\"}.fa-map:before{content:\"\\f279\"}.fa-commenting:before{content:\"\\f27a\"}.fa-commenting-o:before{content:\"\\f27b\"}.fa-houzz:before{content:\"\\f27c\"}.fa-vimeo:before{content:\"\\f27d\"}.fa-black-tie:before{content:\"\\f27e\"}.fa-fonticons:before{content:\"\\f280\"}\n    5  \n\nC:\\dev\\TheChat\\client\\bower_components\\font-awesome\\less\\icons.less:\n  135  .@{fa-css-prefix}-bar-chart:before { content: @fa-var-bar-chart; }\n  136  .@{fa-css-prefix}-twitter-square:before { content: @fa-var-twitter-square; }\n  137: .@{fa-css-prefix}-facebook-square:before { content: @fa-var-facebook-square; }\n  138  .@{fa-css-prefix}-camera-retro:before { content: @fa-var-camera-retro; }\n  139  .@{fa-css-prefix}-key:before { content: @fa-var-key; }\n  ...\n  159  .@{fa-css-prefix}-phone-square:before { content: @fa-var-phone-square; }\n  160  .@{fa-css-prefix}-twitter:before { content: @fa-var-twitter; }\n  161: .@{fa-css-prefix}-facebook-f:before,\n  162: .@{fa-css-prefix}-facebook:before { content: @fa-var-facebook; }\n  163  .@{fa-css-prefix}-github:before { content: @fa-var-github; }\n  164  .@{fa-css-prefix}-unlock:before { content: @fa-var-unlock; }\n  ...\n  587  .@{fa-css-prefix}-neuter:before { content: @fa-var-neuter; }\n  588  .@{fa-css-prefix}-genderless:before { content: @fa-var-genderless; }\n  589: .@{fa-css-prefix}-facebook-official:before { content: @fa-var-facebook-official; }\n  590  .@{fa-css-prefix}-pinterest-p:before { content: @fa-var-pinterest-p; }\n  591  .@{fa-css-prefix}-whatsapp:before { content: @fa-var-whatsapp; }\n\nC:\\dev\\TheChat\\client\\bower_components\\font-awesome\\less\\variables.less:\n  227  @fa-var-eye-slash: \"\\f070\";\n  228  @fa-var-eyedropper: \"\\f1fb\";\n  229: @fa-var-facebook: \"\\f09a\";\n  230: @fa-var-facebook-f: \"\\f09a\";\n  231: @fa-var-facebook-official: \"\\f230\";\n  232: @fa-var-facebook-square: \"\\f082\";\n  233  @fa-var-fast-backward: \"\\f049\";\n  234  @fa-var-fast-forward: \"\\f050\";\n\nC:\\dev\\TheChat\\client\\bower_components\\font-awesome\\scss\\_icons.scss:\n  135  .#{$fa-css-prefix}-bar-chart:before { content: $fa-var-bar-chart; }\n  136  .#{$fa-css-prefix}-twitter-square:before { content: $fa-var-twitter-square; }\n  137: .#{$fa-css-prefix}-facebook-square:before { content: $fa-var-facebook-square; }\n  138  .#{$fa-css-prefix}-camera-retro:before { content: $fa-var-camera-retro; }\n  139  .#{$fa-css-prefix}-key:before { content: $fa-var-key; }\n  ...\n  159  .#{$fa-css-prefix}-phone-square:before { content: $fa-var-phone-square; }\n  160  .#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }\n  161: .#{$fa-css-prefix}-facebook-f:before,\n  162: .#{$fa-css-prefix}-facebook:before { content: $fa-var-facebook; }\n  163  .#{$fa-css-prefix}-github:before { content: $fa-var-github; }\n  164  .#{$fa-css-prefix}-unlock:before { content: $fa-var-unlock; }\n  ...\n  587  .#{$fa-css-prefix}-neuter:before { content: $fa-var-neuter; }\n  588  .#{$fa-css-prefix}-genderless:before { content: $fa-var-genderless; }\n  589: .#{$fa-css-prefix}-facebook-official:before { content: $fa-var-facebook-official; }\n  590  .#{$fa-css-prefix}-pinterest-p:before { content: $fa-var-pinterest-p; }\n  591  .#{$fa-css-prefix}-whatsapp:before { content: $fa-var-whatsapp; }\n\nC:\\dev\\TheChat\\client\\bower_components\\font-awesome\\scss\\_variables.scss:\n  227  $fa-var-eye-slash: \"\\f070\";\n  228  $fa-var-eyedropper: \"\\f1fb\";\n  229: $fa-var-facebook: \"\\f09a\";\n  230: $fa-var-facebook-f: \"\\f09a\";\n  231: $fa-var-facebook-official: \"\\f230\";\n  232: $fa-var-facebook-square: \"\\f082\";\n  233  $fa-var-fast-backward: \"\\f049\";\n  234  $fa-var-fast-forward: \"\\f050\";\n\n34 matches across 8 files\n\n\nSearching 484 files for \"LoginCtrl\"\n\nC:\\dev\\TheChat\\client\\app\\account\\account.js:\n   31        //   url: '/login',\n   32        //   templateUrl: 'app/account/login/login.html',\n   33:       //   controller: 'LoginCtrl'\n   34        // });\n   35    })\n\nC:\\dev\\TheChat\\client\\app\\account\\login\\login.controller.js:\n    2  \n    3  angular.module('theChatApp')\n    4:   .controller('LoginCtrl', function($scope, Auth, $state, $window) {\n    5      $scope.user = {};\n    6      $scope.errors = {};\n\nC:\\dev\\TheChat\\client\\app\\account\\login\\login.controller.spec.js:\n    1  'use strict';\n    2  \n    3: describe('Controller: LoginCtrl', function () {\n    4  \n    5    // load the controller's module\n    6    beforeEach(module('theChatApp'));\n    7  \n    8:   var LoginCtrl, scope;\n    9  \n   10    // Initialize the controller and a mock scope\n   11    beforeEach(inject(function ($controller, $rootScope) {\n   12      scope = $rootScope.$new();\n   13:     LoginCtrl = $controller('LoginCtrl', {\n   14        $scope: scope\n   15      });\n\nC:\\dev\\TheChat\\client\\app\\account\\login\\login.directive.js:\n    8        link: function (scope, element, attrs) {\n    9        },\n   10:       controller: 'LoginCtrl'\n   11      };\n   12    });\n\nC:\\dev\\TheChat\\client\\app\\account\\login\\loginSocial\\loginSocial.directive.js:\n    8        link: function (scope, element, attrs) {\n    9        },\n   10:       controller: 'LoginCtrl'\n   11      };\n   12    });\n\n8 matches across 5 files\n",
 			"settings":
 			{
-				"buffer_size": 2271,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/services/contactManager/contactManager.service.js",
-			"settings":
-			{
-				"buffer_size": 8269,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 74 files for \"new friend request\"\n\nC:\\dev\\TheChat\\client\\app\\directives\\contactsMain\\contactsMain.directive.js:\n   63  \n   64          scope.friendRequests = contactManager.getFriendRequests();\n   65:         scope.$on('new friend request', function(event, friendInfo) {\n   66            // scope.friendRequests++;\n   67          })\n\nC:\\dev\\TheChat\\client\\app\\directives\\friendRequestsPanel\\friendRequestsPanel.directive.js:\n   31        link: function (scope, element, attrs) {\n   32        	scope.friendRequests = contactManager.getFriendRequests();\n   33:         scope.$on('new friend request', function(event, friend) {\n   34            element.find('contacts-panel')\n   35              .append(contactManager.createContactElement(scope, friend));\n\nC:\\dev\\TheChat\\client\\app\\services\\contactManager\\contactManager.service.js:\n  115        onNewFriendRequest: function(data) {\n  116          user.friendRequests.push(data); //isma, WARN, this can potentially de-sync our app\n  117:         $rootScope.$broadcast('new friend request', data);\n  118        },\n  119  \n\n3 matches across 3 files\n",
-			"settings":
-			{
-				"buffer_size": 1105,
+				"buffer_size": 33554,
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
 			}
 		},
 		{
-			"file": "client/app/directives/contactsMain/contactsMain.directive.js",
+			"file": "client/app/account/login/loginSocial/loginSocial.html",
 			"settings":
 			{
-				"buffer_size": 2647,
+				"buffer_size": 557,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/directives/contactsMain/contactsMain.html",
+			"file": "client/app/directives/conversation/conversation.directive.js",
 			"settings":
 			{
-				"buffer_size": 1707,
+				"buffer_size": 4706,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/index.html",
+			"file": "client/app/directives/conversation/conversation.html",
 			"settings":
 			{
-				"buffer_size": 6714,
+				"buffer_size": 1018,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/app.js",
+			"file": "client/app/directives/conversation/conversationHead/conversationHead.directive.js",
 			"settings":
 			{
-				"buffer_size": 1920,
+				"buffer_size": 355,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/account/login/login.controller.js",
+			"settings":
+			{
+				"buffer_size": 688,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nBugs:\n	\n\n	Create group: deactivate the \"create group\" button once clicked, because if \n	you are tester quick, you can create the group twice. See if this happens for \n	other situations like adding new contacts.\n	\n	In the create group in contact manager, provoke an error in the promise success\n	result, see if we can catch it from outside contact manager and display something \n	in screen; currently, if we have an error in client after a success in the \n	server, the group is created but the user isn't redirected to the next screen,\n	giving the impression that the group wasn't created.\n\n\nRefractoring and new features:\n	Remove $scope.pickColor\n	Add an \"erase everything\" control\n	Try to center the canvas inside the canvas container\n	Add a white color to the color picker\n	Add a range selector to change the brush size\n	Center the color picker on screen\n	Add a range selector for opacity?\n	The header in the conversation window must display \n		user avatar\n		members of group\n		some options (which? I don't know)\n\n---------------------------------------------------------------------------------------------\nCREATE GROUP DIRECTIVE\nContact list should be provided in a parameter\nThe directive shouldn't use the contactManager service\n	remove DI\n	remove usage\nIsolate scope\nContacts-Main should handle contactManager service\nContacts can be styled in a different way depending on the css class passed to contacts panel\n\n---------------------------------------------------------------------------------------------\nSUPER BUG\nLog in w/a user account, log-out, drop user, re-create user. \nYou'll notice you have every user until you refresh.\n\nOther possible bug (just a supposition, never reproduced/tested):\nLog in w/an account that has contacts. Log out.\nCreate a new account.\nExpected success result: The new account doesn't have any users.\nExpected fail result: The new account has the users from the previous logged account.\n\n",
+			"file": "/C/Users/Ismael/Desktop/the chat a todo.txt",
+			"file_size": 2327,
+			"file_write_time": 130881262079472003,
+			"settings":
+			{
+				"buffer_size": 1929,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/components/auth/auth.service.js",
+			"settings":
+			{
+				"buffer_size": 4579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/account/login/loginSocial/loginSocial.directive.js",
+			"settings":
+			{
+				"buffer_size": 288,
 				"line_ending": "Unix"
 			}
 		}
@@ -613,7 +632,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -630,54 +649,80 @@
 	},
 	"file_history":
 	[
-		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
-		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.js",
-		"/C/dev/TheChat/client/index.html",
-		"/C/dev/TheChat/bower.json",
-		"/C/dev/TheChat/server/api/user/user.socket.js",
 		"/C/dev/TheChat/client/app/services/contactManager/contactManager.service.js",
-		"/C/dev/TheChat/server/config/express.js",
-		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.directive.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.js",
+		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
+		"/C/dev/TheChat/client/app/directives/conversation/conversation.html",
 		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/include/contactsPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.directive.js",
+		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.html",
+		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.js",
+		"/C/dev/TheChat/server/api/group/group.controller.js",
+		"/C/dev/TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js",
+		"/C/dev/TheChat/client/app/directives/contactsPanel/contactsPanel.html",
+		"/C/dev/TheChat/client/app/directives/contact/contact.html",
+		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.html",
+		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.js",
 		"/C/dev/TheChat/client/app/directives/conversation/conversation.directive.js",
+		"/C/dev/TheChat/server/api/group/group.model.js",
+		"/C/dev/TheChat/client/app/directives/contact/contact.directive.js",
+		"/C/Users/Ismael/Desktop/the chat a todo.txt",
+		"/C/dev/TheChat/client/app/directives/contactsMain/include/createGroupPanelContainer.html",
+		"/C/dev/TheChat/client/app/directives/contact/contact.css",
+		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.css",
+		"/C/dev/TheChat/client/app/directives/conversation/conversation.css",
+		"/C/dev/TheChat/client/app/directives/message/message.html",
+		"/C/dev/TheChat/client/app/directives/scribble/scribble.html",
+		"/C/dev/TheChat/client/app/directives/conversation/include/scribbleEditor/scribbleEditor.controller.js",
+		"/C/dev/TheChat/client/app/directives/conversation/include/scribbleEditor/modalDrawScribble.html",
+		"/C/dev/TheChat/client/app/directives/conversation/include/scribbleEditor/scribbleEditor.css",
+		"/C/dev/TheChat/client/app/directives/message/message.directive.js",
+		"/C/dev/TheChat/client/app/directives/scribble/scribble.directive.js",
+		"/C/Users/Ismael/Desktop/pay.txt",
+		"/C/dev/TheChat/client/app/directives/scribble/scribble.css",
+		"/C/dev/TheChat/client/app/directives/message/message.css",
+		"/C/dev/TheChat/client/app/app.js",
+		"/C/dev/TheChat/client/index.html",
+		"/C/dev/TheChat/client/app/directives/conversation/include/modalDrawScribble.html",
+		"/C/dev/TheChat/server/app.js",
+		"/C/dev/TheChat/bower.json",
+		"/C/dev/TheChat/client/app/directives/conversation/include/scribbleEditor/scribbleEditor.controller.spec.js",
+		"/C/dev/TheChat/server/api/user/user.controller.js",
+		"/C/dev/TheChat/client/components/auth/user.service.js",
+		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.js",
 		"/C/dev/TheChat/server/api/message/message.socket.js",
 		"/C/dev/TheChat/client/app/services/conversationManager/conversationManager.service.js",
-		"/C/dev/TheChat/server/api/user/user.controller.js",
+		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.css",
+		"/C/dev/TheChat/server/api/group/group.socket.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.events.js",
 		"/C/dev/TheChat/server/api/user/user.model.js",
-		"/C/dev/TheChat/server/api/group/group.controller.js",
-		"/C/dev/TheChat/client/app/dashboard/dashboard.html",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.socket.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.model.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.integration.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.controller.js",
+		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.spec.js",
+		"/C/dev/TheChat/server/api/user/index.js",
+		"/C/dev/TheChat/server/routes.js",
 		"/C/dev/TheChat/client/app/directives/addUserPanel/addUserPanel.directive.js",
+		"/C/Users/Ismael/Desktop/TODO.txt",
+		"/C/dev/TheChat/server/api/user/user.socket.js",
+		"/C/dev/TheChat/server/config/express.js",
 		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.html",
-		"/C/dev/TheChat/client/app/directives/contact/contact.directive.js",
-		"/C/dev/TheChat/client/app/directives/contact/contact.html",
-		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.html",
-		"/C/dev/TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js",
-		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.js",
 		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.css",
-		"/C/dev/TheChat/client/app/directives/contactsMain/include/contactsPanelContainer.html",
-		"/C/dev/TheChat/client/app/directives/contact/contact.css",
-		"/C/dev/TheChat/client/app/directives/contactsPanel/contactsPanel.html",
 		"/C/dev/TheChat/client/app/directives/contactsPanelWorker/contactsPanelWorker.directive.js",
 		"/C/dev/TheChat/client/app/directives/contactsPanelWorker/contactsPanelWorker.html",
 		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.css",
-		"/C/dev/TheChat/client/app/directives/contactsMain/contactsMain.css",
 		"/C/dev/TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.spec.js",
 		"/C/dev/TheChat/client/app/directives/contactsMain/include/friendRequestsContainer.html",
 		"/C/dev/TheChat/client/app/directives/addUserPanel/addUserPanel.html",
 		"/C/dev/TheChat/client/app/dashboard/dashboard.controller.spec.js",
-		"/C/Users/Ismael/Desktop/the chat a todo.txt",
-		"/C/dev/TheChat/server/api/group/group.model.js",
 		"/C/Users/Ismael/Documents/Algorithm Friday/blood types.js",
 		"/C/dev/TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.spec.js",
-		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.js",
 		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.spec.js",
-		"/C/dev/TheChat/client/app/directives/conversation/conversation.html",
-		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.html",
-		"/C/dev/TheChat/server/api/user/index.js",
 		"/C/dev/TheChat/server/api/group/index.js",
-		"/C/dev/TheChat/client/components/auth/user.service.js",
 		"/C/dev/TheChat/server/auth/auth.service.js",
-		"/C/dev/TheChat/client/app/directives/contactsMain/include/createGroupPanelContainer.html",
 		"/C/dev/TheChat/client/app/directives/contactsMain/contactsPanelContainer.html",
 		"/C/dev/TheChat/client/app/directives/contactsMain/createGroupPanelContainer.html",
 		"/C/dev/TheChat/client/app/directives/contactsMain/include/addUserPanelContainer.html",
@@ -699,27 +744,19 @@
 		"/C/dev/tuts/DaftMonk-mean-generator/client/bower_components/angular-bootstrap/ui-bootstrap.js",
 		"/C/dev/TheChat/client/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/C/dev/TheChat/dist/client/bower_components/bootstrap/dist/css/bootstrap.css",
-		"/C/dev/TheChat/client/app/directives/conversation/conversationHead/conversationHead.css",
 		"/C/dev/TheChat/client/app/dashboard/dashboard.js",
 		"/C/dev/TheChat/client/app/directives/groupMaker/groupMaker.html",
 		"/C/dev/TheChat/client/app/directives/groupMaker/groupMaker.directive.js",
-		"/C/dev/TheChat/client/app/directives/conversation/conversation.css",
 		"/C/dev/TheChat/client/app/directives/groupConversation/groupConversation.directive.js",
-		"/C/dev/TheChat/server/api/group/group.socket.js",
-		"/C/dev/TheChat/client/app/app.js",
 		"/C/dev/TheChat/client/app/app.css",
-		"/C/dev/TheChat/server/app.js",
 		"/C/dev/TheChat/server/api/user/user.model.spec.js",
 		"/C/dev/TheChat/client/app/main/main.html",
-		"/C/dev/TheChat/client/app/directives/message/message.directive.js",
 		"/C/dev/TheChat/client/app/main/main.controller.js",
 		"/C/dev/TheChat/client/app/account/login/login.directive.js",
 		"/C/dev/TheChat/client/app/account/signup/signup.controller.js",
-		"/C/dev/TheChat/client/app/directives/message/message.css",
 		"/C/dev/TheChat/client/app/services/messageManager/messageManager.service.js",
 		"/C/dev/TheChat/server/index.js",
 		"/C/dev/TheChat/client/app/account/login/login.controller.js",
-		"/C/dev/TheChat/server/routes.js",
 		"/C/dev/TheChat/client/components/auth/auth.service.js",
 		"/C/dev/TheChat/client/app/account/account.js",
 		"/C/dev/TheChat/client/app/main/main.js",
@@ -739,25 +776,7 @@
 		"/C/dev/tuts/angular-tube/server/config/socketio.js",
 		"/C/dev/tuts/thechat_youtube_tut/public/index.html",
 		"/C/dev/tuts/angular-tube/server/app.js",
-		"/C/dev/tuts/angular-tube/server/config/express.js",
-		"/C/dev/tuts/angular-tube/server/api/comment/comment.socket.js",
-		"/C/dev/TheChat/server/api/thing/thing.socket.js",
-		"/C/dev/TheChat/server/api/thing/thing.events.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.events.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.socket.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.controller.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.integration.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/index.spec.js",
-		"/C/dev/tuts/DaftMonk-mean-generator/server/api/thing/thing.model.js",
-		"/C/dev/TheChat/server/auth/index.js",
-		"/C/dev/TheChat/client/app/account/signup/signup.html",
-		"/C/dev/TheChat/theChat.sublime-project",
-		"/C/dev/TheChat/server/api/dashboard/index.js",
-		"/C/dev/TheChat/client/components/match/match.directive.js",
-		"/C/dev/projects/angularJS-exercises/angularJS/04-FormMatch/matchDirective/app/scripts/directives/validatematch.js",
-		"/C/dev/projects/angularJS-exercises/angularJS/04-FormMatch/matchDirective/app/views/main.html",
-		"/C/dev/TheChat/client/app/account/login/loginSocial/loginSocial.html"
+		"/C/dev/tuts/angular-tube/server/config/express.js"
 	],
 	"find":
 	{
@@ -768,6 +787,9 @@
 		"height": 96.0,
 		"where_history":
 		[
+			"C:\\dev\\TheChat\\client",
+			"C:\\dev\\TheChat\\client\\app",
+			"C:\\dev\\TheChat\\server",
 			"C:\\dev\\TheChat\\client\\app",
 			"C:\\dev\\TheChat\\server",
 			"C:\\dev\\TheChat\\client\\app",
@@ -857,6 +879,117 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"LoginCtrl",
+			"loginOauth",
+			"facebook",
+			"contact selected",
+			"currentFriend",
+			"openChatPanel",
+			"currentFriend",
+			"></",
+			"group.addMember",
+			"addGroupMember",
+			"addContactsToGroup",
+			"responseWithResult",
+			"201",
+			"group.mem",
+			"members",
+			"handleEntityNotFound",
+			"addGroupMember",
+			"addGroupMemeber",
+			"op:'",
+			"leavegr",
+			"leave",
+			"update\"",
+			"updategr",
+			"$scope.selectedContacts",
+			"destro",
+			"showconta",
+			"showcontal",
+			"ng-show",
+			"creategr",
+			"$scope",
+			"createContacts",
+			"noCancelBtn",
+			"switchView",
+			"createContactElement",
+			"createCon",
+			"options",
+			"createContacts",
+			"element",
+			"contact-btn-cancel",
+			"contact-btn-options",
+			"chat-header",
+			"conversation-head",
+			"'",
+			"createMessage",
+			"onSendMessage",
+			"scope.messa",
+			"addMessage",
+			"angular-canvas",
+			".push",
+			"addToSet",
+			"addtose",
+			".push",
+			"addtoSet",
+			"acceptFriendRequest",
+			"addfrien",
+			"acceptfriend",
+			"addtose",
+			".push",
+			"addto",
+			"addToSet",
+			"=== -1",
+			"addToSet",
+			"createContactElement",
+			"new friend request",
+			"push",
+			"continue",
+			"friendreque",
+			"contact created",
+			"handleError",
+			"throw new",
+			"$addToSet",
+			"push",
+			"contacts-header-avatar",
+			"scope.$dest",
+			"louboutin",
+			"saveMessage",
+			"type",
+			"socket.on",
+			"'new message",
+			"saveMessage",
+			"sendTextMessage",
+			"onSendMessage",
+			"sendTextMessage",
+			"conversationManager.saveMessage",
+			"saveMessage",
+			"conversationManager.saveMessage",
+			"saveMessage",
+			"new message",
+			"onnew",
+			"savemessage",
+			"type",
+			"createMessage",
+			"addMessage",
+			"new message",
+			"saveMessage",
+			"new message",
+			"removeAsync",
+			"removeEntity",
+			"destroy",
+			"post",
+			"equal",
+			"equals",
+			"leaveGroup",
+			".",
+			"leaveGroup",
+			"contact element removed",
+			"childScope",
+			"contact element removed",
+			"childScope",
+			"contact element removed",
+			"jquery",
 			"angular",
 			"new friend request",
 			"user.groups",
@@ -873,118 +1006,7 @@
 			"addfrien",
 			"          //isma, TODO, don't use push,\ns",
 			"s",
-			"addtoset",
-			"me",
-			"addFriend",
-			"friendRequest",
-			".emit(\"friendRequest",
-			".emit('friendRequest",
-			"socket.emit('friendRequest",
-			"sendFriendRequest",
-			"friendRequest",
-			"socket",
-			"socket.",
-			"friendRequest",
-			"savec",
-			"friendrequest",
-			"emit",
-			"friendRequest",
-			"onnewfriend]",
-			"onnewfriend",
-			"send group req",
-			"console.l",
-			"addUserToGroup",
-			"addToGroup",
-			"members",
-			"addtogroup",
-			"addGroupMemeber",
-			"addgroup",
-			"addGroupMember",
-			"//isma",
-			"user",
-			"user.",
-			"friend",
-			"sendGroupMessage",
-			"grou;s",
-			"getgro",
-			"sendGroupMessage",
-			"sendmessage",
-			"onSendMessage",
-			"sendMessage",
-			".friendL",
-			"friendL",
-			"contact created",
-			"finishAddContact",
-			"saveContact",
-			"finishAddContact",
-			"saveContact",
-			"contact created",
-			"acceptFriendRequest ",
-			"isma",
-			"friendreq",
-			"accept",
-			"group-panel-selected-contacts",
-			"createGroup",
-			"creategr",
-			"leaveGroup",
-			"leabve",
-			"leave",
-			"leave\"",
-			"leave",
-			"contactsuser.\ncontactsuser.\nleaveGroup",
-			"contactsuser.\nleaveGroup",
-			"leaveGroup",
-			"wip",
-			"contact selected",
-			"friendRequests",
-			"new friend request",
-			"no-ok",
-			"Worker",
-			"contactsPanel",
-			"friendList",
-			"friendRequests",
-			"createContactElement",
-			"contact created",
-			"contactlist",
-			"<contact",
-			"getFriendRequests",
-			"contactmanager",
-			"friend",
-			"removeFriend",
-			"friendreq",
-			"new mess",
-			"rootscope",
-			"$rootScope",
-			"friendRequests",
-			"friendreques",
-			"friendRequests",
-			"friendreq",
-			"font-size: 125%;",
-			"friendRequests",
-			"switchContactsMainView",
-			"Contact",
-			"contact element removed",
-			"removecontact",
-			"contact element removed",
-			"pass",
-			";\n",
-			"addtog",
-			"mongoose",
-			"friendRequests",
-			"addToSet",
-			"groups:",
-			"group",
-			"createGroup",
-			"memebers",
-			"createGroup",
-			"update",
-			"User.update",
-			"$addtoset",
-			"createGroup",
-			"updateGroups",
-			"group",
-			"flex-",
-			"friendRequests"
+			"addtoset"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1101,91 +1123,37 @@
 			[
 				{
 					"buffer": 0,
-					"file": "client/app/directives/addUserPanel/addUserPanel.directive.js",
+					"file": "client/app/directives/contactsMain/contactsMain.directive.js",
 					"settings":
 					{
-						"buffer_size": 1973,
+						"buffer_size": 3057,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1333,
-								1333
+								1433,
+								1433
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 660.0,
+						"translation.y": 600.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "client/app/directives/createGroupPanel/createGroupPanel.directive.js",
 					"settings":
 					{
-						"buffer_size": 2271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1100,
-								1100
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 575.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/app/services/contactManager/contactManager.service.js",
-					"settings":
-					{
-						"buffer_size": 8269,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3331,
-								3331
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2100.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"settings":
-					{
-						"buffer_size": 1105,
+						"buffer_size": 33554,
 						"regions":
 						{
 							"match":
@@ -1194,16 +1162,184 @@
 								"regions":
 								[
 									[
-										230,
-										248
+										255,
+										271
 									],
 									[
-										588,
-										606
+										483,
+										499
 									],
 									[
-										1027,
-										1045
+										788,
+										804
+									],
+									[
+										1087,
+										1095
+									],
+									[
+										1327,
+										1335
+									],
+									[
+										1367,
+										1375
+									],
+									[
+										1407,
+										1415
+									],
+									[
+										1650,
+										1658
+									],
+									[
+										1764,
+										1772
+									],
+									[
+										1794,
+										1802
+									],
+									[
+										1901,
+										1909
+									],
+									[
+										9968,
+										9976
+									],
+									[
+										10838,
+										10846
+									],
+									[
+										10860,
+										10868
+									],
+									[
+										25590,
+										25598
+									],
+									[
+										29032,
+										29040
+									],
+									[
+										29074,
+										29082
+									],
+									[
+										29416,
+										29424
+									],
+									[
+										29460,
+										29468
+									],
+									[
+										29495,
+										29503
+									],
+									[
+										29818,
+										29826
+									],
+									[
+										29862,
+										29870
+									],
+									[
+										30193,
+										30201
+									],
+									[
+										30227,
+										30235
+									],
+									[
+										30263,
+										30271
+									],
+									[
+										30306,
+										30314
+									],
+									[
+										30666,
+										30674
+									],
+									[
+										30708,
+										30716
+									],
+									[
+										31055,
+										31063
+									],
+									[
+										31100,
+										31108
+									],
+									[
+										31135,
+										31143
+									],
+									[
+										31463,
+										31471
+									],
+									[
+										31507,
+										31515
+									],
+									[
+										31841,
+										31849
+									],
+									[
+										31875,
+										31883
+									],
+									[
+										31911,
+										31919
+									],
+									[
+										31954,
+										31962
+									],
+									[
+										32296,
+										32305
+									],
+									[
+										32467,
+										32476
+									],
+									[
+										32706,
+										32715
+									],
+									[
+										32845,
+										32854
+									],
+									[
+										33039,
+										33048
+									],
+									[
+										33064,
+										33073
+									],
+									[
+										33277,
+										33286
+									],
+									[
+										33490,
+										33499
 									]
 								],
 								"scope": ""
@@ -1212,14 +1348,14 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								32471,
+								32471
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
-							"output_tag": 1,
+							"output_tag": 3,
 							"result_base_dir": "",
 							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1227,30 +1363,30 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 8940.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "client/app/directives/contactsMain/contactsMain.directive.js",
+					"buffer": 2,
+					"file": "client/app/account/login/loginSocial/loginSocial.html",
 					"settings":
 					{
-						"buffer_size": 2647,
+						"buffer_size": 557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2099,
-								2099
+								107,
+								117
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1261,19 +1397,47 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "client/app/directives/contactsMain/contactsMain.html",
+					"buffer": 3,
+					"file": "client/app/directives/conversation/conversation.directive.js",
 					"settings":
 					{
-						"buffer_size": 1707,
+						"buffer_size": 4706,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								565,
-								565
+								2585,
+								2585
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1440.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/app/directives/conversation/conversation.html",
+					"settings":
+					{
+						"buffer_size": 1018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
 							]
 						],
 						"settings":
@@ -1288,47 +1452,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "client/index.html",
+					"buffer": 5,
+					"file": "client/app/directives/conversation/conversationHead/conversationHead.directive.js",
 					"settings":
 					{
-						"buffer_size": 6714,
+						"buffer_size": 355,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3968,
-								3975
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1092.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "client/app/app.js",
-					"settings":
-					{
-						"buffer_size": 1920,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								794,
-								794
+								269,
+								269
 							]
 						],
 						"settings":
@@ -1338,7 +1474,116 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 120.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/app/account/login/login.controller.js",
+					"settings":
+					{
+						"buffer_size": 688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								577,
+								577
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Ismael/Desktop/the chat a todo.txt",
+					"settings":
+					{
+						"buffer_size": 1929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "client/components/auth/auth.service.js",
+					"settings":
+					{
+						"buffer_size": 4579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								47,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "client/app/account/login/loginSocial/loginSocial.directive.js",
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1388,19 +1633,263 @@
 		"selected_items":
 		[
 			[
-				"app.js",
-				"TheChat/client/app/app.js"
+				"loginsoci",
+				"TheChat/client/app/account/login/loginSocial/loginSocial.directive.js"
 			],
 			[
-				"index.h",
-				"TheChat/client/index.html"
+				"auth",
+				"TheChat/client/components/auth/auth.service.js"
+			],
+			[
+				"logincon",
+				"TheChat/client/app/account/login/login.controller.js"
+			],
+			[
+				"contactmana",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
+			],
+			[
+				"conversationhe",
+				"TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.js"
+			],
+			[
+				"conversa",
+				"TheChat/client/app/directives/conversation/conversation.html"
+			],
+			[
+				"conve",
+				"TheChat/client/app/directives/conversation/conversation.directive.js"
+			],
+			[
+				"convers",
+				"TheChat/client/app/directives/conversation/conversation.html"
+			],
+			[
+				"dash",
+				"TheChat/client/app/dashboard/dashboard.html"
+			],
+			[
+				"das",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"conversation.d",
+				"TheChat/client/app/directives/conversation/conversation.directive.js"
+			],
+			[
+				"conversationhea",
+				"TheChat/client/app/directives/conversation/conversationHead/conversationHead.directive.js"
+			],
+			[
+				"groupm",
+				"TheChat/server/api/group/group.model.js"
+			],
+			[
+				"groupc",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"contactmanager",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
 			],
 			[
 				"contactsma",
 				"TheChat/client/app/directives/contactsMain/contactsMain.html"
 			],
 			[
+				"contac",
+				"TheChat/client/app/directives/contact/contact.html"
+			],
+			[
+				"contactspane",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js"
+			],
+			[
+				"contactpa",
+				"TheChat/client/app/directives/contactsPanel/contactsPanel.html"
+			],
+			[
+				"dashbo",
+				"TheChat/client/app/dashboard/dashboard.html"
+			],
+			[
+				"creategroup",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.html"
+			],
+			[
+				"create",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.js"
+			],
+			[
+				"contact.",
+				"TheChat/client/app/directives/contact/contact.css"
+			],
+			[
+				"contact.d",
+				"TheChat/client/app/directives/contact/contact.directive.js"
+			],
+			[
+				"contact",
+				"TheChat/client/app/directives/contact/contact.html"
+			],
+			[
+				"conversatiohead",
+				"TheChat/client/app/directives/conversation/conversationHead/conversationHead.css"
+			],
+			[
+				"contactman",
+				"TheChat/client/app/services/contactManager/contactManager.service.js"
+			],
+			[
+				"message.css",
+				"TheChat/client/app/directives/message/message.css"
+			],
+			[
+				"scrib",
+				"TheChat/client/app/directives/scribble/scribble.css"
+			],
+			[
+				"scr",
+				"TheChat/client/app/directives/scribble/scribble.directive.js"
+			],
+			[
+				"message.dire",
+				"TheChat/client/app/directives/message/message.directive.js"
+			],
+			[
+				"scribble",
+				"TheChat/client/app/directives/scribble/scribble.html"
+			],
+			[
+				"mess",
+				"TheChat/client/app/directives/message/message.html"
+			],
+			[
+				"messa",
+				"TheChat/client/app/directives/message/message.html"
+			],
+			[
+				"message.ht",
+				"TheChat/client/app/directives/message/message.html"
+			],
+			[
 				"index",
+				"TheChat/client/index.html"
+			],
+			[
+				"app.j",
+				"TheChat/client/app/app.js"
+			],
+			[
+				"app.",
+				"TheChat/server/app.js"
+			],
+			[
+				"inde",
+				"TheChat/client/index.html"
+			],
+			[
+				"user.",
+				"TheChat/client/components/auth/user.service.js"
+			],
+			[
+				"group.c",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"user.serv",
+				"TheChat/client/components/auth/user.service.js"
+			],
+			[
+				"user.contr",
+				"TheChat/server/api/user/user.controller.js"
+			],
+			[
+				"conversationmana",
+				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
+			],
+			[
+				"creategr",
+				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.directive.js"
+			],
+			[
+				"cove",
+				"TheChat/client/app/directives/conversation/conversation.directive.js"
+			],
+			[
+				"contacsmain",
+				"TheChat/client/app/directives/contactsMain/contactsMain.css"
+			],
+			[
+				"contactsman",
+				"TheChat/client/app/directives/contactsMain/contactsMain.directive.js"
+			],
+			[
+				"group.s",
+				"TheChat/server/api/group/group.socket.js"
+			],
+			[
+				"conversationma",
+				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
+			],
+			[
+				"message.di",
+				"TheChat/client/app/directives/message/message.directive.js"
+			],
+			[
+				"dashboar",
+				"TheChat/client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"message.soc",
+				"TheChat/server/api/message/message.socket.js"
+			],
+			[
+				"group.soc",
+				"TheChat/server/api/group/group.socket.js"
+			],
+			[
+				"user/i",
+				"TheChat/server/api/user/index.js"
+			],
+			[
+				"routes.j",
+				"TheChat/server/routes.js"
+			],
+			[
+				"groupmoe",
+				"TheChat/server/api/group/group.model.js"
+			],
+			[
+				"usermod",
+				"TheChat/server/api/user/user.model.js"
+			],
+			[
+				"contact.direc",
+				"TheChat/client/app/directives/contact/contact.directive.js"
+			],
+			[
+				"group",
+				"TheChat/server/api/group/group.controller.js"
+			],
+			[
+				"contact.dire",
+				"TheChat/client/app/directives/contact/contact.directive.js"
+			],
+			[
+				"index.",
+				"TheChat/client/index.html"
+			],
+			[
+				"bower",
+				"TheChat/bower.json"
+			],
+			[
+				"app.js",
+				"TheChat/client/app/app.js"
+			],
+			[
+				"index.h",
 				"TheChat/client/index.html"
 			],
 			[
@@ -1412,16 +1901,8 @@
 				"TheChat/client/app/directives/friendRequestsPanel/friendRequestsPanel.directive.js"
 			],
 			[
-				"dashboar",
-				"TheChat/client/app/dashboard/dashboard.controller.js"
-			],
-			[
 				"user.so",
 				"TheChat/server/api/user/user.socket.js"
-			],
-			[
-				"contactmana",
-				"TheChat/client/app/services/contactManager/contactManager.service.js"
 			],
 			[
 				"creategro",
@@ -1436,24 +1917,8 @@
 				"TheChat/server/api/group/group.controller.js"
 			],
 			[
-				"user.contr",
-				"TheChat/server/api/user/user.controller.js"
-			],
-			[
-				"usermod",
-				"TheChat/server/api/user/user.model.js"
-			],
-			[
-				"conversa",
-				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
-			],
-			[
 				"group.co",
 				"TheChat/server/api/group/group.controller.js"
-			],
-			[
-				"dash",
-				"TheChat/client/app/dashboard/dashboard.html"
 			],
 			[
 				"message.s",
@@ -1464,20 +1929,12 @@
 				"TheChat/client/app/directives/conversation/conversation.directive.js"
 			],
 			[
-				"groupc",
-				"TheChat/server/api/group/group.controller.js"
-			],
-			[
 				"dashb",
 				"TheChat/client/app/dashboard/dashboard.controller.js"
 			],
 			[
 				"contact/d",
 				"TheChat/client/app/directives/contact/contact.directive.js"
-			],
-			[
-				"contact",
-				"TheChat/client/app/directives/contact/contact.html"
 			],
 			[
 				"creategrou",
@@ -1504,10 +1961,6 @@
 				"TheChat/client/app/directives/contactsMain/include/contactsPanelContainer.html"
 			],
 			[
-				"creategroup",
-				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.html"
-			],
-			[
 				"contactpane",
 				"TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js"
 			],
@@ -1524,32 +1977,12 @@
 				"TheChat/client/app/services/contactManager/contactManager.service.js"
 			],
 			[
-				"contac",
-				"TheChat/client/app/directives/contact/contact.html"
-			],
-			[
-				"contact.",
-				"TheChat/client/app/directives/contact/contact.css"
-			],
-			[
 				"cotnacts",
 				"TheChat/client/app/directives/contactsMain/contactsMain.directive.js"
 			],
 			[
-				"index.",
-				"TheChat/client/index.html"
-			],
-			[
 				"contactspanel.htm",
 				"TheChat/client/app/directives/contactsPanel/contactsPanel.html"
-			],
-			[
-				"contactpa",
-				"TheChat/client/app/directives/contactsPanel/contactsPanel.html"
-			],
-			[
-				"contactspane",
-				"TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js"
 			],
 			[
 				"contact.h",
@@ -1584,16 +2017,8 @@
 				"TheChat/client/app/dashboard/dashboard.controller.js"
 			],
 			[
-				"creategr",
-				"TheChat/client/app/directives/createGroupPanel/createGroupPanel.html"
-			],
-			[
 				"add",
 				"TheChat/client/app/directives/addUserPanel/addUserPanel.html"
-			],
-			[
-				"dashbo",
-				"TheChat/client/app/dashboard/dashboard.controller.js"
 			],
 			[
 				"dashbp",
@@ -1680,16 +2105,8 @@
 				"TheChat/client/app/directives/contactsPanel/contactsPanel.directive.js"
 			],
 			[
-				"contact.dire",
-				"TheChat/client/app/directives/contact/contact.directive.js"
-			],
-			[
 				"index.ht",
 				"TheChat/client/index.html"
-			],
-			[
-				"conversationhe",
-				"TheChat/client/app/directives/conversation/conversationHead/conversationHead.html"
 			],
 			[
 				"conversationhead",
@@ -1716,14 +2133,6 @@
 				"TheChat/server/auth/auth.service.js"
 			],
 			[
-				"conversationmana",
-				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
-			],
-			[
-				"conversation.d",
-				"TheChat/client/app/directives/conversation/conversation.directive.js"
-			],
-			[
 				"addus",
 				"TheChat/client/app/directives/addUserPanel/addUserPanel.html"
 			],
@@ -1734,170 +2143,6 @@
 			[
 				"provi",
 				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
-			],
-			[
-				"das",
-				"TheChat/client/app/dashboard/dashboard.controller.js"
-			],
-			[
-				"conversationman",
-				"TheChat/client/app/services/conversationManager/conversationManager.service.js"
-			],
-			[
-				"message.con",
-				"TheChat/server/api/message/message.controller.js"
-			],
-			[
-				"user.",
-				"TheChat/client/components/auth/user.service.js"
-			],
-			[
-				"user.ser",
-				"TheChat/client/components/auth/user.service.js"
-			],
-			[
-				"user.s",
-				"TheChat/client/components/auth/user.service.js"
-			],
-			[
-				"usercon",
-				"TheChat/server/api/user/user.controller.js"
-			],
-			[
-				"user.serv",
-				"TheChat/client/components/auth/user.service.js"
-			],
-			[
-				"user/in",
-				"TheChat/server/api/user/index.js"
-			],
-			[
-				"contactsmain.di",
-				"TheChat/client/app/directives/contactsMain/contactsMain.directive.js"
-			],
-			[
-				"bower",
-				"TheChat/bower.json"
-			],
-			[
-				"i",
-				"TheChat/client/index.html"
-			],
-			[
-				"dashboardcon",
-				"TheChat/client/app/dashboard/dashboard.controller.js"
-			],
-			[
-				"group",
-				"TheChat/server/api/group/group.controller.js"
-			],
-			[
-				"inde",
-				"TheChat/client/index.html"
-			],
-			[
-				"groupmo",
-				"TheChat/server/api/group/group.model.js"
-			],
-			[
-				"pp.",
-				"TheChat/client/app/app.css"
-			],
-			[
-				"app.",
-				"TheChat/server/app.js"
-			],
-			[
-				"user/inde",
-				"TheChat/server/api/user/index.js"
-			],
-			[
-				"app/directives/message/message.directive.js",
-				"TheChat/client/app/directives/message/message.directive.js"
-			],
-			[
-				"main.cont",
-				"TheChat/client/app/main/main.controller.js"
-			],
-			[
-				"lient/app/app.js",
-				"TheChat/client/app/app.js"
-			],
-			[
-				"client/app/account/signup/signup.controller.js",
-				"TheChat/client/app/account/signup/signup.controller.js"
-			],
-			[
-				"client/app/account/login/login.directive.js",
-				"TheChat/client/app/account/login/login.directive.js"
-			],
-			[
-				"user.controller.js",
-				"TheChat/server/api/user/user.controller.js"
-			],
-			[
-				"login",
-				"TheChat/client/app/account/login/login.html"
-			],
-			[
-				"login.di",
-				"TheChat/client/app/account/login/login.directive.js"
-			],
-			[
-				"model",
-				"TheChat/server/api/user/user.model.js"
-			],
-			[
-				"server/config/socketio.js",
-				"server/config/socketio.js"
-			],
-			[
-				"server/config/local",
-				"server/config/local.env.js"
-			],
-			[
-				"auth.se",
-				"client/components/auth/auth.service.js"
-			],
-			[
-				"auth",
-				"server/auth/auth.service.js"
-			],
-			[
-				"auth.serv",
-				"client/components/auth/auth.service.js"
-			],
-			[
-				"bootst",
-				"client/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"boot",
-				"client/bower_components/bootstrap/dist/css/bootstrap.css"
-			],
-			[
-				"config/envi",
-				"server/config/environment/development.js"
-			],
-			[
-				"index.ej",
-				"redditColne/flapper-news/views/index.ejs"
-			],
-			[
-				"routes/",
-				"redditColne/flapper-news/routes/index.js"
-			],
-			[
-				"index.ejs",
-				"redditColne/flapper-news/views/index.ejs"
-			],
-			[
-				"users.j",
-				"redditColne/flapper-news/models/Users.js"
-			],
-			[
-				"profile.t",
-				"client/app/profile/profile.html"
 			]
 		],
 		"width": 0.0

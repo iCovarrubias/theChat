@@ -144,19 +144,18 @@ function acceptFriendRequest(req, res, next) {
       }
 
       //se if user is already on friend list
+      var status = 200;
       idx = user.friends.indexOf(id);
       if(idx !== -1) {
-        console.log('OK! response 204');
-        return res.status(204).end();
+        status = 204;
+      } else {
+        //add to my friends
+        user.friends.addToSet(id);
       }
-
-
-      //add to my friends
-      user.friends.addToSet(id);
-      return user.saveAsync().then(function(){
-        console.log('OK! response 200')
-        res.status(200).json(friend);
-      });
+      
+      user.saveAsync().then(function(){
+        res.status(status).json(friend);
+      });      
     })
     .catch(function(error){
       if(error && error.status) {

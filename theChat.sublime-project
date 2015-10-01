@@ -10,9 +10,6 @@
 				"client/bower_components"
 			],
 			"path": "/C/dev/TheChat"
-		},
-		{
-			"path": "/C/dev/tuts/requireTEst"
 		}
 	]
 }
