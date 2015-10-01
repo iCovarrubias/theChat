@@ -159,28 +159,20 @@ function createGroup(req, res) {
 }
 
 function addGroupMember(req, res) {
-  //isma, work in progress
-  if(true) {
-    return res.status(500).json({err: "this service is not available yet"});
-  }
   var user = req.user;
   var groupId = req.body.groupId;
-  console.log('adding group member[s]', groupId);
-  
+  var members = req.body.members;
   Group.findByIdAsync(groupId)
     .then(handleEntityNotFound(res))
     .then(function(group){
-      user.addToGroup(group);
-      return user.saveAsync();
-    }).then(function(aUser) {
-      console.log('addGroupMember aUser:', aUser);
-      // if(group.addMember(req.body.memeberId) !== -1) {
-        // res.status(200).end();
-      // } else {
-      //   res.status(204).end();
-      // }
-      next();
+      for(var i = 0; i < members.length; i++) {
+        group.addMember(members[i]);
+      }
+      return group.saveAsync().then(function() {
+        return group;
+      });
     })
+    .then(responseWithResult(res, 201))
     .catch(handleError(res));
 }
 
@@ -218,7 +210,7 @@ exports.updateGroups = function(req, res) {
   if(op === 'create') {
     createGroup(req, res);
   } else if(op === 'addMember') {
-    addGroupMemeber(req, res);
+    addGroupMember(req, res);
   } else if(op === 'leave') {
     leaveGroup(req, res);
   } else if(op === 'rename') {

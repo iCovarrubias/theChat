@@ -32,17 +32,22 @@
 			<div class="group-panel-selected-contacts" ng-show="selectedContacts">
 				<h5>Group Members</h4>
 				<contacts-panel contact-list="selectedContacts"
-					 class="simple-contact-list"
-					 no-ok-btn="true"
-					 panel-id="selectedContacts"></contacts-panel>
+					options="selectedContactsOpts"
+					class="simple-contact-list"
+					panel-id="selectedContacts"></contacts-panel>
 			</div>
 			<div class="group-panel-all-contacts">
 				<contacts-panel contact-list="friendList"
 					class="simple-contact-list"
-					no-cancel-btn="true"
+					options="{noCancelBtn: true}"
 					panel-id="friendList"></contacts-panel>
 			</div>
-			<button type="submit" class="btn btn-primary">Create!</button>
+			<button ng-hide="isEditGroup" type="submit" class="btn btn-primary">
+				<span class="glyphicon glyphicon-ok"></span> Create
+			</button>
+			<button ng-show="isEditGroup" type="submit" class="btn btn-primary">
+				<span class="glyphicon glyphicon-ok"></span> Update
+			</button>
 		</form>
 	</div>
 </div>

@@ -5,7 +5,9 @@ angular.module('theChatApp')
     return {
       templateUrl: 'app/directives/conversation/conversationHead/conversationHead.html',
       restrict: 'E',
-      // scope: true,
+      scope: {
+        currentFriend: '='
+      },
       link: function (scope, element, attrs) {
       	
       }

@@ -28,6 +28,7 @@ angular.module('theChatApp')
           accepted parameters: "contacts", "addUser", "createGroup"
         */
       	$scope.switchView = function(menu) {
+          $scope.currentGroup = null;
           $scope.friendList = contactManager.getContacts();
       		$scope.view    = menu;
           $scope.viewUrl = viewUrls[menu];
@@ -37,7 +38,7 @@ angular.module('theChatApp')
         //initialize, the default view is contacts
         $scope.switchView('contacts');
 
-        $scope.$on('contact selected', function(event, contact) {
+        $scope.$on('contact selected', function(event, childScope, element, contact) {
           $scope.$emit('openChatPanel', contact);
         });
 
@@ -55,6 +56,11 @@ angular.module('theChatApp')
                 element.remove();
               })
           }
+        });
+
+        $scope.$on('contact options', function(event, childScope, element, contact) {
+          $scope.switchView('createGroup');
+          $scope.currentGroup = contact;
         }); 
 
       },//controller function END

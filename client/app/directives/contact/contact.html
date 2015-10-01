@@ -12,8 +12,12 @@
 		type="button"
 		ng-click="removeFriend(contactInfo)">
 		<span class="glyphicon glyphicon-remove"></span>
-		<!-- <span class="glyphicon glyphicon-align-center"></span> -->
 	</button>
 
-
+	<button ng-show="contactInfo.members"
+		class="btn contact-btn-options"
+		type="button"
+		ng-click="clickedOptions(contactInfo)">
+		<span class="glyphicon glyphicon-option-vertical"></span>
+	</button>
 </div>

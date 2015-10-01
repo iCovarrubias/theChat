@@ -239,18 +239,20 @@ angular.module('theChatApp')
           });
       },
 
-      //group: receives the a group 
-      //contacts: a user or array of users to add as members of a group
-      //isma, TODO
-      addContactsToGroup: function(group, users) {
+      //group: receives the group object
+      //members: a user or array of users to add as members of a group
+      addContactsToGroup: function(group, members) {
         var myId = user._id;
-        User
-            .updateGroups({id: myId}, {op:'addMember', groupId: group._id})
+        return User
+            .updateGroups({id: myId}, {op:'addMember', groupId: group._id, members: members })
             .$promise
             .then(function(res) {
-                //isma TODO, use $rootScope to broadcast the operation result
-                //expected result {groupId, [the list of the members added?]}
-                console.log('group addMember op SUCCESS', res);
+                var result = {
+                  _id: res._id,
+                  members: res.members,
+                  name: res.name
+                };
+                return result;
             })
             .catch(function(res) {
                 console.error('There was an error with the addMember op: ', res.data.message);
@@ -285,15 +287,26 @@ angular.module('theChatApp')
         if(!scope) {
           throw new Error('Please provide a scope');
         }
-
+        var options = {};
+        if(scope.options) {
+          //isma, must copy scope.options, if not, any modification to the
+          //contactScope will be reflected in the parent
+          options = angular.copy(scope.options, {});
+        }
         var contactScope = scope.$new(true);
         contactScope.contact = contactInfo;
+        contactScope.options = options;
+        if(contactInfo._tmp_opts) {
+          // console.log('contactInfo bfore', contactInfo, contactScope.options);
+          angular.extend(contactScope.options, contactInfo._tmp_opts);
+          // console.log('contactInfo after', contactInfo,  contactScope.options);
+          
+          delete contactInfo._tmp_opts;
+        }
         // var contactStr = '<contact contact-info="contact"></contact>';
         var contactStr = '<contact cid="' + contactInfo._id + '" ';
         contactStr += 'contact-info="contact" ';
-        if(scope.noCancelBtn) { contactStr += 'no-cancel-btn ';}
-        if(scope.noOkBtn) { contactStr += 'no-ok-btn ';}
-
+        contactStr += 'options="options"';
         contactStr += '></contact>';
 
         // console.log('compiling contact w:', contactStr);

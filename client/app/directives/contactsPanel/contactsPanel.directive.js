@@ -12,13 +12,18 @@ angular.module('theChatApp')
       }
     }
 
+    function attachPanelId(event, attrs) {
+      if(attrs['panelId']) {
+        event.panelId = attrs['panelId'];
+      }
+    }
+
     return {
       // templateUrl: 'app/directives/contactsPanel/contactsPanel.html',
       restrict: 'E',
       scope: {
         contactList: "=",
-        noCancelBtn: "@",
-        noOkBtn: "@"
+        options: '='
       },
       link: function (scope, element, attrs) {
      	  var contactsPanel = element;
@@ -39,17 +44,20 @@ angular.module('theChatApp')
             }
           });
         // }
-     
+        
+        scope.$watch('options',function() {
+          contactsPanel.find('contacts').attr('options', scope.options);
+        },true);
 
 
         scope.$on('contact element removed', function(event, childScope, element, friend) {
           //attach panelId and propagate
-          if(attrs['panelId']) {
-            event.panelId = attrs['panelId'];
-          }
+          attachPanelId(event, attrs);
       	});
 
-        
+        scope.$on('contact options', function(event, childScope, element, friend) {
+          attachPanelId(event, attrs);
+        });
         
       }
     };
