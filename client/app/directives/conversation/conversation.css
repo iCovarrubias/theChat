@@ -1,19 +1,12 @@
 
-.chat-header-placeholder {
-	background-color: #faa;
-	display: flex;
-	height: 55px;
-	flex-direction: row;
-	flex: none;
-	align-items: center;
-}
 
 
 .chat-body, .chat-body-placeholder {
-	background-color: #cfc;
+	background-color: #F5F5F5;
 	flex-grow: 1;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	padding: 1em 2em;
 	padding-bottom: 20px;
 }
 

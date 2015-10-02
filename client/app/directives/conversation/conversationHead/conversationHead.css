@@ -1,5 +1,5 @@
 .chat-header, .chat-header-placeholder {
-	background-color: #faa;
+	background-color: #6991AC;
 	display: flex;
 	height: 55px;
 	flex-direction: row;
@@ -7,9 +7,16 @@
 	align-items: center;
 }
 
+.chat-header-placeholder h3 {
+	color: #F5F5F5;
+	margin-left: .5em;
+}
 
 .chat-title-avatar {
-	margin-right: 15px;
+	margin-left: .5em;
+	margin-right: 1em;
+	background-image: url("../../../../assets/images/placeholder.png");
+
 	/*flex: none;*/
 }
 
@@ -17,7 +24,21 @@
 	flex-grow: 1;
 }
 
+.chat-title-body h3 {
+	color: #F5F5F5;
+}
+
 .chat-title-options {
 	margin-left: 20px;
 	/*flex: none;*/
+}
+
+.chat-header button {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: .5em;
+	background-color: white;
+	padding: 0;
+	padding-top: 4px;
 }

@@ -2,16 +2,19 @@
 	Contacts header START 
 */
 .contacts-header {
-	background-color: #90f;
+	background-color: #6991AC;
 	display: flex;
 	height: 55px;
 	flex-direction: row;
 	flex: none;
 	align-items: center;
 }
+.contacts-header h3 {
+	color: #F5F5F5;
+}
 
 .contacts-main-go-back {
-	background-color: #98f;
+	background-color: #C3D7DF;
 	/*display: flex;*/
 	/*height: 55px;*/
 	/*flex-direction: row;*/
@@ -23,13 +26,9 @@
 }
 
 .contacts-header-avatar {
-	width: 40px;
-	height: 40px;
 	margin-right: 10px;
 	margin-left: 5px;
-	background: no-repeat center url("../../../assets/images/placeholder.png");
-	background-size: cover;
-	border-radius: 50%;
+	background-image:url("../../../assets/images/placeholder.png");
 }
 
 
@@ -73,5 +72,5 @@
 
 .contacts-body {
 	flex-grow: 1;
-	background-color: #afa;
+	background-color: #F5F5F5;
 }

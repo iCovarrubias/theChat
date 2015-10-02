@@ -1,5 +1,6 @@
 .msg, .scribble {
-	margin-bottom: 9px;
+	margin-bottom: 1.5em;
+	position: relative;
 }
 
 .msg:after, .scribble:after {
@@ -8,16 +9,43 @@
 	clear: both;
 }
 
+.msg div, .scribble div {
+	padding: .5em;
+	border-radius: 10px;
+	box-shadow: 0px 5px 6px -4px rgba(0, 0, 0, .5);
+	/*box-shadow: 0 2px 5px rgba(0,0,0,.5);*/
+}
+
 .msg div {
 	max-width: 45%;
 }
 
 .msg .msg-out, .scribble .msg-out {
-	background-color: #ccc;
+	background-color: #C3D7DF;
 	float: right;
 }
 
 .msg .msg-in, .scribble .msg-in {
-	background-color: #eee;
+	background-color: #e6e6e6;
 	float: left;
+}
+
+.msg .msg-out:before, .scribble .msg-out:before {
+	content: '';
+	position: absolute;
+    bottom: 15%;
+	right: -12px;
+	border: 7px solid;
+	border-bottom-width: 5px;
+	border-color: transparent transparent #C3D7DF #C3D7DF;
+}
+
+.msg .msg-in:before, .scribble .msg-in:before {
+	content: '';
+	position: absolute;
+    bottom: 15%;
+	left: -12px;
+	border: 7px solid;
+	border-bottom-width: 5px;
+	border-color: transparent #e6e6e6 #e6e6e6 transparent ;
 }

@@ -11,6 +11,7 @@ angular.module('theChatApp')
     return {
       templateUrl: 'app/directives/message/message.html',
       restrict: 'E',
+      // replace: true,
       // transclude: true,
       scope: {
         // type: "=",

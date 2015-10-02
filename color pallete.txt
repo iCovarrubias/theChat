@@ -1,0 +1,5 @@
+#D75C37		Redish
+#67727A		Gray
+#6991AC		Blue
+#C3D7DF		Light blue
+#F5F5F5		Light gray

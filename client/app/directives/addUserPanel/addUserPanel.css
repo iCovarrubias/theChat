@@ -1,6 +1,26 @@
+.add-user-panel-main {
+	padding: 10px 20px;
+}
+
 .add-user-pannel-avatar {
 	border-radius: 100%;
 	background: no-repeat center;
 	width: 200px;
 	height: 200px;
+	margin-top: 25px;
+	display: inline-block;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,.5);
+}
+
+.add-user-found {
+	text-align: center;
+}
+
+.add-user-found h3 {
+	color: #D75C37;
+}
+
+.add-user-found .btn.btn-warning {
+	background-color: #D75C37;
+	border-color: #D24F4A;
 }
